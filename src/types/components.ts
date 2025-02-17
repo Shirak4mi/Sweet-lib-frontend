@@ -64,3 +64,5 @@ export interface IAnimatedIconHandle {
   startAnimation: () => void;
   stopAnimation: () => void;
 }
+
+export interface IBookCardProps {}

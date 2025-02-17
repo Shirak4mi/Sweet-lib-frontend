@@ -3,7 +3,7 @@
 import * as CheckboxPrimitive from "@radix-ui/react-checkbox";
 import * as React from "react";
 
-import { cn } from "@/utils/functions/utils";
+import { cn } from "@/utils/functions";
 
 const Checkbox = React.forwardRef<
   React.ElementRef<typeof CheckboxPrimitive.Root>,
@@ -12,20 +12,14 @@ const Checkbox = React.forwardRef<
   <CheckboxPrimitive.Root
     ref={ref}
     className={cn(
-      "peer grid size-4 shrink-0 place-content-center rounded border border-input shadow-sm shadow-black/5 outline-offset-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring/70 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:border-primary data-[state=indeterminate]:border-primary data-[state=checked]:bg-primary data-[state=indeterminate]:bg-primary data-[state=checked]:text-primary-foreground data-[state=indeterminate]:text-primary-foreground",
-      className,
+      "peer grid size-4 shrink-0 place-content-center rounded border border-input shadow-sm shadow-black/5 outline-offset-2 focus-visible:outline-2 focus-visible:outline-ring/70 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:border-primary data-[state=indeterminate]:border-primary data-[state=checked]:bg-primary data-[state=indeterminate]:bg-primary data-[state=checked]:text-primary-foreground data-[state=indeterminate]:text-primary-foreground",
+      className
     )}
     {...props}
   >
     <CheckboxPrimitive.Indicator className="grid place-content-center text-current">
       {props.checked === "indeterminate" ? (
-        <svg
-          width="9"
-          height="9"
-          viewBox="0 0 9 9"
-          fill="currentcolor"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        <svg width="9" height="9" viewBox="0 0 9 9" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -33,13 +27,7 @@ const Checkbox = React.forwardRef<
           />
         </svg>
       ) : (
-        <svg
-          width="9"
-          height="9"
-          viewBox="0 0 9 9"
-          fill="currentcolor"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        <svg width="9" height="9" viewBox="0 0 9 9" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
           <path
             fillRule="evenodd"
             clipRule="evenodd"
