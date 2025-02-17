@@ -2,7 +2,7 @@ import NeonAlert from "@/components/ui/Origin/Alert/examples/NeonAlert";
 import SecondStepperTest from "@/components/example/SecondStepperTest";
 import StepperTest from "@/components/example/StepperTest";
 import BaseOriginAlert from "@/components/ui/Origin/Alert";
-
+import CustomToast from "@/components/CustomToast";
 
 export default function Home() {
   return (
@@ -17,6 +17,7 @@ export default function Home() {
         details={["XD", "Something else"]}
         action={{ func: () => {}, label: "Action" }}
       />
+      <CustomToast />
     </div>
   );
 }
