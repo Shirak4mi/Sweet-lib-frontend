@@ -28,7 +28,7 @@ export interface IRSLCC extends IRSC {
 /**
  * Interface React Server Component With Class ( IRSCWC )
  *
- * This is just a simple adaptation of IRSC with simple "tailwind" or "css" classes 
+ * This is just a simple adaptation of IRSC with simple "tailwind" or "css" classes
  */
 export interface IRSCWC extends IRSC {
   className?: string;
@@ -38,4 +38,18 @@ export interface IRSCWC extends IRSC {
 export interface IProfilerProps {
   children?: ReactNode;
   id?: string;
+}
+
+export type AlertType = "info" | "danger" | "success";
+
+export type IAlertIcon = { Type?: AlertType };
+
+export interface IAlertProps {
+  details?: Array<string>;
+  className?: string;
+  action?: Function;
+  type?: AlertType;
+  neon?: boolean;
+  show?: boolean;
+  title?: string;
 }
