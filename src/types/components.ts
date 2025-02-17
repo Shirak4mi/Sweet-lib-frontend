@@ -1,11 +1,5 @@
 import type { ReactNode } from "react";
 
-/** Profiler Props Interface <-- Just Syntax amenities --> */
-export interface IProfilerProps {
-  children?: ReactNode;
-  id?: string;
-}
-
 /**
  * Interface React Server Component ( IRSC )
  *
@@ -31,6 +25,17 @@ export interface IRSLCC extends IRSC {
   params: { locale: string };
 }
 
-export interface IRSCC extends IRSC {
+/**
+ * Interface React Server Component With Class ( IRSCWC )
+ *
+ * This is just a simple adaptation of IRSC with simple "tailwind" or "css" classes 
+ */
+export interface IRSCWC extends IRSC {
   className?: string;
+}
+
+/** Profiler Props Interface <-- Just Syntax amenities --> */
+export interface IProfilerProps {
+  children?: ReactNode;
+  id?: string;
 }
