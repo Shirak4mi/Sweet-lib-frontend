@@ -3,6 +3,7 @@ import SecondStepperTest from "@/components/example/SecondStepperTest";
 import StepperTest from "@/components/example/StepperTest";
 import BaseOriginAlert from "@/components/ui/Origin/Alert";
 import CustomToast from "@/components/CustomToast";
+import ProfileForm from "@/components/kokonutui/profile-03";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         action={{ func: () => {}, label: "Action" }}
       />
       <CustomToast />
+      <ProfileForm />
     </div>
   );
 }
