@@ -22,12 +22,7 @@ export default function CardSection(): ReactNode {
   useEffect(() => () => clearTimeout(timer), []);
 
   return (
-    <motion.div
-      style={{ gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))" }}
-      transition={{ duration: 0.5 }}
-      initial={{ width: "100%" }}
-      className="grid gap-4"
-    >
+    <motion.div transition={{ duration: 0.5 }} initial={{ width: "100%" }} className="BookCardsGrid">
       <AnimatePresence mode="sync">
         {cards.map((item) => (
           <Card {...item} key={item.id} ifr={isFirstRender} />
