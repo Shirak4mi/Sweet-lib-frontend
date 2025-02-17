@@ -5,3 +5,8 @@ export type TUseMeasureResult<E extends Element = Element> = [TUseMeasureRef<E>,
 
 export type TUseMeasureRef<E extends Element = Element> = (element: E) => void;
 /* useMeasure Hook Types */
+
+export type TWindowObjSize = {
+  width: number | undefined;
+  height: number | undefined;
+};
