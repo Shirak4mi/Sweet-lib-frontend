@@ -40,7 +40,7 @@ export interface IProfilerProps {
   id?: string;
 }
 
-export type AlertType = "info" | "danger" | "success";
+export type AlertType = "info" | "danger" | "success" | "warning";
 
 export type IAlertIcon = { Type?: AlertType };
 

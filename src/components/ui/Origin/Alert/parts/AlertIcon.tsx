@@ -1,7 +1,7 @@
 import type { AlertType } from "@/types";
 import type { ReactNode } from "react";
 
-export default function AlertTypeBasedIcon({ Type }: { Type: AlertType }): ReactNode {
+export default function AlertIcon({ Type }: { Type?: AlertType }): ReactNode {
   switch (Type) {
     case "info":
       return <></>;
