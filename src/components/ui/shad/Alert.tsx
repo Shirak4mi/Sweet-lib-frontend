@@ -1,4 +1,4 @@
-import { alertVariants, TAlertVariants } from "@/utils/variants/alert";
+import { alertVariants, TAlertVariants } from "@/utils/variants";
 import { type HTMLAttributes, forwardRef } from "react";
 import { cn } from "@/utils/functions";
 
