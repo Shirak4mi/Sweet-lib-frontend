@@ -2,30 +2,20 @@
 import useIsomorphicLayoutEffect from "./useIsoLayout";
 import { useMemo, useState } from "react";
 
-import type { UseMeasureRect, UseMeasureResult } from "@/types/hooks";
+import type { TUseMeasureRect, TUseMeasureResult } from "@/types/hooks";
 
-const defaultState: UseMeasureRect = {
-  x: 0,
-  y: 0,
-  width: 0,
-  height: 0,
-  top: 0,
-  left: 0,
-  bottom: 0,
-  right: 0,
-};
+const defaultState: TUseMeasureRect = { x: 0, y: 0, width: 0, height: 0, top: 0, left: 0, bottom: 0, right: 0 };
 
-function useMeasure<E extends Element = Element>(): UseMeasureResult<E> {
+function useMeasure<E extends Element = Element>(): TUseMeasureResult<E> {
   const [element, ref] = useState<E | null>(null);
-  const [rect, setRect] = useState<UseMeasureRect>(defaultState);
+  const [rect, setRect] = useState<TUseMeasureRect>(defaultState);
 
   const observer = useMemo(
     () =>
       new window.ResizeObserver((entries) => {
-        if (entries[0]) {
-          const { x, y, width, height, top, left, bottom, right } = entries[0].contentRect;
-          setRect({ x, y, width, height, top, left, bottom, right });
-        }
+        if (!entries[0]) return;
+        const { x, y, width, height, top, left, bottom, right } = entries[0].contentRect;
+        setRect(() => ({ x, y, width, height, top, left, bottom, right }));
       }),
     []
   );
@@ -33,9 +23,7 @@ function useMeasure<E extends Element = Element>(): UseMeasureResult<E> {
   useIsomorphicLayoutEffect(() => {
     if (!element) return;
     observer.observe(element);
-    return () => {
-      observer.disconnect();
-    };
+    return () => observer.disconnect();
   }, [element]);
 
   return [ref, rect];
