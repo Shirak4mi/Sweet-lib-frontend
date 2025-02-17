@@ -1,9 +1,9 @@
 import { cn, getAlertType } from "@/utils/functions";
+import ToggleButton from "../Buttons/TooltipButton";
 import AlertIcon from "./parts/AlertIcon";
 
 import type { IAlertProps } from "@/types/components";
 import type { ReactNode } from "react";
-import ToggleButton from "../Buttons/TooltipButton";
 
 export default function BaseOriginAlert({ show, neon, details, type, title, action, className }: IAlertProps): ReactNode {
   // Prop management
@@ -33,7 +33,7 @@ export default function BaseOriginAlert({ show, neon, details, type, title, acti
               </ul>
             )}
           </div>
-          {action && <ToggleButton>{/* {label} */}</ToggleButton>}
+          {action && <ToggleButton />}
         </div>
       </div>
     )
