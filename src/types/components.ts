@@ -20,8 +20,12 @@ export interface IRSC {
 
 /**
  * Interface React Server Lnaguague Change Component ( IRSLCC )
- * 
- * This 
+ *
+ * This interface is a implementation of the IRSC the only difference
+ * between this two,
+ *
+ * Is that IRSLCC actualy expects a "locale" param for the reading of the "languague" in the http call
+ *
  */
 export interface IRSLCC extends IRSC {
   params: { locale: string };
