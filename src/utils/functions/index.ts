@@ -10,9 +10,9 @@ export function cn(...inputs: Array<ClassValue>): string {
 export function getAlertType(type: AlertType = "info"): string {
   switch (type) {
     case "info":
-      return "";
+      return "default";
     case "danger":
-      return "";
+      return "red";
     case "success":
       return "";
     default:

@@ -1,6 +1,7 @@
 import NeonAlert from "@/components/ui/Origin/Alert/examples/NeonAlert";
 import SecondStepperTest from "@/components/example/SecondStepperTest";
 import StepperTest from "@/components/example/StepperTest";
+import BaseOriginAlert from "@/components/ui/Origin/Alert";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <StepperTest />
       <SecondStepperTest />
       <NeonAlert />
+      <BaseOriginAlert show title="This is a error" details={["Blown up"]} type="danger" />
     </div>
   );
 }
