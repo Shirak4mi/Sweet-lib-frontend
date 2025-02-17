@@ -4,7 +4,7 @@ import * as DropdownMenuPrimitive from "@radix-ui/react-dropdown-menu";
 import { Check, ChevronRight, Circle } from "lucide-react";
 import { cn } from "@/utils/functions";
 
-type CommonInset = {
+export type CommonInset = {
   inset?: boolean;
 };
 
