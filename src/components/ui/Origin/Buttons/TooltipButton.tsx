@@ -1,11 +1,10 @@
-"use client";
-
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { Toggle } from "@/components/ui/toggle";
 import { Bookmark } from "lucide-react";
-import { useState } from "react";
 
-export default function Component() {
+import type { ReactNode } from "react";
+
+export default function ToggleButton(): ReactNode {
   return (
     <TooltipProvider>
       <Tooltip>
