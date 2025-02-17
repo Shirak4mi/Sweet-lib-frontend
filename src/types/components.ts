@@ -65,4 +65,8 @@ export interface IAnimatedIconHandle {
   stopAnimation: () => void;
 }
 
-export interface IBookCardProps {}
+export interface IBookCardProps {
+  /** Is First Render ( IFR ) */
+  ifr?: boolean;
+  id: number;
+}
