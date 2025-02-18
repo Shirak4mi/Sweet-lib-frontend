@@ -27,9 +27,7 @@ export default function Home() {
 
       <SoftAnimatedLogin />
 
-      <div className="w-full">
-        <CardSection />
-      </div>
+      <CardSection />
     </div>
   );
 }

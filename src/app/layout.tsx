@@ -1,11 +1,11 @@
 import { AppThemeProvider } from "@/components";
 import { geistMono, geistSans } from "@/fonts";
+import Navbar from "@/components/ui/Navbar";
 import "@/css/globals.css";
 
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import type { IRSLCC } from "@/types";
-import Navbar from "@/components/ui/Navbar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,6 +25,10 @@ export default function RootLayout({ children, params: { locale } }: Readonly<IR
 
   return (
     <html lang={locale} suppressHydrationWarning>
+      <head>
+        <script src="https://unpkg.com/react-scan/dist/auto.global.js" />
+      </head>
+
       <body className={`${fonts} antialiased`}>
         <AppThemeProvider>
           <div className="">

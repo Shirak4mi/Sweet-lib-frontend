@@ -1,7 +1,5 @@
 "use client";
 
-import type React from "react";
-
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/shad/Button";
@@ -38,7 +36,7 @@ export default function SoftAnimatedLogin() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-gray-100 to-gray-200">
+    <>
       <Button onClick={() => setIsOpen(true)} variant="outline">
         Sign In
       </Button>
@@ -64,74 +62,10 @@ export default function SoftAnimatedLogin() {
                 maxHeight: isSmallScreen ? "90vh" : "none",
                 overflowY: isSmallScreen ? "auto" : "visible",
               }}
-            >
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="text-center">
-                  <motion.div
-                    initial={{ y: -20, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ delay: 0.1 }}
-                    className="inline-block"
-                  >
-                    {/* <Icons.logo className="h-10 w-10 text-primary" /> */}
-                  </motion.div>
-                  <motion.h2
-                    initial={{ y: -20, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ delay: 0.2 }}
-                    className="mt-4 text-2xl font-bold text-gray-900"
-                  >
-                    Welcome back
-                  </motion.h2>
-                </div>
-
-                <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.3 }}>
-                  <Label htmlFor="email">Email</Label>
-                  <Input
-                    id="email"
-                    type="email"
-                    placeholder="Enter your email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                    className="mt-1"
-                  />
-                </motion.div>
-
-                <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4 }}>
-                  <Label htmlFor="password">Password</Label>
-                  <Input
-                    id="password"
-                    type="password"
-                    placeholder="Enter your password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    required
-                    className="mt-1"
-                  />
-                </motion.div>
-
-                <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.5 }}>
-                  <Button type="submit" className="w-full">
-                    Sign in
-                  </Button>
-                </motion.div>
-
-                <motion.div
-                  initial={{ y: 20, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ delay: 0.6 }}
-                  className="text-center text-sm"
-                >
-                  <a href="#" className="text-primary hover:underline">
-                    Forgot password?
-                  </a>
-                </motion.div>
-              </form>
-            </motion.div>
+            ></motion.div>
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </>
   );
 }

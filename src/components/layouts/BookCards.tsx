@@ -10,7 +10,6 @@ const cards = [
   { id: 3, title: "UI/UX Design", content: "Design intuitive user interfaces" },
   { id: 4, title: "Data Science", content: "Analyze and visualize complex data" },
   { id: 5, title: "Data Science", content: "Analyze and visualize complex data" },
-  { id: 5, title: "Data Science", content: "Analyze and visualize complex data" },
 ];
 
 export default function CardSection(): ReactNode {
@@ -24,7 +23,7 @@ export default function CardSection(): ReactNode {
   useEffect(() => () => clearTimeout(timer), []);
 
   return (
-    <motion.div transition={{ duration: 0.5 }} initial={{ width: "100%" }} className="grid grid-cols-5 gap-6">
+    <motion.div transition={{ duration: 0.5 }} initial={{ width: "100%" }} className="grid grid-cols-5 gap-6 w-full">
       <AnimatePresence mode="sync">
         {cards.map((item) => (
           <Card {...item} key={`card_key_${item.id}`} ifr={isFirstRender} />
