@@ -6,6 +6,7 @@ import CustomToast from "@/components/CustomToast";
 import ProfileForm from "@/components/kokonutui/profile-03";
 import LoginModal from "@/components/comp-326";
 import CardSection from "@/components/layouts/BookCards";
+import SoftAnimatedLogin from "@/components/ui/TestModal";
 
 export default function Home() {
   return (
@@ -23,6 +24,9 @@ export default function Home() {
       <CustomToast />
       <ProfileForm />
       <LoginModal />
+
+      <SoftAnimatedLogin />
+
       <div className="w-full">
         <CardSection />
       </div>
