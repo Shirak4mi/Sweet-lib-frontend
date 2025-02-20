@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/components/ui/shad/Button";
+import Button from "@/components/ui/shad/Button";
 import {
   Toast,
   ToastAction,

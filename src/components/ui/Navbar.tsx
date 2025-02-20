@@ -1,6 +1,6 @@
 "use client";
-import { ComponentPropsWithoutRef, ComponentRef, forwardRef, type ReactNode, useEffect, useState } from "react";
-import { Button } from "@/components/ui/shad/Button";
+import { type ReactNode, useEffect, useState } from "react";
+import Button from "@/components/ui/shad/Button";
 import { SunIcon, MoonIcon } from "lucide-react";
 import { motion, useScroll } from "motion/react";
 import { cn } from "@/utils/functions";
@@ -176,5 +176,3 @@ export default function NavbarHamburguer(): ReactNode {
     </motion.header>
   );
 }
-
-
