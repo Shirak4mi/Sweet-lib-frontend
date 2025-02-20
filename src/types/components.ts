@@ -1,4 +1,6 @@
-import type { MouseEventHandler, ReactNode } from "react";
+import type { ComponentProps, MouseEventHandler, ReactNode } from "react";
+import type { VariantProps } from "class-variance-authority";
+import type { TButtonVariants } from "@/utils/variants";
 
 /**
  * Interface React Server Component ( IRSC )
@@ -70,3 +72,11 @@ export interface IBookCardProps {
   ifr?: boolean;
   id: number;
 }
+
+/* Base Component Props */
+
+export interface IButtonProps extends ComponentProps<"button">, VariantProps<TButtonVariants> {
+  asChild?: boolean;
+}
+
+/* Base Component Props */
