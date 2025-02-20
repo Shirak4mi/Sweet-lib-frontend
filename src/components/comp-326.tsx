@@ -1,6 +1,6 @@
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Button } from "@/components/ui";
-import { Checkbox } from "@/components/ui/checkbox";
+import { Checkbox } from "@/components/ui/base/checkbox/Base";
 import { Input } from "@/components/ui/shad/Input";
 import { Label } from "@/components/ui/label";
 import { useId } from "react";
