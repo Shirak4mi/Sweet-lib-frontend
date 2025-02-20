@@ -2,7 +2,7 @@
 
 import { useCharacterLimit } from "@/utils/hooks/use-character-limit";
 import { useImageUpload } from "@/utils/hooks/use-image-upload";
-import Button from "@/components/ui/shad/Button";
+import { Button } from "@/components/ui";
 import {
   Dialog,
   DialogClose,

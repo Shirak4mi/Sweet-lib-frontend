@@ -1,5 +1,5 @@
 import { Sparkles } from "lucide-react";
-import Button from "@/components/ui/shad/Button";
+import { Button } from "@/components/ui";
 import { Input } from "@/components/ui/shad/Input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
