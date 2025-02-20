@@ -1,5 +1,4 @@
 "use client";
-
 import { Root, Image, Fallback } from "@radix-ui/react-avatar";
 import { cn } from "@/utils/functions";
 
