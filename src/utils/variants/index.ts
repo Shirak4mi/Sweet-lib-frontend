@@ -62,3 +62,9 @@ export const BookCardVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: { opacity: 1, y: 0 },
 };
+
+export function getModalVariants(isSmall: boolean): Variants {
+  return isSmall
+    ? { hidden: { y: "100%", opacity: 1 }, visible: { y: 0, opacity: 1 }, exit: { y: "100%", opacity: 1 } }
+    : { hidden: { scale: 0.95, opacity: 0 }, visible: { scale: 1, opacity: 1 }, exit: { scale: 0.95, opacity: 0 } };
+}
