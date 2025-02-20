@@ -45,17 +45,13 @@ export const buttonVariants = cva(
 export type TButtonVariants = typeof buttonVariants;
 
 export const MoonSvgVariants: Variants = {
-  normal: {
-    rotate: 0,
-  },
-  animate: {
-    rotate: [0, -10, 10, -5, 5, 0],
-  },
+  animate: { rotate: [0, -10, 10, -5, 5, 0] },
+  normal: { rotate: 0 },
 };
 
 export const MoonSvgTransition: Transition = {
-  duration: 1.2,
   ease: "easeInOut",
+  duration: 1.2,
 };
 
 export const BookCardVariants = {
