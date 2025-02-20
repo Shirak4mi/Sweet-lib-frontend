@@ -1,20 +1,14 @@
 "use client";
-import { motion, type HTMLMotionProps } from "framer-motion";
 import { Avatar, AvatarImage, AvatarFallback } from "./Base.tsx";
+import { motion } from "framer-motion";
 import { cn } from "@/utils/functions";
-import { ReactNode } from "react";
+
+import type { IAnimatedAvatarProps } from "@/types/components.ts";
+import type { ReactNode } from "react";
 
 const MotionAvatar = motion(Avatar);
 const MotionAvatarImage = motion(AvatarImage);
 const MotionAvatarFallback = motion(AvatarFallback);
-
-export interface IAnimatedAvatarProps extends HTMLMotionProps<"div"> {
-  src?: string;
-  alt?: string;
-  fallback?: string;
-  delayMs?: number;
-  showRing?: boolean;
-}
 
 export default function AnimatedAvatar(compProps: IAnimatedAvatarProps): ReactNode {
   // Props

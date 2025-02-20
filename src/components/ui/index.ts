@@ -9,5 +9,6 @@ export * from "./base/alerts/Base.tsx";
 /* Alerts */
 
 /* Avatars */
+export { default as AnimatedAvatar } from "./base/avatar/Animated.tsx";
 export * from "./base/avatar/Base.tsx";
 /* Avatars */

@@ -92,4 +92,12 @@ export interface IAnimatedAlertProps extends Omit<IAlertProps, keyof HTMLMotionP
 
 export type TAlertDivProps = ComponentProps<"div">;
 
+export interface IAnimatedAvatarProps extends HTMLMotionProps<"div"> {
+  src?: string;
+  alt?: string;
+  fallback?: string;
+  delayMs?: number;
+  showRing?: boolean;
+}
+
 /* Base Component Props */
