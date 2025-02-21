@@ -2,7 +2,7 @@
 import { type ReactNode, useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { getModalVariants } from "@/utils/variants";
-import { Button } from "@/components/ui";
+import { AnimatedButton, Button } from "@/components/ui";
 import { cn } from "@/utils/functions";
 
 export default function SoftAnimatedLogin(): ReactNode {
@@ -27,7 +27,7 @@ export default function SoftAnimatedLogin(): ReactNode {
 
   return (
     <>
-      <Button onClick={() => setIsOpen(true)} variant="outline">
+      <Button onClick={() => setIsOpen(true)} variant="outline" isLoading={isOpen}>
         Sign In
       </Button>
 
@@ -53,9 +53,9 @@ export default function SoftAnimatedLogin(): ReactNode {
               )}
             >
               <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.5 }}>
-                <Button type="submit" className="w-full">
+                <AnimatedButton type="submit" className="w-full" isLoading>
                   Sign in
-                </Button>
+                </AnimatedButton>
               </motion.div>
 
               <motion.div

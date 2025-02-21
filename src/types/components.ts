@@ -77,6 +77,7 @@ export interface IBookCardProps {
 /* Base Component Props */
 
 export interface IButtonProps extends ComponentProps<"button">, VariantProps<TButtonVariants> {
+  isLoading?: boolean;
   asChild?: boolean;
 }
 

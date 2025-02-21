@@ -5,7 +5,18 @@ import { cn } from "@/utils/functions";
 import type { IButtonProps } from "@/types/components.ts";
 import type { ReactNode } from "react";
 
-export default function Button({ className, variant, size, asChild = false, ...props }: IButtonProps): ReactNode {
+export default function Button({ className, variant, size, asChild = false, isLoading, ...props }: IButtonProps): ReactNode {
+  // Component Instancing
   const Comp = asChild ? Slot : "button";
-  return <Comp data-slot="button" className={cn(buttonVariants({ variant, size, className }))} {...props} />;
+
+  // Tailwind Classes
+  const btcn = "";
+
+  return (
+    <Comp
+      className={cn(isLoading && "cursor-progress ", buttonVariants({ variant, size, className }))}
+      data-slot="button"
+      {...props}
+    />
+  );
 }
