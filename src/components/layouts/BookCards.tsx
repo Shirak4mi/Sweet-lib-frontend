@@ -2,7 +2,7 @@
 import { type ReactNode, useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 
-import Card from "../ui/Card";
+import Card from "../ui/Card.tsx";
 
 const cards = [
   { id: 1, title: "Web Development", content: "Create modern web applications" },
