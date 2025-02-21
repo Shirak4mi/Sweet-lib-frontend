@@ -1,7 +1,7 @@
 "use client";
-import { motion } from "motion/react";
 import { cn } from "@/utils/functions";
-import Button from "./Base.ts";
+import { motion } from "motion/react";
+import Button from "./Base.tsx";
 
 import type { IAnimatedButtonProps } from "@/types/components.ts";
 import type { ReactNode } from "react";
