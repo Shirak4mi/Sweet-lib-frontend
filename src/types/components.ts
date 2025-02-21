@@ -101,4 +101,6 @@ export interface IAnimatedAvatarProps extends HTMLMotionProps<"div"> {
   showRing?: boolean;
 }
 
+export interface IBaseInputProps extends ComponentProps<"input"> {}
+
 /* Base Component Props */
