@@ -6,7 +6,7 @@ import { Alert } from "./Base.tsx";
 import type { IAnimatedAlertProps } from "@/types/components.ts";
 import type { ReactNode } from "react";
 
-const MotionAlert = motion(Alert);
+const MotionAlert = motion.create(Alert);
 
 export default function AnimatedAlert({ className, children, ...props }: IAnimatedAlertProps): ReactNode {
   return (
