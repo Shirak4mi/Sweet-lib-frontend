@@ -1,11 +1,11 @@
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/shad/Button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/shad/Input";
-import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { useId } from "react";
 
-export default function Component() {
+export default function LoginModal() {
   const id = useId();
   return (
     <Dialog>
