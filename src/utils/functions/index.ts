@@ -19,3 +19,7 @@ export function getAlertType(type: AlertType = "info"): string {
       return "";
   }
 }
+
+export function defaultNumberFormatFunction(number: number): string {
+  return number.toLocaleString();
+}

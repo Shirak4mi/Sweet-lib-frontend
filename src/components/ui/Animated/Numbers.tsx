@@ -1,40 +1,24 @@
 "use client";
+import { type MotionValue, motion, useSpring, useTransform } from "motion/react";
+import { type ReactNode, useEffect } from "react";
+import { defaultNumberFormatFunction as DeFMT } from "@/utils/functions";
 
-import { useEffect } from "react";
-import { MotionValue, motion, useSpring, useTransform } from "motion/react";
+import type { IAnimatedNumberProps } from "@/types/components.tsx";
 
-interface AnimatedNumberProps {
-  value: number;
-  mass?: number;
-  stiffness?: number;
-  damping?: number;
-  precision?: number;
-  format?: (value: number) => string;
-  onAnimationStart?: () => void;
-  onAnimationComplete?: () => void;
-}
+export function AnimatedNumber(props: IAnimatedNumberProps): ReactNode {
+  // Props
+  const { value, mass = 0.8, stiffness = 75, damping = 15, precision = 0, format = DeFMT, onAnimInit, onAnimDone } = props;
 
-export function AnimatedNumber({
-  value,
-  mass = 0.8,
-  stiffness = 75,
-  damping = 15,
-  precision = 0,
-  format = (num) => num.toLocaleString(),
-  onAnimationStart,
-  onAnimationComplete,
-}: AnimatedNumberProps) {
+  // Hooks
   const spring = useSpring(value, { mass, stiffness, damping });
-  const display: MotionValue<string> = useTransform(spring, (current) => format(parseFloat(current.toFixed(precision))));
+  const display: MotionValue<string> = useTransform(spring, (curr) => format(parseFloat(curr.toFixed(precision))));
 
   useEffect(() => {
     spring.set(value);
-    if (onAnimationStart) onAnimationStart();
-    const unsubscribe = spring.onChange(() => {
-      if (spring.get() === value && onAnimationComplete) onAnimationComplete();
-    });
+    if (onAnimInit) onAnimInit();
+    const unsubscribe = spring.on("change", () => spring.get() === value && onAnimDone && onAnimDone());
     return () => unsubscribe();
-  }, [spring, value, onAnimationStart, onAnimationComplete]);
+  }, [spring, value, onAnimInit, onAnimDone]);
 
   return <motion.span>{display}</motion.span>;
 }
