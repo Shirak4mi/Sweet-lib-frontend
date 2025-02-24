@@ -5,7 +5,7 @@ import BaseOriginAlert from "@/components/ui/Origin/Alert";
 import CustomToast from "@/components/CustomToast";
 import ProfileForm from "@/components/kokonutui/profile-03";
 import LoginModal from "@/components/comp-326";
-import CardSection from "@/components/layouts/BookCards";
+import CardSection from "@/components/layouts/Books";
 import SoftAnimatedLogin from "@/components/ui/TestModal";
 import { AnimatedCheckbox } from "@/components/ui";
 import ToastProvider from "@/components/ui/Origin/kutom";
