@@ -1,7 +1,12 @@
 "use client";
-import { skeletonPulseVariants, skeletonShimmerVariants, skeletonVariants } from "@/utils/variants/animated.ts";
 import { cn } from "@/utils/functions";
 import { motion } from "motion/react";
+import {
+  skeletonVariants,
+  getSkeletonTransition,
+  skeletonPulseVariants,
+  skeletonShimmerVariants,
+} from "@/utils/variants/animated.ts";
 
 import type { IAnimatedSkeletonProps } from "@/types/components";
 import type { ReactNode } from "react";
@@ -10,24 +15,16 @@ export default function AnimatedSkeleton(props: IAnimatedSkeletonProps): ReactNo
   // Props
   const { variant = "default", shimmer = true, pulse = false, className, ...eProps } = props;
 
+  // Constants
+  const skellVars = pulse ? skeletonPulseVariants : skeletonShimmerVariants;
+  const skellTrs = getSkeletonTransition(pulse);
+
   return (
     <motion.div
-      variants={pulse ? skeletonPulseVariants : skeletonShimmerVariants}
+      transition={skellTrs}
+      variants={skellVars}
       initial="initial"
       animate="animate"
-      transition={
-        pulse
-          ? {
-              duration: 2,
-              repeat: Number.POSITIVE_INFINITY,
-              ease: "easeInOut",
-            }
-          : {
-              duration: 2.5,
-              repeat: Number.POSITIVE_INFINITY,
-              ease: "linear",
-            }
-      }
       className={cn(
         "relative isolate overflow-hidden rounded-md bg-muted",
         skeletonVariants[variant],

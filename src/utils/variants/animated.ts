@@ -1,14 +1,14 @@
 import type { Transition, Variants } from "motion/react";
 
 export const skeletonVariants = {
-  default: "h-4 w-full",
-  card: "h-48 w-full rounded-xl",
-  text: "h-4 w-3/4",
   avatar: "h-12 w-12 rounded-full",
+  card: "h-48 w-full rounded-xl",
   button: "h-10 w-24 rounded-md",
+  default: "h-4 w-full",
+  text: "h-4 w-3/4",
 };
 
-export const skeletonShimmerVariants = {
+export const skeletonShimmerVariants: Variants = {
   initial: {
     backgroundPosition: "-1000px 0",
   },
@@ -17,7 +17,7 @@ export const skeletonShimmerVariants = {
   },
 };
 
-export const skeletonPulseVariants = {
+export const skeletonPulseVariants: Variants = {
   initial: {
     opacity: 0.5,
   },
@@ -45,4 +45,10 @@ export function getModalVariants(isSmall: boolean): Variants {
   return isSmall
     ? { hidden: { y: "100%", opacity: 1 }, visible: { y: 0, opacity: 1 }, exit: { y: "100%", opacity: 1 } }
     : { hidden: { scale: 0.95, opacity: 0 }, visible: { scale: 1, opacity: 1 }, exit: { scale: 0.95, opacity: 0 } };
+}
+
+export function getSkeletonTransition(pulse: boolean): Transition {
+  return pulse
+    ? { duration: 2, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }
+    : { duration: 2.5, repeat: Number.POSITIVE_INFINITY, ease: "linear" };
 }
