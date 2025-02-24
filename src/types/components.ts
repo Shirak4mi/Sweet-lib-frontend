@@ -86,4 +86,10 @@ export interface IAnimatedButtonProps
   children: ReactNode;
 }
 
+export interface IAnimatedAlertProps extends Omit<IAlertProps, keyof HTMLMotionProps<"div">>, HTMLMotionProps<"div"> {
+  children: ReactNode;
+}
+
+export type TAlertDivProps = ComponentProps<"div">;
+
 /* Base Component Props */
