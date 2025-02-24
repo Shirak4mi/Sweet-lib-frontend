@@ -2,13 +2,9 @@ import { createNavigation } from "next-intl/navigation";
 import { defineRouting } from "next-intl/routing";
 
 export const routing = defineRouting({
+  pathnames: { "/Home": "/Home" },
   locales: ["en", "es"],
   defaultLocale: "en",
-  pathnames: {
-    "/Home": "/Home",
-    "/Auth/Register": "/Auth/Register",
-    "/Auth/Login": "/Auth/Login",
-  },
 });
 
 export type Pathnames = keyof typeof routing.pathnames;
