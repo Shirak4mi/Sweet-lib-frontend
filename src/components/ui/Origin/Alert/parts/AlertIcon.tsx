@@ -1,13 +1,15 @@
-import type { AlertType } from "@/types";
+import { CheckCircle, Info, XCircle } from "@phosphor-icons/react/dist/ssr";
+
+import type { IAlertIconProps } from "@/types/components";
 import type { ReactNode } from "react";
 
-export default function AlertIcon({ Type }: { Type?: AlertType }): ReactNode {
+export default function AlertIcon({ Type, size = 20 }: IAlertIconProps): ReactNode {
   switch (Type) {
     case "info":
-      return <></>;
+      return <Info size={size} />;
     case "danger":
-      return <></>;
+      return <XCircle size={size} />;
     case "success":
-      return <></>;
+      return <CheckCircle size={size} />;
   }
 }

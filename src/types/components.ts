@@ -53,3 +53,8 @@ export interface IAlertProps {
   show?: boolean;
   title?: string;
 }
+
+export interface IAlertIconProps {
+  Type?: AlertType;
+  size?: number;
+}
