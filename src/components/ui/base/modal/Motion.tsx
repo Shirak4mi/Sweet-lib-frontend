@@ -1,8 +1,8 @@
 "use client";
 import { type ReactNode, useState, useEffect } from "react";
+import { AnimatedButton, Button } from "@/components/ui";
 import { motion, AnimatePresence } from "motion/react";
 import { getModalVariants } from "@/utils/variants";
-import { AnimatedButton, Button } from "@/components/ui";
 import { cn } from "@/utils/functions";
 
 export default function SoftAnimatedLogin(): ReactNode {
