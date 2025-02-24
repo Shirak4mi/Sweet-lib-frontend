@@ -1,35 +1,35 @@
 "use client";
-
-import * as React from "react";
-import * as TooltipPrimitive from "@radix-ui/react-tooltip";
+import { Provider, Root, Trigger, Portal, Content, Arrow } from "@radix-ui/react-tooltip";
 import { cn } from "@/utils/functions";
 
+import { ComponentProps, ReactNode } from "react";
 
-function TooltipProvider({ delayDuration = 0, ...props }: React.ComponentProps<typeof TooltipPrimitive.Provider>) {
-  return <TooltipPrimitive.Provider data-slot="tooltip-provider" delayDuration={delayDuration} {...props} />;
+
+export function TooltipProvider({ delayDuration = 0, ...props }: ComponentProps<typeof Provider>): ReactNode {
+  return <Provider data-slot="tooltip-provider" delayDuration={delayDuration} {...props} />;
 }
 
-function Tooltip({ ...props }: React.ComponentProps<typeof TooltipPrimitive.Root>) {
+export function Tooltip({ ...props }: ComponentProps<typeof Root>): ReactNode {
   return (
     <TooltipProvider>
-      <TooltipPrimitive.Root data-slot="tooltip" {...props} />
+      <Root data-slot="tooltip" {...props} />
     </TooltipProvider>
   );
 }
 
-function TooltipTrigger({ ...props }: React.ComponentProps<typeof TooltipPrimitive.Trigger>) {
-  return <TooltipPrimitive.Trigger data-slot="tooltip-trigger" {...props} />;
+export function TooltipTrigger({ ...props }: ComponentProps<typeof Trigger>): ReactNode {
+  return <Trigger data-slot="tooltip-trigger" {...props} />;
 }
 
-function TooltipContent({
+export function TooltipContent({
   className,
   sideOffset = 4,
   children,
   ...props
-}: React.ComponentProps<typeof TooltipPrimitive.Content>) {
+}: ComponentProps<typeof Content>): ReactNode {
   return (
-    <TooltipPrimitive.Portal>
-      <TooltipPrimitive.Content
+    <Portal>
+      <Content
         data-slot="tooltip-content"
         sideOffset={sideOffset}
         className={cn(
@@ -39,10 +39,8 @@ function TooltipContent({
         {...props}
       >
         {children}
-        <TooltipPrimitive.Arrow className="bg-primary fill-primary z-50 size-2.5 translate-y-[calc(-50%_-_2px)] rotate-45 rounded-[2px]" />
-      </TooltipPrimitive.Content>
-    </TooltipPrimitive.Portal>
+        <Arrow className="bg-primary fill-primary z-50 size-2.5 translate-y-[calc(-50%_-_2px)] rotate-45 rounded-[2px]" />
+      </Content>
+    </Portal>
   );
 }
-
-export { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider };
