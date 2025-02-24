@@ -6,7 +6,7 @@ import CustomToast from "@/components/CustomToast";
 import ProfileForm from "@/components/kokonutui/profile-03";
 import LoginModal from "@/components/comp-326";
 import CardSection from "@/components/layouts/Books";
-import SoftAnimatedLogin from "@/components/ui/TestModal";
+import SoftAnimatedLogin from "@/components/ui/base/modal/Motion";
 import { AnimatedCheckbox } from "@/components/ui";
 
 export default function Home() {
