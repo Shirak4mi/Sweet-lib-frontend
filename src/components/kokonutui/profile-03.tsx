@@ -14,6 +14,8 @@ interface ProfileFormProps {
   };
 }
 
+//TODO: This form Design is the one chosen for the "profile edit function" pending refactor
+
 export default function ProfileForm({ defaultValues }: ProfileFormProps) {
   return (
     <div className="w-full max-w-2xl mx-auto space-y-8 p-6 bg-white/50 dark:bg-zinc-950/50 backdrop-blur-xs rounded-xl border border-zinc-200/80 dark:border-zinc-800/80 shadow-xs">
