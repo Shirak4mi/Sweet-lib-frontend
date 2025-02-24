@@ -1,7 +1,7 @@
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Checkbox, Button } from "@/components/ui";
 import { Input } from "@/components/ui/shad/Input";
-import { Label } from "@/components/ui/label";
+import { Label } from "@/components/ui/base/label/Base";
 import { useId } from "react";
 
 export default function LoginModal() {

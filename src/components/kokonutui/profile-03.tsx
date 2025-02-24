@@ -1,7 +1,7 @@
 import { Sparkles } from "lucide-react";
 import { Button } from "@/components/ui";
 import { Input } from "@/components/ui/shad/Input";
-import { Label } from "@/components/ui/label";
+import { Label } from "@/components/ui/base/label/Base";
 import { Textarea } from "@/components/ui/textarea";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui";
 
