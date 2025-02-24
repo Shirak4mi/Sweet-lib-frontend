@@ -43,9 +43,10 @@ export default function BookDetails({ params }: { params: { id: string } }) {
   const [rating, setRating] = useState(0);
   const [hoveredStar, setHoveredStar] = useState(0);
   const [comment, setComment] = useState("");
+  const { id } = params;
 
   const book = {
-    id: Number.parseInt(params.id),
+    id: Number.parseInt(id),
     title: "The Silent Echo",
     author: "Elena Rivers",
     year: 2023,
