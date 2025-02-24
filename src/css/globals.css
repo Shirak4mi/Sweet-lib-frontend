@@ -104,6 +104,7 @@
 
 * {
   scroll-behavior: smooth;
+  scrollbar-width: thin;
 }
 
 .lineared {

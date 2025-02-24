@@ -1,6 +1,5 @@
 "use client";
 import { type ReactNode, useEffect, useState } from "react";
-import { SunIcon, MoonIcon } from "lucide-react";
 import { motion, useScroll } from "motion/react";
 import { cn } from "@/utils/functions";
 import {
@@ -67,15 +66,16 @@ export default function NavbarHamburguer(): ReactNode {
 
   return (
     <motion.header
-      animate={{ y: 0 }}
-      initial={{ y: -100 }}
       transition={{ type: "spring", stiffness: 300, damping: 30 }}
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
       className={cn(
         "sticky top-0 z-30 w-full border-b px-10",
         blurred ? "bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60" : "bg-background"
       )}
     >
       <div className="container flex h-14 items-center">
+        {/* 1 */}
         <div className="mr-4 md:hidden">
           <Button
             size="icon"
@@ -112,6 +112,8 @@ export default function NavbarHamburguer(): ReactNode {
             </svg>
           </Button>
         </div>
+
+        {/* 2 */}
         <div className="hidden md:block">
           <NavigationMenu>
             <NavigationMenuList>
@@ -165,13 +167,9 @@ export default function NavbarHamburguer(): ReactNode {
             </NavigationMenuList>
           </NavigationMenu>
         </div>
-        <div className="ml-auto flex items-center space-x-4">
-          <Button variant="ghost" size="icon" aria-label="Toggle theme">
-            <SunIcon className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-            <MoonIcon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-            <span className="sr-only">Toggle theme</span>
-          </Button>
-        </div>
+
+        {/* 3 */}
+        <div className="ml-auto flex items-center space-x-4"></div>
       </div>
     </motion.header>
   );
