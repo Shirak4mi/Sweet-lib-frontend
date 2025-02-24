@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import { cn } from "@/utils/functions";
 import Button from "./Base";
 
-import type { IAnimatedButtonProps } from "@/types";
+import type { IAnimatedButtonProps } from "@/types/components.ts";
 import type { ReactNode } from "react";
 
 const MotionButton = motion.create(Button);

@@ -30,11 +30,11 @@ export default function AnimatedCheckbox({ className, ...props }: ComponentProps
           <motion.svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <motion.path
               initial={{ pathLength: 0, opacity: 0 }}
+              strokeLinejoin="round"
               d="M2 6L4.5 8.5L10 3"
               stroke="currentColor"
-              strokeWidth="2"
               strokeLinecap="round"
-              strokeLinejoin="round"
+              strokeWidth="2"
               animate={{
                 transition: { pathLength: { duration: 0.2, ease: "easeOut", delay: 0.1 }, opacity: { duration: 0.05 } },
                 pathLength: 1,
