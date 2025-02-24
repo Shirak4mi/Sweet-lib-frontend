@@ -72,3 +72,7 @@ export * from "./table/Base.tsx";
 export * from "./Menu/ListItem.tsx";
 export * from "./Menu/Navigation.tsx";
 /* Menus */
+
+/* Command */
+export * from "./command/Base.tsx";
+/* Command */

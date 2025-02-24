@@ -59,8 +59,6 @@ export default function NavbarHamburguer(): ReactNode {
   const unsubscribe = scrollY.on("change", (latest) => setBlurred(() => latest > 1));
   const mobileHandler = () => setMobileMenuOpen((old) => !old);
 
-  // Constants CSS
-
   // Effect
   useEffect(() => () => unsubscribe(), [scrollY]);
 
@@ -159,9 +157,9 @@ export default function NavbarHamburguer(): ReactNode {
                 <NavigationMenuTrigger>Components</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                    {components.map((component) => (
-                      <ListItem key={component.title} title={component.title} href={component.href}>
-                        {component.description}
+                    {components.map(({ title, href, description }) => (
+                      <ListItem key={title} title={title} href={href}>
+                        {description}
                       </ListItem>
                     ))}
                   </ul>
