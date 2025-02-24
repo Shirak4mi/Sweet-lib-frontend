@@ -22,8 +22,8 @@ export default function Home() {
       <NeonAlert />
       <BaseOriginAlert
         show
-        title="This is a error"
         type="danger"
+        title="This is a error"
         details={["XD", "Something else"]}
         action={{ func: () => {}, label: "Action" }}
       />

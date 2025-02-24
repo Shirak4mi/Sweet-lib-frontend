@@ -117,6 +117,7 @@ export default function NavbarHamburguer(): ReactNode {
         <div className="hidden md:block">
           <NavigationMenu>
             <NavigationMenuList>
+              {/* NavItem1 */}
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
                 <NavigationMenuContent>
@@ -152,6 +153,8 @@ export default function NavbarHamburguer(): ReactNode {
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
+
+              {/* NavItem2 */}
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Components</NavigationMenuTrigger>
                 <NavigationMenuContent>
