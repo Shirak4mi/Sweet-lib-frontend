@@ -63,3 +63,7 @@ export * from "./base/pagination/Base.tsx";
 /* Select */
 export * from "./base/select/Base.tsx";
 /* Select */
+
+/* Table */
+export * from "./base/table/Base.tsx";
+/* Table */
