@@ -26,5 +26,8 @@ export { default as Textarea } from "./base/textarea/Base.tsx";
 
 /* Tooltip */
 export * from "./base/tooltip/Base.tsx";
-
 /* Tooltip */
+
+/* Toggle */
+export { default as Toggle } from "./base/toggle/Base.tsx";
+/* Toggle */
