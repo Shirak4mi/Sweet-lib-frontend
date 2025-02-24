@@ -3,7 +3,7 @@ import { Button } from "@/components/ui";
 import { Input } from "@/components/ui/shad/Input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui";
 
 interface ProfileFormProps {
   defaultValues?: {
