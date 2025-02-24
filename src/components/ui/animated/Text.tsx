@@ -1,11 +1,10 @@
 "use client";
-
-import { FC, useEffect, useRef } from "react";
-import { HTMLMotionProps, motion, useAnimation, useInView } from "motion/react";
+import { type HTMLMotionProps, motion, useAnimation, useInView } from "motion/react";
+import { type ReactNode, useRef } from "react";
 
 type AnimationType = "fadeIn" | "fadeInUp" | "popIn" | "shiftInUp" | "rollIn" | "whipIn" | "whipInUp" | "calmInUp";
 
-interface Props extends HTMLMotionProps<"div"> {
+interface IAnimatedTextProps extends HTMLMotionProps<"div"> {
   text: string;
   type?: AnimationType;
   delay?: number;
@@ -183,28 +182,13 @@ const animationVariants = {
   },
 };
 
-const TextAnimate: FC<Props> = ({ text, type = "whipInUp", ...props }: Props) => {
-  //   const { ref, inView } = useInView({
-  //     threshold: 0.5,
-  //     triggerOnce: true,
-  //   });
-
+export default function TextAnimate({ text, type = "whipInUp", ...props }: IAnimatedTextProps): ReactNode {
+  // Ref
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
 
+  // Consts
   const letters = Array.from(text);
   const { container, child } = animationVariants[type];
-
-  const ctrls = useAnimation();
-
-  //   useEffect(() => {
-  //     if (isInView) {
-  //       ctrls.start("visible");
-  //     }
-  //     if (!isInView) {
-  //       ctrls.start("hidden");
-  //     }
-  //   }, [ctrls, isInView]);
 
   if (type === "rollIn" || type === "whipIn") {
     return (
@@ -257,6 +241,4 @@ const TextAnimate: FC<Props> = ({ text, type = "whipInUp", ...props }: Props) =>
       ))}
     </motion.h2>
   );
-};
-
-export { TextAnimate };
+}
