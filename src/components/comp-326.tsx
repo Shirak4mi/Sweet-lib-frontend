@@ -1,5 +1,5 @@
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { Button } from "@/components/ui/shad/Button";
+import Button from "@/components/ui/shad/Button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/shad/Input";
 import { Label } from "@/components/ui/label";
