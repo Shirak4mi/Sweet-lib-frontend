@@ -45,7 +45,7 @@ export type AlertType = "info" | "danger" | "success" | "warning";
 export type IAlertIcon = { Type?: AlertType };
 
 export interface IAlertProps {
-  action?: MouseEventHandler<HTMLAnchorElement>;
+  action?: { func?: MouseEventHandler<HTMLAnchorElement>; label?: string };
   details?: Array<string>;
   className?: string;
   type?: AlertType;
@@ -55,6 +55,7 @@ export interface IAlertProps {
 }
 
 export interface IAlertIconProps {
+  className?: string;
   Type?: AlertType;
   size?: number;
 }
