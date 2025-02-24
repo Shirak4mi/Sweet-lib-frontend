@@ -11,12 +11,12 @@ import { AnimatedCheckbox } from "@/components/ui/base";
 import TestTable from "@/components/ui/customs/Table";
 import { AnimatedNumber } from "@/components/ui/Animated/AddUpNumbers";
 import CountUpNumbers from "@/components/ui/Animated/CountUpNumbers";
-import VercelNavbar from "@/components/ui/customs/VercelNavbar";
+import VercelNavbarT1 from "@/components/ui/customs/Navbars/VercelType2";
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] animated-grid">
-      <VercelNavbar />
+      <VercelNavbarT1 />
       <StepperTest />
       <SecondStepperTest />
       <NeonAlert />

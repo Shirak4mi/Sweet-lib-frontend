@@ -1,5 +1,5 @@
 "use client";
-import { ReactNode, useState } from "react";
+import { ElementType, ReactNode, useState } from "react";
 import {
   ChevronDown,
   Cpu,
@@ -25,7 +25,7 @@ export default function VercelType2Navbar(): ReactNode {
       items: {
         label: string;
         description: string;
-        icon: React.ElementType;
+        icon: ElementType;
       }[];
     }[];
     link?: string;
