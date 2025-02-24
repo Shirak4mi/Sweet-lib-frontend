@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { MouseEventHandler, ReactNode } from "react";
 
 /**
  * Interface React Server Component ( IRSC )
@@ -45,9 +45,9 @@ export type AlertType = "info" | "danger" | "success" | "warning";
 export type IAlertIcon = { Type?: AlertType };
 
 export interface IAlertProps {
+  action?: MouseEventHandler<HTMLAnchorElement>;
   details?: Array<string>;
   className?: string;
-  action?: Function;
   type?: AlertType;
   neon?: boolean;
   show?: boolean;
