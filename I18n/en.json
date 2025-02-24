@@ -1,0 +1,10 @@
+{
+     "Langs": {
+          "select_lang": "Select your Language",
+          "es": "Spanish",
+          "en": "English"
+     },
+     "Status": {
+          "loading": "Loading..."
+     }
+}
