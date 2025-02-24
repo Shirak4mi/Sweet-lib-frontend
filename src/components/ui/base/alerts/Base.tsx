@@ -2,7 +2,7 @@ import { type TAlertVariants, alertVariants } from "@/utils/variants";
 import { cn } from "@/utils/functions";
 
 import type { VariantProps } from "class-variance-authority";
-import type { TAlertDivProps } from "@/types/components.tsx";
+import type { TAlertDivProps } from "@/types/components.ts";
 import type { ReactNode } from "react";
 
 export function Alert({ className, variant, ...props }: TAlertDivProps & VariantProps<TAlertVariants>): ReactNode {
