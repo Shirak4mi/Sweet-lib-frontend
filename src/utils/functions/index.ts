@@ -20,6 +20,11 @@ export function getAlertType(type: AlertType = "info"): string {
   }
 }
 
-export function defaultNumberFormatFunction(number: number): string {
+/**
+ * Basic Format function to parse from number ( Int | BigInt ) to string
+ * @param number
+ * @returns string
+ */
+export function DFMT(number: number): string {
   return number.toLocaleString();
 }
