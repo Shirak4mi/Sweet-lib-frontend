@@ -1,3 +1,4 @@
+"use client";
 import { useInView, useMotionValue, useSpring } from "motion/react";
 import { type ReactNode, useEffect, useRef } from "react";
 import { cn } from "@/utils/functions";
@@ -19,13 +20,12 @@ export default function CountUpNumbers({
   // Refs
   const ref = useRef<HTMLSpanElement>(null);
 
-  // Hooks
-  const motionValue = useMotionValue(direction === "down" ? to : from);
-
   // Calculate damping and stiffness based on duration
   const damping = 20 + 40 * (1 / duration);
   const stiffness = 100 * (1 / duration);
 
+  // Hooks
+  const motionValue = useMotionValue(direction === "down" ? to : from);
   const springValue = useSpring(motionValue, { damping, stiffness });
   const isInView = useInView(ref, { once: true, margin: "0px" });
 
