@@ -1,6 +1,6 @@
 "use client";
 import { type ReactNode, useState, useEffect } from "react";
-import { AnimatedButton, Button } from "@/components/ui";
+import { AnimatedButton, Button } from "@/components/ui/base";
 import { motion, AnimatePresence } from "motion/react";
 import { getModalVariants } from "@/utils/variants";
 import { cn } from "@/utils/functions";

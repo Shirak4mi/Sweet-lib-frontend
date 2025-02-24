@@ -1,5 +1,5 @@
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui";
-import { Toggle } from "@/components/ui";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/base";
+import { Toggle } from "@/components/ui/base";
 import { Bookmark } from "lucide-react";
 
 import type { ReactNode } from "react";

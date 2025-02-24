@@ -45,7 +45,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui";
+} from "@/components/ui/base";
 import {
   type ColumnDef,
   type ColumnFiltersState,
@@ -229,7 +229,7 @@ function TableSkeleton() {
   );
 }
 
-export default function Component() {
+export default function TestTable() {
   const id = useId();
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
   const [columnVisibility, setColumnVisibility] = useState<VisibilityState>({});

@@ -7,7 +7,8 @@ import ProfileForm from "@/components/kokonutui/profile-03";
 import LoginModal from "@/components/comp-326";
 import CardSection from "@/components/layouts/Books";
 import SoftAnimatedLogin from "@/components/ui/base/modal/Motion";
-import { AnimatedCheckbox } from "@/components/ui";
+import { AnimatedCheckbox } from "@/components/ui/base";
+import TestTable from "@/components/ui/customs/Table";
 
 export default function Home() {
   return (
@@ -29,6 +30,8 @@ export default function Home() {
       <SoftAnimatedLogin />
 
       <AnimatedCheckbox />
+
+      <TestTable />
 
       <CardSection />
     </div>
