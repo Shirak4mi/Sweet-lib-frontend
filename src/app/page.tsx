@@ -11,10 +11,8 @@ import { AnimatedCheckbox } from "@/components/ui/base";
 import TestTable from "@/components/ui/customs/Table";
 import { AnimatedNumber } from "@/components/ui/Animated/AddUpNumbers";
 import CountUpNumbers from "@/components/ui/Animated/CountUpNumbers";
-import TextAnimate from "@/components/ui/Animated/Text";
 
 export default function Home() {
-
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] animated-grid">
       <StepperTest />
@@ -37,8 +35,6 @@ export default function Home() {
 
       <CountUpNumbers to={9000} separator="," from={100} />
       <AnimatedNumber value={100} />
-
-      <TextAnimate text={"This is a miami vice reference"} />
 
       <TestTable />
 

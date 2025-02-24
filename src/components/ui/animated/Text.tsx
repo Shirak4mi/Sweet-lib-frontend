@@ -5,10 +5,10 @@ import { type ReactNode, useRef } from "react";
 type AnimationType = "fadeIn" | "fadeInUp" | "popIn" | "shiftInUp" | "rollIn" | "whipIn" | "whipInUp" | "calmInUp";
 
 interface IAnimatedTextProps extends HTMLMotionProps<"div"> {
-  text: string;
-  type?: AnimationType;
-  delay?: number;
+  animType?: AnimationType;
   duration?: number;
+  delay?: number;
+  text: string;
 }
 
 const animationVariants = {
@@ -182,15 +182,15 @@ const animationVariants = {
   },
 };
 
-export default function TextAnimate({ text, type = "whipInUp", ...props }: IAnimatedTextProps): ReactNode {
+export default function TextAnimate({ text, animType = "whipInUp", ...props }: IAnimatedTextProps): ReactNode {
   // Ref
   const ref = useRef(null);
 
   // Consts
-  const { container, child } = animationVariants[type];
+  const { container, child } = animationVariants[animType];
   const letters = Array.from(text);
 
-  if (type === "rollIn" || type === "whipIn") {
+  if (animType === "rollIn" || animType === "whipIn") {
     return (
       <h2 className="mt-10 text-3xl font-black text-black dark:text-neutral-100 py-5 pb-8 px-8 md:text-5xl">
         {text.split(" ").map((word, index) => {
