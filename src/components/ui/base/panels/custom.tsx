@@ -1,8 +1,8 @@
 "use client";
 
-import React, { createContext, useContext, useEffect, useId, useRef, useState } from "react";
-import { ArrowLeftIcon } from "lucide-react";
+import { createContext, useContext, useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, MotionConfig, Variants, motion } from "motion/react";
+import { ArrowLeftIcon } from "lucide-react";
 
 import { cn } from "@/utils/functions";
 
