@@ -1,25 +1,21 @@
 "use client";
 
-import { badgeVariants, TBadgeVariants } from "@/utils/variants";
-import { Slot } from "@radix-ui/react-slot";
-import { HTMLMotionProps, motion } from "motion/react";
+import { badgeVariants } from "@/utils/variants";
 import { cn } from "@/utils/functions";
+import { motion } from "motion/react";
+import Badge from "./Normal";
 
-import type { HTMLAttributes, ReactNode } from "react";
+import type { IAnimatedBadgeProps } from "@/types";
+import type { ReactNode } from "react";
 
-export interface IBadgeProps extends HTMLAttributes<HTMLDivElement>, HTMLMotionProps<"div">, TBadgeVariants {
-  asChild?: boolean;
-  removeIcon?: boolean;
-}
+const MotionBadge = motion.create(Badge);
 
-export default function AnimatedBadge(props: IBadgeProps): ReactNode {
+export default function AnimatedBadge(props: IAnimatedBadgeProps): ReactNode {
   // Props
   const { variant, className, asChild, removeIcon, children, ...eprops } = props;
 
-  const Comp = asChild ? Slot : motion.div;
-
   return (
-    <Comp
+    <MotionBadge
       exit={{ scale: 0.8, opacity: 0, y: -10, transition: { type: "spring", stiffness: 300, damping: 20, mass: 0.5 } }}
       animate={{ scale: 1, opacity: 1, y: 0, transition: { type: "spring", stiffness: 300, damping: 20, mass: 0.5 } }}
       whileHover={{ scale: 1.05, transition: { type: "spring", stiffness: 400, damping: 10, mass: 0.5 } }}
@@ -55,6 +51,6 @@ export default function AnimatedBadge(props: IBadgeProps): ReactNode {
           ×
         </motion.span>
       )}
-    </Comp>
+    </MotionBadge>
   );
 }
