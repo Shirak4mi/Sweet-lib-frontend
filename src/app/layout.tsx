@@ -4,7 +4,7 @@ import "@/css/globals.css";
 
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
-import type { IRSC } from "@/types";
+import type { IRSLCC } from "@/types";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,12 +18,12 @@ export const viewport: Viewport = {
   ],
 };
 
-export default function RootLayout({ children }: Readonly<IRSC>): ReactNode {
+export default function RootLayout({ children, params: { locale } }: Readonly<IRSLCC>): ReactNode {
   // Fonts Variable, only reason for this to exist is to make syntax readable
   const fonts = `${geistSans.variable} ${geistMono.variable}`;
 
   return (
-    <html lang="en">
+    <html lang={locale} suppressHydrationWarning>
       <body className={`${fonts} antialiased`}>
         <AppThemeProvider>{children}</AppThemeProvider>
       </body>
