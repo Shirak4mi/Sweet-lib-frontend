@@ -59,3 +59,8 @@ export interface IAlertIconProps {
   Type?: AlertType;
   size?: number;
 }
+
+export interface IAnimatedIconHandle {
+  startAnimation: () => void;
+  stopAnimation: () => void;
+}
