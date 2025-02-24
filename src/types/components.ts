@@ -6,15 +6,27 @@ export interface IProfilerProps {
   id?: string;
 }
 
-
+/**
+ * Interface React Server Component ( IRSC )
+ *
+ * This interface is just a kind of "Markup" interface,
+ * this means that this interface sole purpose of existing.
+ *
+ * Is to be used on 'server/client' components that only that the children prop.
+ */
 export interface IRSC {
   children: ReactNode;
 }
 
-export interface IRSLC extends IRSC {
+/**
+ * Interface React Server Lnaguague Change Component ( IRSLCC )
+ * 
+ * This 
+ */
+export interface IRSLCC extends IRSC {
   params: { locale: string };
 }
 
-export interface IRC extends IRSC {
+export interface IRSCC extends IRSC {
   className?: string;
 }
