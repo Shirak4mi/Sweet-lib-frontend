@@ -8,32 +8,29 @@ import LoginModal from "@/components/comp-326";
 import CardSection from "@/components/layouts/Books";
 import SoftAnimatedLogin from "@/components/ui/TestModal";
 import { AnimatedCheckbox } from "@/components/ui";
-import ToastProvider from "@/components/ui/Origin/kutom";
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] animated-grid">
-      <ToastProvider position="top-right">
-        <StepperTest />
-        <SecondStepperTest />
-        <NeonAlert />
-        <BaseOriginAlert
-          show
-          title="This is a error"
-          type="danger"
-          details={["XD", "Something else"]}
-          action={{ func: () => {}, label: "Action" }}
-        />
-        <CustomToast />
-        <ProfileForm />
-        <LoginModal />
+      <StepperTest />
+      <SecondStepperTest />
+      <NeonAlert />
+      <BaseOriginAlert
+        show
+        title="This is a error"
+        type="danger"
+        details={["XD", "Something else"]}
+        action={{ func: () => {}, label: "Action" }}
+      />
+      <CustomToast />
+      <ProfileForm />
+      <LoginModal />
 
-        <SoftAnimatedLogin />
+      <SoftAnimatedLogin />
 
-        <AnimatedCheckbox />
+      <AnimatedCheckbox />
 
-        <CardSection />
-      </ToastProvider>
+      <CardSection />
     </div>
   );
 }
