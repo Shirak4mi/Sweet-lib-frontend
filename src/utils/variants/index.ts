@@ -57,3 +57,8 @@ export const MoonSvgTransition: Transition = {
   duration: 1.2,
   ease: "easeInOut",
 };
+
+export const BookCardVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0 },
+};

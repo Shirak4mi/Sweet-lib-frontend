@@ -5,7 +5,7 @@ import BaseOriginAlert from "@/components/ui/Origin/Alert";
 import CustomToast from "@/components/CustomToast";
 import ProfileForm from "@/components/kokonutui/profile-03";
 import LoginModal from "@/components/comp-326";
-import CardSection from "@/components/layouts/Cards";
+import CardSection from "@/components/layouts/BookCards";
 
 export default function Home() {
   return (
