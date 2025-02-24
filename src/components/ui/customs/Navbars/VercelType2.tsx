@@ -1,7 +1,5 @@
 "use client";
-import { useState } from "react";
-import React from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { ReactNode, useState } from "react";
 import {
   ChevronDown,
   Cpu,
@@ -16,8 +14,9 @@ import {
   FileText,
   Newspaper,
 } from "lucide-react";
+import { AnimatePresence, motion } from "motion/react";
 
-const Two = () => {
+export default function VercelType2Navbar(): ReactNode {
   type Props = {
     id: number;
     label: string;
@@ -223,7 +222,7 @@ const Two = () => {
     },
   ];
 
-  const [openMenu, setOpenMenu] = React.useState<string | null>(null);
+  const [openMenu, setOpenMenu] = useState<string | null>(null);
 
   const handleHover = (menuLabel: string | null) => {
     setOpenMenu(menuLabel);
@@ -248,8 +247,8 @@ const Two = () => {
             {navItem.subMenus && (
               <ChevronDown
                 className={`h-4 w-4 group-hover:rotate-180 duration-300 transition-transform
-                ${openMenu === navItem.label ? "rotate-180" : ""}
-                `}
+                   ${openMenu === navItem.label ? "rotate-180" : ""}
+                   `}
               />
             )}
             {(isHover === navItem.id || openMenu === navItem.label) && (
@@ -307,70 +306,5 @@ const Two = () => {
         </li>
       ))}
     </ul>
-  );
-};
-
-const One = () => {
-  type Props = {
-    id: number;
-    tile: string;
-  };
-
-  const ITEMS: Props[] = [
-    { id: 1, tile: "Overview" },
-    { id: 2, tile: "Integrations" },
-    { id: 3, tile: "Activity" },
-    { id: 4, tile: "Domains" },
-    { id: 5, tile: "Usage" },
-    { id: 6, tile: "AI" },
-    { id: 7, tile: "Settings" },
-  ];
-
-  const [active, setActive] = useState<Props>(ITEMS[0]);
-  const [isHover, setIsHover] = useState<Props | null>(null);
-
-  return (
-    <ul className="flex items-center justify-center">
-      {ITEMS.map((item) => (
-        <button
-          key={item.id}
-          className="py-2 relative duration-300 transition-colors hover:!text-white"
-          onClick={() => setActive(item)}
-          onMouseEnter={() => setIsHover(item)}
-          onMouseLeave={() => setIsHover(null)}
-          style={{ color: active.id === item.id ? "#FFF" : "#888888" }}
-        >
-          <div className="px-5 py-2 relative">
-            {item.tile}
-            {isHover?.id === item.id && (
-              <motion.div
-                layoutId="hover-bg"
-                className="absolute bottom-0 left-0 right-0 w-full h-full bg-white/10"
-                style={{
-                  borderRadius: 6,
-                }}
-              />
-            )}
-          </div>
-          {active.id === item.id && (
-            <motion.div layoutId="active" className="absolute bottom-0 left-0 right-0 w-full h-0.5 bg-white" />
-          )}
-          {isHover?.id === item.id && (
-            <motion.div layoutId="hover" className="absolute bottom-0 left-0 right-0 w-full h-0.5 bg-white" />
-          )}
-        </button>
-      ))}
-    </ul>
-  );
-};
-
-export default function VercelNavbar() {
-  return (
-    <main className="relative w-full min-h-screen flex items-start md:items-center justify-center px-4 py-10">
-      <div className="relative gap-5 flex flex-col items-center justify-center">
-        <One />
-        <Two />
-      </div>
-    </main>
   );
 }
