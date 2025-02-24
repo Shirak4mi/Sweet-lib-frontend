@@ -9,7 +9,7 @@ import {
   ToastProvider,
   ToastTitle,
   ToastViewport,
-} from "@/components/ui/toast";
+} from "@/components/ui/base/toast/toast";
 import { CircleCheck, X } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 
