@@ -5,7 +5,7 @@ import { cn } from "@/utils/functions";
 
 import type { ComponentProps, ReactNode } from "react";
 
-export function Checkbox({ className, ...props }: ComponentProps<typeof Root>): ReactNode {
+export default function Checkbox({ className, ...props }: ComponentProps<typeof Root>): ReactNode {
   return (
     <Root
       className={cn(

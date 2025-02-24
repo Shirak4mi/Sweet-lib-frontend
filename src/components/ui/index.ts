@@ -12,3 +12,8 @@ export * from "./base/alerts/Base.tsx";
 export { default as AnimatedAvatar } from "./base/avatar/Animated.tsx";
 export * from "./base/avatar/Base.tsx";
 /* Avatars */
+
+/* Checkboxes */
+export { default as AnimatedCheckbox } from "./base/checkbox/Animated.tsx";
+export { default as Checkbox } from "./base/checkbox/Base.tsx";
+/* Checkboxes */
