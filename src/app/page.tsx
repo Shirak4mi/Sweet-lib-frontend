@@ -1,9 +1,8 @@
-"use client";
 import NeonAlert from "@/components/ui/Origin/Alert/examples/NeonAlert";
 import SecondStepperTest from "@/components/example/SecondStepperTest";
 import StepperTest from "@/components/example/StepperTest";
 import BaseOriginAlert from "@/components/ui/Origin/Alert";
-import { MoonIcon } from "@/components/ui/shad/Icons/Moon";
+
 
 export default function Home() {
   return (
@@ -15,11 +14,9 @@ export default function Home() {
         show
         title="This is a error"
         type="danger"
-        details={["XD"]}
+        details={["XD", "Something else"]}
         action={{ func: () => {}, label: "Action" }}
       />
-
-      <MoonIcon />
     </div>
   );
 }
