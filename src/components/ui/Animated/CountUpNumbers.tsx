@@ -1,21 +1,10 @@
 "use client";
-import { useEffect, useRef } from "react";
-import { useInView, useMotionValue, useSpring } from "framer-motion";
+import { useInView, useMotionValue, useSpring } from "motion/react";
+import { type ReactNode, useEffect, useRef } from "react";
 
-interface CountUpProps {
-  to: number;
-  from?: number;
-  direction?: "up" | "down";
-  delay?: number;
-  duration?: number;
-  className?: string;
-  startWhen?: boolean;
-  separator?: string;
-  onStart?: () => void;
-  onEnd?: () => void;
-}
+import type { ICountUpNumbersProps } from "@/types";
 
-export default function CountUp({
+export default function CountUpNumbers({
   to,
   from = 0,
   direction = "up",
@@ -26,19 +15,16 @@ export default function CountUp({
   separator = "",
   onStart,
   onEnd,
-}: CountUpProps) {
+}: ICountUpNumbersProps): ReactNode {
   const ref = useRef<HTMLSpanElement>(null);
   const motionValue = useMotionValue(direction === "down" ? to : from);
 
   // Calculate damping and stiffness based on duration
-  const damping = 20 + 40 * (1 / duration); // Adjust this formula for finer control
-  const stiffness = 100 * (1 / duration); // Adjust this formula for finer control
+  const damping = 20 + 40 * (1 / duration);
+  const stiffness = 100 * (1 / duration);
 
-  const springValue = useSpring(motionValue, {
-    damping,
-    stiffness,
-  });
-
+  // Animation Hooks
+  const springValue = useSpring(motionValue, { damping, stiffness });
   const isInView = useInView(ref, { once: true, margin: "0px" });
 
   // Set initial text content to the initial value based on direction
@@ -51,9 +37,7 @@ export default function CountUp({
   // Start the animation when in view and startWhen is true
   useEffect(() => {
     if (isInView && startWhen) {
-      if (typeof onStart === "function") {
-        onStart();
-      }
+      if (typeof onStart === "function") onStart();
 
       const timeoutId = setTimeout(() => {
         motionValue.set(direction === "down" ? from : to);
