@@ -6,6 +6,7 @@ export interface IProfilerProps {
   id?: string;
 }
 
+
 export interface IRSC {
   children: ReactNode;
 }
