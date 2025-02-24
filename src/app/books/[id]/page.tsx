@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Star, Clock, BookOpen, User, ChevronLeft } from "lucide-react";
-import { Button, Textarea } from "@/components/ui";
+import { Button, Textarea } from "@/components/ui/base";
 import Link from "next/link";
 import Image from "next/image";
 

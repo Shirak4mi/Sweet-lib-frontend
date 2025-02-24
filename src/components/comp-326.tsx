@@ -1,5 +1,5 @@
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui";
-import { Label, Input, Checkbox, Button } from "@/components/ui";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/base";
+import { Label, Input, Checkbox, Button } from "@/components/ui/base";
 import { useId } from "react";
 
 export default function LoginModal() {

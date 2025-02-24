@@ -1,4 +1,4 @@
-import { Avatar, AvatarFallback, AvatarImage, Button, Label, Input, Textarea } from "@/components/ui";
+import { Avatar, AvatarFallback, AvatarImage, Button, Label, Input, Textarea } from "@/components/ui/base";
 import { Sparkles } from "lucide-react";
 
 interface ProfileFormProps {
