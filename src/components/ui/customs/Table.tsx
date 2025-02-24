@@ -10,10 +10,10 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
+  Badge,
+  Button,
+  Checkbox,
 } from "@/components/ui";
-import { Badge } from "@/components/ui/base/";
-import { Button } from "@/components/ui";
-import { Checkbox } from "@/components/ui";
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,

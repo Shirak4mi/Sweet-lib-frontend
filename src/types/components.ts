@@ -1,6 +1,6 @@
 import type { ComponentProps, HTMLAttributes, MouseEventHandler, ReactNode } from "react";
 import type { VariantProps } from "class-variance-authority";
-import type { TButtonVariants } from "@/utils/variants";
+import type { TBadgeVariants, TButtonVariants } from "@/utils/variants";
 import type { HTMLMotionProps } from "motion/react";
 
 /**
@@ -84,6 +84,15 @@ export interface IButtonProps extends ComponentProps<"button">, VariantProps<TBu
 export interface IAnimatedButtonProps
   extends Omit<IButtonProps, keyof HTMLMotionProps<"button">>,
     HTMLMotionProps<"button"> {
+  children: ReactNode;
+}
+
+export interface IBadgeProps extends ComponentProps<"span">, TBadgeVariants {
+  asChild?: boolean;
+}
+
+export interface IAnimatedBadgeProps extends Omit<IBadgeProps, keyof HTMLMotionProps<"span">>, HTMLMotionProps<"span"> {
+  removeIcon?: boolean;
   children: ReactNode;
 }
 

@@ -40,3 +40,8 @@ export * from "./base/modal/Base.tsx";
 export { default as AnimatedSkeleton } from "./base/skeleton/Animated.tsx";
 export { default as Skeleton } from "./base/skeleton/Base.tsx";
 /* Skeleton */
+
+/* Badge */
+export { default as AnimatedBadge } from "./base/badge/Animated.tsx";
+export { default as Badge } from "./base/badge/Normal.tsx";
+/* Badge */
