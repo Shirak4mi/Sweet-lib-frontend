@@ -35,3 +35,8 @@ export { default as Toggle } from "./base/toggle/Base.tsx";
 /* Dialog */
 export * from "./base/modal/Base.tsx";
 /* Dialog */
+
+/* Skeleton */
+export { default as AnimatedSkeleton } from "./base/skeleton/Animated.tsx";
+export { default as Skeleton } from "./base/skeleton/Base.tsx";
+/* Skeleton */

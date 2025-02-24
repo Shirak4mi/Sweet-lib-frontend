@@ -1,4 +1,4 @@
-import type { ComponentProps, MouseEventHandler, ReactNode } from "react";
+import type { ComponentProps, HTMLAttributes, MouseEventHandler, ReactNode } from "react";
 import type { VariantProps } from "class-variance-authority";
 import type { TButtonVariants } from "@/utils/variants";
 import type { HTMLMotionProps } from "motion/react";
@@ -116,6 +116,13 @@ export interface IAnimatedNumberProps {
   format?: (value: number) => string;
   onAnimInit?: () => void;
   onAnimDone?: () => void;
+}
+
+export interface IAnimatedSkeletonProps extends HTMLMotionProps<"div"> {
+  variant?: "default" | "card" | "text" | "avatar" | "button";
+  className?: string;
+  shimmer?: boolean;
+  pulse?: boolean;
 }
 
 /* Animated Component Props */

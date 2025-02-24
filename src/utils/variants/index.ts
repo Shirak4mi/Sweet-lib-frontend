@@ -1,7 +1,5 @@
 import { cva, type VariantProps } from "class-variance-authority";
 
-import type { Transition, Variants } from "motion/react";
-
 /* Base variants & types */
 
 export const alertVariants = cva(
@@ -70,27 +68,4 @@ export const toggleVariants = cva(
 export type TToggleVariants = VariantProps<typeof toggleVariants>;
 /* Base variants & types */
 
-/* Animated Variants */
-
-export const MoonSvgVariants: Variants = {
-  animate: { rotate: [0, -10, 10, -5, 5, 0] },
-  normal: { rotate: 0 },
-};
-
-export const MoonSvgTransition: Transition = {
-  ease: "easeInOut",
-  duration: 1.2,
-};
-
-export const BookCardVariants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0 },
-};
-
-export function getModalVariants(isSmall: boolean): Variants {
-  return isSmall
-    ? { hidden: { y: "100%", opacity: 1 }, visible: { y: 0, opacity: 1 }, exit: { y: "100%", opacity: 1 } }
-    : { hidden: { scale: 0.95, opacity: 0 }, visible: { scale: 1, opacity: 1 }, exit: { scale: 0.95, opacity: 0 } };
-}
-
-/* Animated Variants */
+export * from "./animated.ts";
