@@ -1,6 +1,7 @@
 "use client";
 import { BookCardVariants } from "@/utils/variants";
 import { motion } from "motion/react";
+import Image from "next/image";
 
 import type { IBookCardProps } from "@/types/components";
 import type { ReactNode } from "react";
@@ -21,7 +22,9 @@ export default function BookCard({ ifr, id }: IBookCardProps): ReactNode {
         animate="visible"
         initial="hidden"
       >
-        x
+        <div>
+          <Image alt={"title"} className="w-full object-cover" src={`/placeholders/${id}.avif`} width={200} height={200} />
+        </div>
       </motion.div>
     </motion.div>
   );
