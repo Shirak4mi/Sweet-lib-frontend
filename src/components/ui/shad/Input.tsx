@@ -1,7 +1,7 @@
 import { type ComponentProps, type ForwardedRef, type ReactNode, forwardRef } from "react";
 import { cn } from "@/utils/functions";
 
-function Input({ className, type, ...props }: ComponentProps<"input">, ref: ForwardedRef<HTMLInputElement>): ReactNode {
+function BaseInput({ className, type, ...props }: ComponentProps<"input">, ref: ForwardedRef<HTMLInputElement>): ReactNode {
   return (
     <input
       type={type}
@@ -15,4 +15,4 @@ function Input({ className, type, ...props }: ComponentProps<"input">, ref: Forw
   );
 }
 
-export default forwardRef(Input);
+export const Input = forwardRef(BaseInput);
