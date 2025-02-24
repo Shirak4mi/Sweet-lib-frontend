@@ -39,8 +39,13 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
 } from "@/components/ui";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import {
   type ColumnDef,
   type ColumnFiltersState,
@@ -443,8 +448,8 @@ export default function Component() {
             <div className="flex items-center gap-3">
               {/* Delete button */}
               {table.getSelectedRowModel().rows.length > 0 && (
-                <AlertDialog>
-                  <AlertDialogTrigger asChild>
+                <Dialog>
+                  <DialogTrigger asChild>
                     <Button className="ml-auto" variant="outline">
                       <TrashIcon className="-ms-1 opacity-60" size={16} aria-hidden="true" />
                       Delete
@@ -452,8 +457,8 @@ export default function Component() {
                         {table.getSelectedRowModel().rows.length}
                       </span>
                     </Button>
-                  </AlertDialogTrigger>
-                  <AlertDialogContent>
+                  </DialogTrigger>
+                  <DialogContent>
                     <div className="flex flex-col gap-2 max-sm:items-center sm:flex-row sm:gap-4">
                       <div
                         className="flex size-9 shrink-0 items-center justify-center rounded-full border"
@@ -461,21 +466,21 @@ export default function Component() {
                       >
                         <CircleAlertIcon className="opacity-80" size={16} />
                       </div>
-                      <AlertDialogHeader>
-                        <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
-                        <AlertDialogDescription>
+                      <DialogHeader>
+                        <DialogTitle>Are you absolutely sure?</DialogTitle>
+                        <DialogDescription>
                           This action cannot be undone. This will permanently delete{" "}
                           {table.getSelectedRowModel().rows.length} selected{" "}
                           {table.getSelectedRowModel().rows.length === 1 ? "row" : "rows"}.
-                        </AlertDialogDescription>
-                      </AlertDialogHeader>
+                        </DialogDescription>
+                      </DialogHeader>
                     </div>
-                    <AlertDialogFooter>
-                      <AlertDialogCancel>Cancel</AlertDialogCancel>
-                      <AlertDialogAction onClick={handleDeleteRows}>Delete</AlertDialogAction>
-                    </AlertDialogFooter>
-                  </AlertDialogContent>
-                </AlertDialog>
+                    <DialogFooter>
+                      {/* <AlertDialogCancel>Cancel</AlertDialogCancel> */}
+                      {/* <AlertDialogAction onClick={handleDeleteRows}>Delete</AlertDialogAction> */}
+                    </DialogFooter>
+                  </DialogContent>
+                </Dialog>
               )}
               {/* Add user button */}
               <Button className="ml-auto" variant="outline">
