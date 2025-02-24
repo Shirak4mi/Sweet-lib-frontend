@@ -10,7 +10,13 @@ export default function Home() {
       <StepperTest />
       <SecondStepperTest />
       <NeonAlert />
-      <BaseOriginAlert show title="This is a error" type="danger" />
+      <BaseOriginAlert
+        show
+        title="This is a error"
+        type="danger"
+        details={["XD"]}
+        action={{ func: () => {}, label: "Action" }}
+      />
     </div>
   );
 }
