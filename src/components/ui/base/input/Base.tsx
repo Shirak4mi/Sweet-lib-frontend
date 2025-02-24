@@ -1,8 +1,9 @@
-import * as React from "react"
+import { cn } from "@/utils/functions";
 
-import { cn } from "@/utils"
+import type { IBaseInputProps } from "@/types/components";
+import type { ReactNode } from "react";
 
-function Input({ className, type, ...props }: React.ComponentProps<"input">) {
+export default function Input({ className, type, ...props }: IBaseInputProps): ReactNode {
   return (
     <input
       type={type}
@@ -15,7 +16,5 @@ function Input({ className, type, ...props }: React.ComponentProps<"input">) {
       )}
       {...props}
     />
-  )
+  );
 }
-
-export { Input }
