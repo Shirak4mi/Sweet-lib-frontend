@@ -132,3 +132,67 @@
 .BookCardsGrid {
   @apply grid grid-cols-[repeat(5,1fr)] grid-rows-[repeat(5,1fr)] gap-x-[25px] gap-y-5;
 }
+
+.animated-grid {
+  width: 100%;
+  height: 100%;
+  --color: rgba(114, 114, 114, 0.3);
+  background-image: linear-gradient(
+      0deg,
+      transparent 24%,
+      var(--color) 25%,
+      var(--color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--color) 75%,
+      var(--color) 76%,
+      transparent 77%,
+      transparent
+    ),
+    linear-gradient(
+      90deg,
+      transparent 24%,
+      var(--color) 25%,
+      var(--color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--color) 75%,
+      var(--color) 76%,
+      transparent 77%,
+      transparent
+    );
+  background-size: 55px 55px;
+  animation: moveGrid 6s linear infinite;
+}
+
+@keyframes moveGrid {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 55px 55px;
+  }
+}
+
+/* Optional: Add these classes to control animation direction */
+.animated-grid.reverse {
+  animation-direction: reverse;
+}
+
+.animated-grid.diagonal-reverse {
+  animation: moveGridReverse 3s linear infinite;
+}
+
+@keyframes moveGridReverse {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -55px -55px;
+  }
+}
+
+/* Optional: Add this class to pause animation on hover */
+.animated-grid.pause-on-hover:hover {
+  animation-play-state: paused;
+}

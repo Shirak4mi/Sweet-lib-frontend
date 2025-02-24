@@ -6,7 +6,7 @@ import Button from "./Base";
 import type { IAnimatedButtonProps } from "@/types";
 import type { ReactNode } from "react";
 
-const MotionButton = motion(Button);
+const MotionButton = motion.create(Button);
 
 export default function AnimatedButton({ className, children, ...props }: IAnimatedButtonProps): ReactNode {
   return (

@@ -6,9 +6,9 @@ import { cn } from "@/utils/functions";
 import type { IAnimatedAvatarProps } from "@/types/components.ts";
 import type { ReactNode } from "react";
 
-const MotionAvatar = motion(Avatar);
-const MotionAvatarImage = motion(AvatarImage);
-const MotionAvatarFallback = motion(AvatarFallback);
+const MotionAvatar = motion.create(Avatar);
+const MotionAvatarImage = motion.create(AvatarImage);
+const MotionAvatarFallback = motion.create(AvatarFallback);
 
 export default function AnimatedAvatar(compProps: IAnimatedAvatarProps): ReactNode {
   // Props
