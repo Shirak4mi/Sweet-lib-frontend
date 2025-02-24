@@ -17,3 +17,14 @@ export * from "./base/avatar/Base.tsx";
 export { default as AnimatedCheckbox } from "./base/checkbox/Animated.tsx";
 export { default as Checkbox } from "./base/checkbox/Base.tsx";
 /* Checkboxes */
+
+/* Forms ( Labels, Input, Textarea, ) */
+export { default as Input } from "./base/input/Base.tsx";
+export { default as Label } from "./base/label/Base.tsx";
+export { default as Textarea } from "./base/textarea/Base.tsx";
+/* Forms ( Labels, Input, Textarea, ) */
+
+/* Tooltip */
+export * from "./base/tooltip/Base.tsx";
+
+/* Tooltip */
