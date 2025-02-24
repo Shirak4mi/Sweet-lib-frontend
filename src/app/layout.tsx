@@ -1,6 +1,5 @@
-import { AppThemeProvider } from "@/components";
+import { AppThemeProvider, MainAppWrapper } from "@/components";
 import { geistMono, geistSans } from "@/fonts";
-import Navbar from "@/components/ui/Navbar";
 import "@/css/globals.css";
 
 import type { Metadata, Viewport } from "next";
@@ -31,10 +30,7 @@ export default function RootLayout({ children, params: { locale } }: Readonly<IR
 
       <body className={`${fonts} antialiased`}>
         <AppThemeProvider>
-          <div className="">
-            <Navbar />
-            {children}
-          </div>
+          <MainAppWrapper>{children}</MainAppWrapper>
         </AppThemeProvider>
       </body>
     </html>
