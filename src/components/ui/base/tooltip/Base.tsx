@@ -2,8 +2,7 @@
 import { Provider, Root, Trigger, Portal, Content, Arrow } from "@radix-ui/react-tooltip";
 import { cn } from "@/utils/functions";
 
-import { ComponentProps, ReactNode } from "react";
-
+import type { ComponentProps, ReactNode } from "react";
 
 export function TooltipProvider({ delayDuration = 0, ...props }: ComponentProps<typeof Provider>): ReactNode {
   return <Provider data-slot="tooltip-provider" delayDuration={delayDuration} {...props} />;
