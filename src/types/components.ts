@@ -1,6 +1,7 @@
 import type { ComponentProps, MouseEventHandler, ReactNode } from "react";
 import type { VariantProps } from "class-variance-authority";
 import type { TButtonVariants } from "@/utils/variants";
+import type { HTMLMotionProps } from "motion/react";
 
 /**
  * Interface React Server Component ( IRSC )
@@ -77,6 +78,12 @@ export interface IBookCardProps {
 
 export interface IButtonProps extends ComponentProps<"button">, VariantProps<TButtonVariants> {
   asChild?: boolean;
+}
+
+export interface IAnimatedButtonProps
+  extends Omit<IButtonProps, keyof HTMLMotionProps<"button">>,
+    HTMLMotionProps<"button"> {
+  children: ReactNode;
 }
 
 /* Base Component Props */
