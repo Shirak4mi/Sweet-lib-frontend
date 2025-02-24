@@ -66,7 +66,7 @@ interface PopoverRootProps {
   className?: string;
 }
 
-export function PopoverRoot({ children, className }: PopoverRootProps) {
+export function CultPopoverRoot({ children, className }: PopoverRootProps) {
   const popoverLogic = usePopoverLogic();
 
   return (
@@ -83,7 +83,7 @@ interface PopoverTriggerProps {
   className?: string;
 }
 
-export function PopoverTrigger({ children, className }: PopoverTriggerProps) {
+export function CultPopoverTrigger({ children, className }: PopoverTriggerProps) {
   const { openPopover, uniqueId } = usePopover();
 
   return (
@@ -111,7 +111,7 @@ interface PopoverContentProps {
   className?: string;
 }
 
-export function PopoverContent({ children, className }: PopoverContentProps) {
+export function CultPopoverContent({ children, className }: PopoverContentProps) {
   const { isOpen, closePopover, uniqueId } = usePopover();
   const formContainerRef = useRef<HTMLDivElement | null>(null);
 
@@ -161,7 +161,7 @@ interface PopoverFormProps {
   className?: string;
 }
 
-export function PopoverForm({ children, onSubmit, className }: PopoverFormProps) {
+export function CultPopoverForm({ children, onSubmit, className }: PopoverFormProps) {
   const { note, closePopover } = usePopover();
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -182,7 +182,7 @@ interface PopoverLabelProps {
   className?: string;
 }
 
-export function PopoverLabel({ children, className }: PopoverLabelProps) {
+export function CultPopoverLabel({ children, className }: PopoverLabelProps) {
   const { uniqueId, note } = usePopover();
 
   return (
@@ -203,7 +203,7 @@ interface PopoverTextareaProps {
   className?: string;
 }
 
-export function PopoverTextarea({ className }: PopoverTextareaProps) {
+export function CultPopoverTextarea({ className }: PopoverTextareaProps) {
   const { note, setNote } = usePopover();
 
   return (
@@ -221,7 +221,7 @@ interface PopoverFooterProps {
   className?: string;
 }
 
-export function PopoverFooter({ children, className }: PopoverFooterProps) {
+export function CultPopoverFooter({ children, className }: PopoverFooterProps) {
   return (
     <div key="close" className={cn("flex justify-between px-4 py-3", className)}>
       {children}
@@ -233,7 +233,7 @@ interface PopoverCloseButtonProps {
   className?: string;
 }
 
-export function PopoverCloseButton({ className }: PopoverCloseButtonProps) {
+export function CultPopoverCloseButton({ className }: PopoverCloseButtonProps) {
   const { closePopover } = usePopover();
 
   return (
@@ -247,7 +247,7 @@ interface PopoverSubmitButtonProps {
   className?: string;
 }
 
-export function PopoverSubmitButton({ className }: PopoverSubmitButtonProps) {
+export function CultPopoverSubmitButton({ className }: PopoverSubmitButtonProps) {
   return (
     <button
       className={cn(
@@ -262,16 +262,16 @@ export function PopoverSubmitButton({ className }: PopoverSubmitButtonProps) {
   );
 }
 
-export function PopoverHeader({ children, className }: { children: React.ReactNode; className?: string }) {
+export function CultPopoverHeader({ children, className }: { children: React.ReactNode; className?: string }) {
   return <div className={cn("px-4 py-2 font-semibold text-zinc-900 dark:text-zinc-100", className)}>{children}</div>;
 }
 
-export function PopoverBody({ children, className }: { children: React.ReactNode; className?: string }) {
+export function CultPopoverBody({ children, className }: { children: React.ReactNode; className?: string }) {
   return <div className={cn("p-4", className)}>{children}</div>;
 }
 
 // New component: PopoverButton
-export function PopoverButton({
+export function CultPopoverButton({
   children,
   onClick,
   className,
