@@ -1,4 +1,4 @@
-import NeonAlert from "@/components/ui/Origin/Alert/NeonAlert";
+import NeonAlert from "@/components/ui/Origin/Alert/examples/NeonAlert";
 import SecondStepperTest from "@/components/example/SecondStepperTest";
 import StepperTest from "@/components/example/StepperTest";
 
