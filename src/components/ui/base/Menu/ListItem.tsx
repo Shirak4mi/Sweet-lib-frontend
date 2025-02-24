@@ -1,5 +1,5 @@
-import { NavigationMenuLink } from "@/components/ui/shad/Menus/NavigationMenu";
 import { HTMLMotionProps, motion } from "motion/react";
+import { NavigationMenuLink } from "./Navigation.tsx";
 import { type ReactNode, forwardRef } from "react";
 import { cn } from "@/utils/functions";
 

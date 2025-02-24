@@ -14,7 +14,7 @@ import {
 } from "react-hook-form";
 
 import { cn } from "@/utils/functions";
-import { Label } from "@/components/ui/base/label/Base";
+import Label from "../label/Base";
 
 const Form = FormProvider;
 
@@ -84,9 +84,9 @@ function FormLabel({ className, ...props }: React.ComponentProps<typeof LabelPri
 
   return (
     <Label
+      className={cn("data-[error=true]:text-destructive-foreground", className)}
       data-slot="form-label"
       data-error={!!error}
-      className={cn("data-[error=true]:text-destructive", className)}
       htmlFor={formItemId}
       {...props}
     />
@@ -132,7 +132,7 @@ function FormMessage({ className, ...props }: React.ComponentProps<"p">) {
     <p
       data-slot="form-message"
       id={formMessageId}
-      className={cn("text-destructive text-sm font-medium", className)}
+      className={cn("text-destructive-foreground text-sm", className)}
       {...props}
     >
       {body}

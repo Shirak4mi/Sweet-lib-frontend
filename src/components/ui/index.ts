@@ -31,3 +31,7 @@ export * from "./base/tooltip/Base.tsx";
 /* Toggle */
 export { default as Toggle } from "./base/toggle/Base.tsx";
 /* Toggle */
+
+/* Dialog */
+export * from "./base/modal/Base.tsx";
+/* Dialog */

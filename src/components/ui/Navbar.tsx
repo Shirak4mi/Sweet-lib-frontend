@@ -11,8 +11,8 @@ import {
   NavigationMenuList,
   NavigationMenuContent,
   NavigationMenuTrigger,
-} from "@/components/ui/shad/Menus/NavigationMenu";
-import { ListItem } from "./shad/Menus/ListItem";
+} from "@/components/ui/base/Menu/Navigation";
+import { ListItem } from "@/components/ui/base/Menu/ListItem";
 
 const components: { title: string; href: string; description: string }[] = [
   {
