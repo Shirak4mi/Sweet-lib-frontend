@@ -13,7 +13,7 @@ export default function BookCard({ ifr, id }: IBookCardProps): ReactNode {
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.8 }}
       transition={{ duration: 0.3 }}
-      id={id.toString()}
+      id={id.toString() + 1}
       layout
     >
       <motion.div
@@ -31,7 +31,7 @@ export default function BookCard({ ifr, id }: IBookCardProps): ReactNode {
         >
           <div className="text-center">
             <h3 className="text-2xl font-bold text-white mb-2">{id}</h3>
-            <p className="text-gray-200">{id}</p>
+            <p className="text-primary">{id}</p>
           </div>
         </motion.div>
       </motion.div>
