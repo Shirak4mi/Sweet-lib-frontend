@@ -14,7 +14,8 @@ export default function Button({ className, variant, size, asChild = false, isLo
 
   return (
     <Comp
-      className={cn(isLoading && "cursor-progress ", buttonVariants({ variant, size, className }))}
+      className={cn(isLoading && "disabled:cursor-progress disabled:bg-amber-700", buttonVariants({ variant, size, className }))}
+      disabled={isLoading || props.disabled}
       data-slot="button"
       {...props}
     />
