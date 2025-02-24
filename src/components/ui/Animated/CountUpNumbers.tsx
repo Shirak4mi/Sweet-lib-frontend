@@ -1,45 +1,70 @@
 "use client";
-import { useInView, useMotionValue, useSpring } from "motion/react";
-import { type ReactNode, useEffect, useRef } from "react";
-import { cn } from "@/utils/functions";
+import { useEffect, useRef } from "react";
+import { useInView, useMotionValue, useSpring } from "framer-motion";
 
-import type { ICountUpNumbersProps } from "@/types/components.ts";
+interface CountUpProps {
+  to: number;
+  from?: number;
+  direction?: "up" | "down";
+  delay?: number;
+  duration?: number;
+  className?: string;
+  startWhen?: boolean;
+  separator?: string;
+  onStart?: () => void;
+  onEnd?: () => void;
+}
 
-export default function CountUpNumbers({
-  startWhen = true,
-  direction = "up",
-  className = "",
-  separator = "",
-  duration = 2,
-  delay = 0,
+export default function CountUp({
+  to,
   from = 0,
+  direction = "up",
+  delay = 0,
+  duration = 2, // Duration of the animation in seconds
+  className = "",
+  startWhen = true,
+  separator = "",
   onStart,
   onEnd,
-  to,
-}: ICountUpNumbersProps): ReactNode {
-  // Refs
+}: CountUpProps) {
   const ref = useRef<HTMLSpanElement>(null);
+  const motionValue = useMotionValue(direction === "down" ? to : from);
 
   // Calculate damping and stiffness based on duration
-  const damping = 20 + 40 * (1 / duration);
-  const stiffness = 100 * (1 / duration);
+  const damping = 20 + 40 * (1 / duration); // Adjust this formula for finer control
+  const stiffness = 100 * (1 / duration); // Adjust this formula for finer control
 
-  // Hooks
-  const motionValue = useMotionValue(direction === "down" ? to : from);
-  const springValue = useSpring(motionValue, { damping, stiffness });
+  const springValue = useSpring(motionValue, {
+    damping,
+    stiffness,
+  });
+
   const isInView = useInView(ref, { once: true, margin: "0px" });
 
   // Set initial text content to the initial value based on direction
   useEffect(() => {
-    if (ref.current) ref.current.textContent = String(direction === "down" ? to : from);
+    if (ref.current) {
+      ref.current.textContent = String(direction === "down" ? to : from);
+    }
   }, [from, to, direction]);
 
   // Start the animation when in view and startWhen is true
   useEffect(() => {
     if (isInView && startWhen) {
-      if (typeof onStart === "function") onStart();
-      const timeoutId = setTimeout(() => motionValue.set(direction === "down" ? from : to), delay * 1000);
-      const durationTimeoutId = setTimeout(() => typeof onEnd === "function" && onEnd(), delay * 1000 + duration * 1000);
+      if (typeof onStart === "function") {
+        onStart();
+      }
+
+      const timeoutId = setTimeout(() => {
+        motionValue.set(direction === "down" ? from : to);
+      }, delay * 1000);
+
+      const durationTimeoutId = setTimeout(() => {
+        if (typeof onEnd === "function") {
+          onEnd();
+        }
+      }, delay * 1000 + duration * 1000);
+
       return () => {
         clearTimeout(timeoutId);
         clearTimeout(durationTimeoutId);
@@ -49,15 +74,22 @@ export default function CountUpNumbers({
 
   // Update text content with formatted number on spring value change
   useEffect(() => {
-    return () =>
-      springValue.on("change", (latest) => {
-        if (ref.current) {
-          const options = { useGrouping: !!separator, minimumFractionDigits: 0, maximumFractionDigits: 0 };
-          const formattedNumber = Intl.NumberFormat("en-US", options).format(Number(latest.toFixed(0)));
-          ref.current.textContent = separator ? formattedNumber.replace(/,/g, separator) : formattedNumber;
-        }
-      })();
+    const unsubscribe = springValue.on("change", (latest) => {
+      if (ref.current) {
+        const options = {
+          useGrouping: !!separator,
+          minimumFractionDigits: 0,
+          maximumFractionDigits: 0,
+        };
+
+        const formattedNumber = Intl.NumberFormat("en-US", options).format(Number(latest.toFixed(0)));
+
+        ref.current.textContent = separator ? formattedNumber.replace(/,/g, separator) : formattedNumber;
+      }
+    });
+
+    return () => unsubscribe();
   }, [springValue, separator]);
 
-  return <span className={cn(className)} ref={ref} />;
+  return <span className={`${className}`} ref={ref} />;
 }

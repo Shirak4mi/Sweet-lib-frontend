@@ -33,7 +33,7 @@ export default function Home() {
 
       <AnimatedCheckbox />
 
-      <CountUpNumbers to={9000} separator="," from={100} />
+      <CountUpNumbers to={9000} separator="," />
       <AnimatedNumber value={100} />
 
       <TestTable />
