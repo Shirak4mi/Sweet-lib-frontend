@@ -104,3 +104,18 @@ export interface IAnimatedAvatarProps extends HTMLMotionProps<"div"> {
 export interface IBaseInputProps extends ComponentProps<"input"> {}
 
 /* Base Component Props */
+
+/* Animated Component Props */
+
+export interface IAnimatedNumberProps {
+  value: number;
+  mass?: number;
+  damping?: number;
+  stiffness?: number;
+  precision?: number;
+  format?: (value: number) => string;
+  onAnimInit?: () => void;
+  onAnimDone?: () => void;
+}
+
+/* Animated Component Props */
