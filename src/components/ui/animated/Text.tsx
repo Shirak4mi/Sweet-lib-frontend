@@ -1,5 +1,5 @@
 "use client";
-import { type HTMLMotionProps, motion, useAnimation, useInView } from "motion/react";
+import { type HTMLMotionProps, motion } from "motion/react";
 import { type ReactNode, useRef } from "react";
 
 type AnimationType = "fadeIn" | "fadeInUp" | "popIn" | "shiftInUp" | "rollIn" | "whipIn" | "whipInUp" | "calmInUp";
@@ -187,8 +187,8 @@ export default function TextAnimate({ text, type = "whipInUp", ...props }: IAnim
   const ref = useRef(null);
 
   // Consts
-  const letters = Array.from(text);
   const { container, child } = animationVariants[type];
+  const letters = Array.from(text);
 
   if (type === "rollIn" || type === "whipIn") {
     return (

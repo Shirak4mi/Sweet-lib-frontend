@@ -9,12 +9,8 @@ export const skeletonVariants = {
 };
 
 export const skeletonShimmerVariants: Variants = {
-  initial: {
-    backgroundPosition: "-1000px 0",
-  },
-  animate: {
-    backgroundPosition: ["1000px 0", "-1000px 0"],
-  },
+  animate: { backgroundPosition: ["1000px 0", "-1000px 0"] },
+  initial: { backgroundPosition: "-1000px 0" },
 };
 
 export const skeletonPulseVariants: Variants = {
@@ -31,10 +27,7 @@ export const MoonSvgVariants: Variants = {
   normal: { rotate: 0 },
 };
 
-export const MoonSvgTransition: Transition = {
-  ease: "easeInOut",
-  duration: 1.2,
-};
+export const MoonSvgTransition: Transition = { ease: "easeInOut", duration: 1.2 };
 
 export const BookCardVariants = {
   hidden: { opacity: 0, y: 50 },

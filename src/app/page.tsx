@@ -1,3 +1,4 @@
+"use client";
 import NeonAlert from "@/components/ui/Origin/Alert/examples/NeonAlert";
 import SecondStepperTest from "@/components/example/SecondStepperTest";
 import StepperTest from "@/components/example/StepperTest";
@@ -9,8 +10,21 @@ import CardSection from "@/components/layouts/Books";
 import SoftAnimatedLogin from "@/components/ui/base/modal/Motion";
 import { AnimatedCheckbox } from "@/components/ui/base";
 import TestTable from "@/components/ui/customs/Table";
+import { AnimatedNumber } from "@/components/ui/Animated/AddUpNumbers";
+import { useEffect, useState } from "react";
+import CountUpNumbers from "@/components/ui/Animated/CountUpNumbers";
 
 export default function Home() {
+  const [commonNum, setCommonNum] = useState(0);
+
+  useEffect(() => {
+    const tma = setTimeout(() => {
+      setCommonNum(() => 15000);
+    }, 3000);
+
+    return () => clearTimeout(tma);
+  }, []);
+
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] animated-grid">
       <StepperTest />
@@ -30,6 +44,9 @@ export default function Home() {
       <SoftAnimatedLogin />
 
       <AnimatedCheckbox />
+
+      <CountUpNumbers to={9000} separator="," from={100} />
+      <AnimatedNumber value={commonNum} />
 
       <TestTable />
 

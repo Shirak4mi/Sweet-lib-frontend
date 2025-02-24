@@ -16,7 +16,9 @@ export function AnimatedNumber(props: IAnimatedNumberProps): ReactNode {
   useEffect(() => {
     spring.set(value);
     if (onAnimInit) onAnimInit();
-    const unsubscribe = spring.on("change", () => spring.get() === value && onAnimDone && onAnimDone());
+    const unsubscribe = spring.on("change", () => {
+      if (spring.get() === value && onAnimDone) onAnimDone();
+    });
     return () => unsubscribe();
   }, [spring, value, onAnimInit, onAnimDone]);
 
