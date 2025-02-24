@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect, useCallback, useMemo, useRef, createContext, useContext, memo } from "react";
+import type {} from "@/types/customs";
 
 type ToastType = "default" | "success" | "error" | "info" | "warning" | "loading";
 type ToastPosition = "top-right" | "top-left" | "bottom-right" | "bottom-left" | "top-center" | "bottom-center";
