@@ -9,7 +9,7 @@ export default function CountUpNumbers({
   from = 0,
   direction = "up",
   delay = 0,
-  duration = 2, // Duration of the animation in seconds
+  duration = 2,
   className = "",
   startWhen = true,
   separator = "",
@@ -29,9 +29,7 @@ export default function CountUpNumbers({
 
   // Set initial text content to the initial value based on direction
   useEffect(() => {
-    if (ref.current) {
-      ref.current.textContent = String(direction === "down" ? to : from);
-    }
+    if (ref.current) ref.current.textContent = String(direction === "down" ? to : from);
   }, [from, to, direction]);
 
   // Start the animation when in view and startWhen is true
