@@ -6,8 +6,7 @@ import {
   StepperTitle,
   StepperItem,
   Stepper,
-} from "@/components/ui/stepper";
-import RenderTimeProfiler from "../providers/Profiler";
+} from "@/components/ui/Origin/Stepper/stepper";
 
 const steps = [
   {
