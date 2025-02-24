@@ -9,6 +9,7 @@ import type { ReactNode } from "react";
 export default function BookCard({ ifr, id }: IBookCardProps): ReactNode {
   return (
     <motion.div
+      whileTap={{ transition: { type: "spring", stiffness: 400, damping: 17 }, scale: 0.95 }}
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.8 }}
