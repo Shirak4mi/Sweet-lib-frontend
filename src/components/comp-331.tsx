@@ -14,7 +14,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/base/input/Base";
-import { Label } from "@/components/ui/label";
+import { Label } from "@/components/ui/base/label/Base";
 import { Textarea } from "@/components/ui/textarea";
 import { Check, ImagePlus, X } from "lucide-react";
 import { useId, useState } from "react";
