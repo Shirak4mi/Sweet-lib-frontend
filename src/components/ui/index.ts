@@ -45,3 +45,9 @@ export { default as Skeleton } from "./base/skeleton/Base.tsx";
 export { default as AnimatedBadge } from "./base/badge/Animated.tsx";
 export { default as Badge } from "./base/badge/Normal.tsx";
 /* Badge */
+
+/* Popovers */
+export * from "./base/popover/Base.tsx";
+export * from "./base/popover/Custom.tsx";
+export * from "./base/popover/CustomForm.tsx";
+/* Popovers */
