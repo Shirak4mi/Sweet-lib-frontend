@@ -1,5 +1,5 @@
-import SecondStepperTest from "@/components/SecondStepperTest";
-import StepperTest from "@/components/StepperTest";
+import SecondStepperTest from "@/components/example/SecondStepperTest";
+import StepperTest from "@/components/example/StepperTest";
 
 export default function Home() {
   return (
