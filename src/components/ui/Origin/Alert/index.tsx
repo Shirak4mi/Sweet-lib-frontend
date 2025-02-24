@@ -20,7 +20,11 @@ export default function BaseOriginAlert({ show, neon, details, type, title, acti
       >
         <div className="flex gap-3">
           <AlertIcon Type={type} />
-          <div className="flex grow justify-between gap-3"></div>
+          <div className={details ? "grow space-y-1" : "flex grow justify-between gap-3"}>
+            {(details ?? []).map((item) => (
+              <></>
+            ))}
+          </div>
         </div>
       </div>
     )
