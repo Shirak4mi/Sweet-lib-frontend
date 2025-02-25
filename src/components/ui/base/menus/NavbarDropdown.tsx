@@ -7,7 +7,7 @@ import { ChevronDown } from "lucide-react";
 
 import type { IDropdownMenuProps } from "@/types/components.ts";
 
-export default function DropdownMenu({ trigger, children, width = "w-[200px]" }: IDropdownMenuProps): ReactNode {
+export default function NavbarDropdownMenu({ trigger, children, width = "w-[200px]" }: IDropdownMenuProps): ReactNode {
   // Ref
   const dropdownRef = useRef<HTMLDivElement>(null);
 

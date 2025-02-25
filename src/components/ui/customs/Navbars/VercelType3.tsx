@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "motion/react";
-import DropdownMenu from "./parts/customDropdownMenu";
+import { NavbarDropdown } from "@/components/ui/base";
 import { type ReactNode, useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -61,8 +61,8 @@ export default function VercelNavbar(): ReactNode {
       <div className="hidden md:flex items-center gap-6">
         <div className="flex gap-6">
           {/* Solutions Dropdown */}
-          
-          <DropdownMenu trigger="Solutions" width="w-[400px]">
+
+          <NavbarDropdown trigger="Solutions" width="w-[400px]">
             <div className="p-4">
               <ul className="grid gap-3 p-2">
                 <li>
@@ -85,7 +85,7 @@ export default function VercelNavbar(): ReactNode {
                 </li>
               </ul>
             </div>
-          </DropdownMenu>
+          </NavbarDropdown>
 
           {/* Pricing Link */}
           <a href="/pricing" className="text-sm font-medium text-gray-700 hover:text-black transition-colors">
@@ -98,7 +98,7 @@ export default function VercelNavbar(): ReactNode {
           </a>
 
           {/* Product Dropdown */}
-          <DropdownMenu trigger="Product" width="w-[200px]">
+          <NavbarDropdown trigger="Product" width="w-[200px]">
             <div className="p-2">
               <ul className="grid gap-2 p-1">
                 <li>
@@ -121,9 +121,7 @@ export default function VercelNavbar(): ReactNode {
                 </li>
               </ul>
             </div>
-          </DropdownMenu>
-
-
+          </NavbarDropdown>
         </div>
 
         {/* Desktop Auth Buttons */}

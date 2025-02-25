@@ -69,8 +69,9 @@ export * from "./table/Base.tsx";
 /* Table */
 
 /* Menus */
-export * from "./menus/ListItem.tsx";
+export { default as NavbarDropdown } from "./menus/NavbarDropdown.tsx";
 export * from "./menus/Navigation.tsx";
+export * from "./menus/ListItem.tsx";
 /* Menus */
 
 /* Command */
