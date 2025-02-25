@@ -12,6 +12,7 @@ import TestTable from "@/components/ui/customs/Table";
 import { AnimatedNumber } from "@/components/ui/Animated/AddUpNumbers";
 import CountUpNumbers from "@/components/ui/Animated/CountUpNumbers";
 import VercelNavbarT1 from "@/components/ui/customs/Navbars/VercelType2";
+import NavigationMenuCustom from "@/components/ui/customs/Navmenu";
 
 export default function Home() {
   return (
@@ -37,6 +38,8 @@ export default function Home() {
 
       <CountUpNumbers to={9000} separator="," />
       <AnimatedNumber value={100} />
+
+      <NavigationMenuCustom />
 
       <TestTable />
 
