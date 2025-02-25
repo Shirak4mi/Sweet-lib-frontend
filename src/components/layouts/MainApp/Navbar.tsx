@@ -1,17 +1,8 @@
 "use client";
 import { type ReactNode, useEffect, useState } from "react";
 import { motion, useScroll } from "motion/react";
+import { Button } from "@/components/ui/base";
 import { cn } from "@/utils/functions";
-import {
-  Button,
-  ListItem,
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuContent,
-  NavigationMenuTrigger,
-} from "@/components/ui/base";
 import DropdownMenu from "@/components/ui/customs/Navbars/parts/customDropdownMenu";
 
 const components: { title: string; href: string; description: string }[] = [
@@ -57,7 +48,7 @@ export default function NavbarHamburguer(): ReactNode {
   const [blurred, setBlurred] = useState<boolean>(false);
 
   // Functions
-  const unsubscribe = scrollY.on("change", (latest) => setBlurred(() => latest > 1));
+  const unsubscribe = scrollY.on("change", (old) => setBlurred(() => old > 1));
   const mobileHandler = () => setMobileMenuOpen((old) => !old);
 
   // Effect
@@ -115,8 +106,7 @@ export default function NavbarHamburguer(): ReactNode {
         {/* 2 */}
         <div className="hidden md:block">
           <div className="hidden md:flex items-center gap-6">
-            <div className="flex gap-6">
-              
+            <div className="hidden md:flex items-center gap-6">
               {/* Solutions Dropdown */}
 
               <DropdownMenu trigger="Solutions" width="w-[400px]">
@@ -179,8 +169,6 @@ export default function NavbarHamburguer(): ReactNode {
                   </ul>
                 </div>
               </DropdownMenu>
-
-
             </div>
 
             {/* Desktop Auth Buttons */}
