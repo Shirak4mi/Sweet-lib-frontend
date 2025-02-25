@@ -10,6 +10,8 @@ import SoftAnimatedLogin from "@/components/ui/base/modal/Motion";
 import { AnimatedCheckbox } from "@/components/ui/base";
 import TestTable from "@/components/ui/customs/Table";
 import FancyDropdown from "@/components/ui/customs/ddown";
+import CardDemo from "@/components/ui/customs/card";
+import AnimatedSearchBar from "@/components/ui/customs/searchbar";
 
 export default function Home() {
   return (
@@ -34,7 +36,11 @@ export default function Home() {
 
       <FancyDropdown />
 
+      <CardDemo />
+
       <TestTable />
+
+      <AnimatedSearchBar />
 
       <CardSection />
     </div>
