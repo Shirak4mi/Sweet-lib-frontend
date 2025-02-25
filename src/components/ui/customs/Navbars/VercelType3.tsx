@@ -61,6 +61,7 @@ export default function VercelNavbar(): ReactNode {
       <div className="hidden md:flex items-center gap-6">
         <div className="flex gap-6">
           {/* Solutions Dropdown */}
+          
           <DropdownMenu trigger="Solutions" width="w-[400px]">
             <div className="p-4">
               <ul className="grid gap-3 p-2">
@@ -121,6 +122,8 @@ export default function VercelNavbar(): ReactNode {
               </ul>
             </div>
           </DropdownMenu>
+
+
         </div>
 
         {/* Desktop Auth Buttons */}

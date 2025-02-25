@@ -147,4 +147,10 @@ export interface ICountUpNumbersProps {
   onEnd?: () => void;
 }
 
+export interface IDropdownMenuProps {
+  children?: ReactNode;
+  trigger?: string;
+  width?: string;
+}
+
 /* Animated Component Props */

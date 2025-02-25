@@ -12,6 +12,7 @@ import {
   NavigationMenuContent,
   NavigationMenuTrigger,
 } from "@/components/ui/base";
+import DropdownMenu from "@/components/ui/customs/Navbars/parts/customDropdownMenu";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -113,60 +114,88 @@ export default function NavbarHamburguer(): ReactNode {
 
         {/* 2 */}
         <div className="hidden md:block">
-          <NavigationMenu>
-            <NavigationMenuList>
-              {/* NavItem1 */}
-              <NavigationMenuItem>
-                <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                    <li className="row-span-3">
-                      <NavigationMenuLink asChild>
-                        <a
-                          className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                          href="/"
-                        >
-                          <motion.div
-                            initial={{ scale: 0.5, opacity: 0 }}
-                            animate={{ scale: 1, opacity: 1 }}
-                            transition={{ delay: 0.2 }}
-                          >
-                            <div className="mb-2 mt-4 text-lg font-medium">shadcn/ui</div>
-                            <p className="text-sm leading-tight text-muted-foreground">
-                              Beautifully designed components built with Radix UI and Tailwind CSS.
-                            </p>
-                          </motion.div>
-                        </a>
-                      </NavigationMenuLink>
-                    </li>
-                    <ListItem href="/docs" title="Introduction">
-                      Re-usable components built using Radix UI and Tailwind CSS.
-                    </ListItem>
-                    <ListItem href="/docs/installation" title="Installation">
-                      How to install dependencies and structure your app.
-                    </ListItem>
-                    <ListItem href="/docs/primitives/typography" title="Typography">
-                      Styles for headings, paragraphs, lists...etc
-                    </ListItem>
-                  </ul>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
+          <div className="hidden md:flex items-center gap-6">
+            <div className="flex gap-6">
+              
+              {/* Solutions Dropdown */}
 
-              {/* NavItem2 */}
-              <NavigationMenuItem>
-                <NavigationMenuTrigger>Components</NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                    {components.map(({ title, href, description }) => (
-                      <ListItem key={title} title={title} href={href}>
-                        {description}
-                      </ListItem>
-                    ))}
+              <DropdownMenu trigger="Solutions" width="w-[400px]">
+                <div className="p-4">
+                  <ul className="grid gap-3 p-2">
+                    <li>
+                      <a
+                        href="/solutions/enterprise"
+                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-gray-100/50"
+                      >
+                        <div className="text-sm font-medium text-gray-900">Enterprise</div>
+                        <p className="text-sm text-gray-500">Scale with confidence</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/solutions/startups"
+                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-gray-100/50"
+                      >
+                        <div className="text-sm font-medium text-gray-900">Startups</div>
+                        <p className="text-sm text-gray-500">Launch fast</p>
+                      </a>
+                    </li>
                   </ul>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-            </NavigationMenuList>
-          </NavigationMenu>
+                </div>
+              </DropdownMenu>
+
+              {/* Pricing Link */}
+              <a href="/pricing" className="text-sm font-medium text-gray-700 hover:text-black transition-colors">
+                Pricing
+              </a>
+
+              {/* Docs Link */}
+              <a href="/docs" className="text-sm font-medium text-gray-700 hover:text-black transition-colors">
+                Docs
+              </a>
+
+              {/* Product Dropdown */}
+              <DropdownMenu trigger="Product" width="w-[200px]">
+                <div className="p-2">
+                  <ul className="grid gap-2 p-1">
+                    <li>
+                      <a
+                        href="/product/nextjs"
+                        className="block select-none space-y-1 rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-gray-100/50"
+                      >
+                        <div className="text-xs font-medium text-gray-900">Next.js</div>
+                        <p className="text-xs text-gray-500">React Framework</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/product/vercel-platform"
+                        className="block select-none space-y-1 rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-gray-100/50"
+                      >
+                        <div className="text-xs font-medium text-gray-900">Platform</div>
+                        <p className="text-xs text-gray-500">Deploy easy</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </DropdownMenu>
+
+
+            </div>
+
+            {/* Desktop Auth Buttons */}
+            <div className="flex items-center gap-4">
+              <a href="/login" className="text-sm font-medium text-gray-700 hover:text-black transition-colors">
+                Sign In
+              </a>
+              <a
+                href="/signup"
+                className="text-sm font-medium bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 transition-colors"
+              >
+                Sign Up
+              </a>
+            </div>
+          </div>
         </div>
 
         {/* 3 */}

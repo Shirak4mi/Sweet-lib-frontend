@@ -45,3 +45,8 @@ export function getSkeletonTransition(pulse: boolean): Transition {
     ? { duration: 2, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }
     : { duration: 2.5, repeat: Number.POSITIVE_INFINITY, ease: "linear" };
 }
+
+export const menuItemDropdownVariants = {
+  visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 200, damping: 15, mass: 0.8 } },
+  hidden: { opacity: 0, y: -10, transition: { duration: 0.3, ease: [0.7, 0.1, 0.3, 1] } },
+};
