@@ -3,7 +3,7 @@
 import { badgeVariants } from "@/utils/variants";
 import { cn } from "@/utils/functions";
 import { motion } from "motion/react";
-import Badge from "./Normal";
+import Badge from "./Base";
 
 import type { IAnimatedBadgeProps } from "@/types";
 import type { ReactNode } from "react";
