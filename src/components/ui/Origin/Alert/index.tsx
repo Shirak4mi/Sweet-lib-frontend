@@ -11,8 +11,9 @@ export default function BaseOriginAlert({ show, neon, details, type, title, acti
 
   const alertCss = cn(
     neon ? `border-${color}` : "border border-border",
-    "rounded-lg px-4 py-3 bg-blur",
+    "rounded-lg px-4 py-3",
     `text-${color}-600`,
+    "bg-background/25 backdrop-blur supports-[backdrop-filter]:bg-background/20",
     className
   );
 

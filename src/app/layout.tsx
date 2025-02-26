@@ -18,7 +18,7 @@ export const viewport: Viewport = {
   ],
 };
 
-export default function RootLayout({ children, params: { locale } }: Readonly<IRSLCC>): ReactNode {
+export default async function RootLayout({ children, params: { locale } }: Readonly<IRSLCC>): Promise<ReactNode> {
   // Fonts Variable, only reason for this to exist is to make syntax readable
   const fonts = `${geistSans.variable} ${geistMono.variable}`;
 
@@ -30,7 +30,7 @@ export default function RootLayout({ children, params: { locale } }: Readonly<IR
 
       <body className={`${fonts} antialiased`}>
         <AppThemeProvider>
-          <MainAppWrapper>{children}</MainAppWrapper>
+          <MainAppWrapper >{children}</MainAppWrapper>
         </AppThemeProvider>
       </body>
     </html>

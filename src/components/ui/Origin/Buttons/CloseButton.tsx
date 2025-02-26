@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/shad/Button";
+import { Button } from "@/components/ui/base";
 
 export default function Component() {
   return (

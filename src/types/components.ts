@@ -134,4 +134,23 @@ export interface IAnimatedSkeletonProps extends HTMLMotionProps<"div"> {
   pulse?: boolean;
 }
 
+export interface ICountUpNumbersProps {
+  to: number;
+  from?: number;
+  direction?: "up" | "down";
+  delay?: number;
+  duration?: number;
+  className?: string;
+  startWhen?: boolean;
+  separator?: string;
+  onStart?: () => void;
+  onEnd?: () => void;
+}
+
+export interface IDropdownMenuProps {
+  children?: ReactNode;
+  trigger?: string;
+  width?: string;
+}
+
 /* Animated Component Props */
