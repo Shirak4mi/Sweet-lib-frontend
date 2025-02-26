@@ -2,7 +2,7 @@
 import { useInView, useMotionValue, useSpring } from "motion/react";
 import { type ReactNode, useEffect, useRef } from "react";
 
-import type { ICountUpNumbersProps } from "@/types";
+import type { ICountUpNumbersProps } from "@/types/components.tsx";
 
 export default function CountUpNumbers({
   to,

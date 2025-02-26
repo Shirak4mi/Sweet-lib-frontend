@@ -160,7 +160,7 @@ export default function NavbarHamburguer(): ReactNode {
           blurred ? "bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60" : "bg-background"
         )}
       >
-        <div className="container flex h-14 items-center justify-between">
+        <div className="flex h-14 items-center justify-between">
           {/* Logo/Brand (Left Side) */}
           <div className="flex items-center gap-4">
             <div className="mr-4 md:hidden">
