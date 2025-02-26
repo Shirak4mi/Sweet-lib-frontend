@@ -50,10 +50,7 @@ const AnimatedSearchBar: React.FC<AnimatedSearchBarProps> = ({ onSearch, classNa
   const filterBadgeControls = useAnimation();
 
   const handleFilterChange = (filter: keyof FilterOptions): void => {
-    setSelectedFilters({
-      ...selectedFilters,
-      [filter]: !selectedFilters[filter],
-    });
+    setSelectedFilters(() => ({ ...selectedFilters, [filter]: !selectedFilters[filter] }));
 
     // Animate badge when adding a filter
     if (!selectedFilters[filter]) {
@@ -67,10 +64,7 @@ const AnimatedSearchBar: React.FC<AnimatedSearchBarProps> = ({ onSearch, classNa
 
   const handleSearch = (): void => {
     // Provide visual feedback on search
-    iconControls.start({
-      scale: [1, 0.9, 1],
-      transition: { duration: 0.3 },
-    });
+    iconControls.start({ scale: [1, 0.9, 1], transition: { duration: 0.3 } });
     onSearch?.(searchQuery, selectedProperty, selectedFilters);
   };
 
@@ -92,51 +86,6 @@ const AnimatedSearchBar: React.FC<AnimatedSearchBarProps> = ({ onSearch, classNa
     { value: "price", label: "Price" },
     { value: "status", label: "Status" },
   ];
-
-  // Enhanced animation variants for main container
-  const containerVariants = {
-    expanded: {
-      width: "100%",
-      height: "48px",
-      borderRadius: "0.5rem",
-      transition: {
-        type: "spring",
-        stiffness: 400,
-        damping: 30,
-        duration: 0.3,
-      },
-    },
-    collapsed: {
-      width: "48px",
-      height: "48px",
-      borderRadius: "9999px",
-      transition: {
-        type: "spring",
-        stiffness: 400,
-        damping: 30,
-        duration: 0.3,
-      },
-    },
-  };
-
-  // Animation for individual content elements - separate from container animation
-  const contentVariants = {
-    expanded: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        duration: 0.2,
-        delay: 0.1,
-      },
-    },
-    collapsed: {
-      opacity: 0,
-      x: -10,
-      transition: {
-        duration: 0.1,
-      },
-    },
-  };
 
   // Animation for the search icon
   const searchIconVariants = {
@@ -255,9 +204,8 @@ const AnimatedSearchBar: React.FC<AnimatedSearchBarProps> = ({ onSearch, classNa
               </motion.div>
 
               <motion.div
-                animate={{ opacity: 1, transition: { delay: 0.15, duration: 0.2 }, ...iconControls }}
+                animate={{ opacity: 1, transition: { delay: 0.15, duration: 0.2 } }}
                 initial={{ opacity: 0 }}
-                
                 className="flex-grow opacity-100"
               >
                 <Input
@@ -438,7 +386,7 @@ const AnimatedSearchBar: React.FC<AnimatedSearchBarProps> = ({ onSearch, classNa
               className="flex justify-center items-center w-12 h-12 bg-white dark:bg-gray-700 rounded-full shadow-md dark:shadow-gray-900/30 cursor-pointer z-10"
               onClick={() => setIsExpanded(true)}
             >
-              <motion.div variants={searchIconVariants} transition={{ type: "spring", stiffness: 300, damping: 10 }}>
+              <motion.div variants={searchIconVariants} transition={{ type: "spring", stiffness: 300, damping: 10 }} >
                 <Search size={20} className="text-gray-500 dark:text-gray-300" />
               </motion.div>
             </motion.div>
