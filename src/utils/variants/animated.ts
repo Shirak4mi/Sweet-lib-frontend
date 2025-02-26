@@ -13,26 +13,13 @@ export const skeletonShimmerVariants: Variants = {
   initial: { backgroundPosition: "-1000px 0" },
 };
 
-export const skeletonPulseVariants: Variants = {
-  initial: {
-    opacity: 0.5,
-  },
-  animate: {
-    opacity: [0.5, 0.8, 0.5],
-  },
-};
+export const skeletonPulseVariants: Variants = { initial: { opacity: 0.5 }, animate: { opacity: [0.5, 0.8, 0.5] } };
 
-export const MoonSvgVariants: Variants = {
-  animate: { rotate: [0, -10, 10, -5, 5, 0] },
-  normal: { rotate: 0 },
-};
+export const MoonSvgVariants: Variants = { animate: { rotate: [0, -10, 10, -5, 5, 0] }, normal: { rotate: 0 } };
 
 export const MoonSvgTransition: Transition = { ease: "easeInOut", duration: 1.2 };
 
-export const BookCardVariants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0 },
-};
+export const BookCardVariants = { hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0 } };
 
 export function getModalVariants(isSmall: boolean): Variants {
   return isSmall
@@ -46,7 +33,7 @@ export function getSkeletonTransition(pulse: boolean): Transition {
     : { duration: 2.5, repeat: Number.POSITIVE_INFINITY, ease: "linear" };
 }
 
-export const menuItemDropdownVariants = {
+export const menuItemDropdownVariants: Variants = {
   visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 200, damping: 15, mass: 0.8 } },
   hidden: { opacity: 0, y: -10, transition: { duration: 0.3, ease: [0.7, 0.1, 0.3, 1] } },
 };

@@ -7,14 +7,13 @@ export default function useWindowSize() {
   // State
   const [windowSize, setWindowSize] = useState<TWindowObjSize>({ width: undefined, height: undefined });
 
+  function handleResize() {
+    setWindowSize(() => ({ width: window.innerWidth, height: window.innerHeight }));
+  }
+  
   // Effects
   useEffect(() => {
-    function handleResize() {
-      setWindowSize(() => ({ width: window.innerWidth, height: window.innerHeight }));
-    }
-
     window.addEventListener("resize", handleResize);
-
     handleResize();
     return () => window.removeEventListener("resize", handleResize);
   }, []);
