@@ -8,7 +8,7 @@ import LoginModal from "@/components/comp-326";
 import CardSection from "@/components/layouts/Books";
 import SoftAnimatedLogin from "@/components/ui/base/modal/Motion";
 import { AnimatedCheckbox } from "@/components/ui/base";
-import TestTable from "@/components/ui/customs/Table";
+import TestTable from "@/components/ui/customs/Tables/origin/index.tsx";
 import FancyDropdown from "@/components/ui/customs/ddown";
 import CardDemo from "@/components/ui/customs/card";
 import AnimatedSearchBar from "@/components/ui/customs/searchbar";

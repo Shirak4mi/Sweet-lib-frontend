@@ -78,6 +78,7 @@ import {
   TrashIcon,
 } from "lucide-react";
 import { useEffect, useId, useMemo, useRef, useState } from "react";
+import TableSkeleton from "./Skeleton";
 
 type Item = {
   id: string;
@@ -182,51 +183,6 @@ const columns: ColumnDef<Item>[] = [
     enableHiding: false,
   },
 ];
-
-function TableSkeleton() {
-  return (
-    <div className="w-full">
-      <div className="flex items-center space-x-4 py-5">
-        <div className="h-9 w-60 animate-pulse rounded-md bg-muted"></div>
-        <div className="h-9 w-24 animate-pulse rounded-md bg-muted"></div>
-        <div className="h-9 w-24 animate-pulse rounded-md bg-muted"></div>
-      </div>
-      <div className="rounded-md border">
-        <div className="border-b">
-          <div className="flex h-11 items-center space-x-6 px-3">
-            <div className="h-4 w-4 animate-pulse rounded bg-muted"></div>
-            <div className="h-4 w-[180px] animate-pulse rounded bg-muted"></div>
-            <div className="h-4 w-[220px] animate-pulse rounded bg-muted"></div>
-            <div className="h-4 w-[180px] animate-pulse rounded bg-muted"></div>
-            <div className="h-4 w-[100px] animate-pulse rounded bg-muted"></div>
-            <div className="h-4 w-[120px] animate-pulse rounded bg-muted"></div>
-          </div>
-        </div>
-        <div>
-          {[...Array(5)].map((_, i) => (
-            <div key={i} className="flex h-16 items-center space-x-6 border-b px-3 last:border-0">
-              <div className="h-4 w-4 animate-pulse rounded bg-muted"></div>
-              <div className="h-4 w-[180px] animate-pulse rounded bg-muted"></div>
-              <div className="h-4 w-[220px] animate-pulse rounded bg-muted"></div>
-              <div className="h-4 w-[180px] animate-pulse rounded bg-muted"></div>
-              <div className="h-4 w-[100px] animate-pulse rounded bg-muted"></div>
-              <div className="h-4 w-[120px] animate-pulse rounded bg-muted"></div>
-            </div>
-          ))}
-        </div>
-      </div>
-      <div className="flex items-center justify-between py-5">
-        <div className="h-9 w-[150px] animate-pulse rounded-md bg-muted"></div>
-        <div className="flex space-x-2">
-          <div className="h-9 w-9 animate-pulse rounded-md bg-muted"></div>
-          <div className="h-9 w-9 animate-pulse rounded-md bg-muted"></div>
-          <div className="h-9 w-9 animate-pulse rounded-md bg-muted"></div>
-          <div className="h-9 w-9 animate-pulse rounded-md bg-muted"></div>
-        </div>
-      </div>
-    </div>
-  );
-}
 
 export default function TestTable() {
   const id = useId();
@@ -674,17 +630,6 @@ export default function TestTable() {
               </Pagination>
             </div>
           </div>
-          <p className="text-muted-foreground mt-4 text-center text-sm">
-            Example of a more complex table made with{" "}
-            <a
-              className="hover:text-foreground underline"
-              href="https://tanstack.com/table"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              TanStack Table
-            </a>
-          </p>
         </>
       )}
     </div>
