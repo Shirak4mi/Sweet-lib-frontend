@@ -1,8 +1,8 @@
 "use client";
 
+import { motion, useScroll, AnimatePresence } from "motion/react";
 import { Button, NavbarDropdown } from "@/components/ui/base";
 import { type ReactNode, useEffect, useState } from "react";
-import { motion, useScroll, AnimatePresence } from "framer-motion";
 import { cn } from "@/utils/functions";
 
 // Language Selector Component

@@ -398,3 +398,6 @@ const AnimatedSearchBar: React.FC<AnimatedSearchBarProps> = ({ onSearch, classNa
 };
 
 export default AnimatedSearchBar;
+
+
+// /app/storage/dentalpro/img/odontograma_imagenes/php/files/1771827/63948f21d2dfa_AMBROSIO

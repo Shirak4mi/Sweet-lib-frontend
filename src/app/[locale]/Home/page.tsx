@@ -1,3 +1,4 @@
+"use client";
 import NeonAlert from "@/components/ui/Origin/Alert/examples/NeonAlert";
 import SecondStepperTest from "@/components/example/SecondStepperTest";
 import StepperTest from "@/components/example/StepperTest";
@@ -7,13 +8,32 @@ import ProfileForm from "@/components/kokonutui/profile-03";
 import LoginModal from "@/components/comp-326";
 import CardSection from "@/components/layouts/Books";
 import SoftAnimatedLogin from "@/components/ui/base/modal/Motion";
-import { AnimatedCheckbox } from "@/components/ui/base";
+import { AnimatedCheckbox, Button } from "@/components/ui/base";
 import TestTable from "@/components/ui/customs/Tables/origin/index.tsx";
 import FancyDropdown from "@/components/ui/customs/ddown";
 import CardDemo from "@/components/ui/customs/card";
 import AnimatedSearchBar from "@/components/ui/customs/searchbar";
+import TestNPoints from "./TestNPoints";
+import NameFilesInput, { TNamedFiles } from "@/components/ui/base/file/Uploader";
+import { useState } from "react";
 
 export default function Home() {
+  const [oldObj, setOldObj] = useState<Array<TNamedFiles>>();
+  const [files, setFiles] = useState<Array<TNamedFiles>>();
+
+  function filesChange(files: Array<TNamedFiles>) {
+    setFiles(() => files);
+    setOldObj(() => files);
+  }
+
+  function cleanActual() {
+    setFiles(() => []);
+  }
+
+  function setOld() {
+    setFiles(() => oldObj);
+  }
+
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] animated-grid">
       <StepperTest />
@@ -39,6 +59,15 @@ export default function Home() {
       <CardDemo />
 
       <TestTable />
+
+      <TestNPoints />
+
+      <div className="flex justify-center gap-20">
+        <Button onClick={setOld}>Old</Button>
+        <Button onClick={cleanActual}>clean</Button>
+
+        <NameFilesInput files={files} handleChange={filesChange} />
+      </div>
 
       <AnimatedSearchBar />
 
