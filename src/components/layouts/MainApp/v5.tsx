@@ -1,12 +1,12 @@
 "use client";
 
-import React, { useState, useEffect, useCallback, memo } from "react";
+import { Menu, X, ChevronDown, Globe, Moon, Sun } from "lucide-react";
+import { useState, useEffect, useCallback, memo } from "react";
+import { motion, AnimatePresence } from "motion/react";
+import { Button } from "@/components/ui/base";
 import Link from "next/link";
 import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/utils/functions";
-import { Menu, X, ChevronDown, Globe, Moon, Sun } from "lucide-react";
-import { Button } from "@/components/ui/base";
 import { useTheme } from "next-themes";
 import { usePathname } from "next/navigation";
 
