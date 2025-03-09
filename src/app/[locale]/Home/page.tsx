@@ -22,6 +22,7 @@ import VercelNavbar from "@/components/ui/customs/Navbars/VercelType3";
 import NavbarHamburguer from "@/components/layouts/MainApp/Navbar";
 import AnimatedHero from "@/components/layouts/Homepage/Hero";
 import HeroSection from "@/components/layouts/Homepage/Herov2";
+import UsersTable from "@/components/utable";
 
 export default function Home() {
   const [oldObj, setOldObj] = useState<Array<TNamedFiles>>();
@@ -86,6 +87,8 @@ export default function Home() {
       </div>
 
       <AnimatedSearchBar />
+
+      <UsersTable />
 
       <CardSection />
     </div>
