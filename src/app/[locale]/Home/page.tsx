@@ -16,6 +16,12 @@ import AnimatedSearchBar from "@/components/ui/customs/searchbar";
 import TestNPoints from "./TestNPoints";
 import NameFilesInput, { TNamedFiles } from "@/components/ui/base/file/Uploader";
 import { useState } from "react";
+import VercelType1Navbar from "@/components/ui/customs/Navbars/VercelType1";
+import VercelType2Navbar from "@/components/ui/customs/Navbars/VercelType2";
+import VercelNavbar from "@/components/ui/customs/Navbars/VercelType3";
+import NavbarHamburguer from "@/components/layouts/MainApp/Navbar";
+import AnimatedHero from "@/components/layouts/Homepage/Hero";
+import HeroSection from "@/components/layouts/Homepage/Herov2";
 
 export default function Home() {
   const [oldObj, setOldObj] = useState<Array<TNamedFiles>>();
@@ -36,9 +42,19 @@ export default function Home() {
 
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] animated-grid">
+      <AnimatedHero />
+
+      <HeroSection />
+
       <StepperTest />
       <SecondStepperTest />
       <NeonAlert />
+
+      <VercelType1Navbar />
+      <VercelType2Navbar />
+      <VercelNavbar />
+      <NavbarHamburguer />
+
       <BaseOriginAlert
         show
         type="danger"

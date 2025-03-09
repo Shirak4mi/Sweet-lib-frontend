@@ -39,16 +39,16 @@ export default function VercelType1Navbar(): ReactNode {
                 layoutId="hover-bg"
                 className="absolute bottom-0 left-0 right-0 w-full h-full bg-white/10"
                 style={{
-                  borderRadius: 6,
+                  borderRadius: 16,
                 }}
               />
             )}
           </div>
           {active.id === item.id && (
-            <motion.div layoutId="active" className="absolute bottom-0 left-0 right-0 w-full h-0.5 bg-white" />
+            <motion.div layoutId="active" className="absolute bottom-0 left-0 right-0 w-full h-0.5 bg-red-900" />
           )}
           {isHover?.id === item.id && (
-            <motion.div layoutId="hover" className="absolute bottom-0 left-0 right-0 w-full h-0.5 bg-white" />
+            <motion.div layoutId="hover" className="absolute bottom-0 left-0 right-0 w-full h-0.5 bg-red-400" />
           )}
         </button>
       ))}
