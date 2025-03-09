@@ -1,7 +1,7 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import Navbar from "../MainApp/Navbar/index.tsx";
 import { type ReactNode } from "react";
-import Navbar from "./Navbar.tsx";
 
 import type { IRSC } from "@/types/components";
 

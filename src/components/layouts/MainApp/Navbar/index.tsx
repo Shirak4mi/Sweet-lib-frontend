@@ -1,122 +1,25 @@
 "use client";
-
-import { Menu, X, ChevronDown, Globe, Moon, Sun } from "lucide-react";
-import { useState, useEffect, useCallback, memo } from "react";
+import { Menu, X, ChevronDown, Globe } from "lucide-react";
+import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "motion/react";
+import MobileDropdown from "./MNDropdownMenu.tsx";
+import DropdownMenu from "./DropdownMenu.tsx";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/base";
 import { cn } from "@/utils/functions";
 import { useTheme } from "next-themes";
+import { Link } from "@/i18n/routing";
 import Image from "next/image";
-import Link from "next/link";
 
-interface NavItem {
-  label: string;
-  href: string;
-  children?: NavItem[];
-}
-
-// Memoized dropdown menu component
-const DropdownMenu = memo(({ item, isOpen, onClose }: { item: NavItem; isOpen: boolean; onClose: () => void }) => {
-  return (
-    <AnimatePresence>
-      {isOpen && (
-        <motion.div
-          initial={{ opacity: 0, y: 10, height: 0 }}
-          animate={{ opacity: 1, y: 0, height: "auto" }}
-          exit={{ opacity: 0, y: 10, height: 0 }}
-          transition={{ duration: 0.3 }}
-          className="absolute top-full left-0 mt-1 w-48 dark:bg-gray-800 bg-white shadow-lg dark:shadow-gray-900 rounded-md overflow-hidden z-10"
-        >
-          <div className="py-2">
-            {item.children?.map((child) => (
-              <Link
-                key={child.label}
-                href={child.href}
-                className="block px-4 py-2 text-sm dark:text-gray-300 text-gray-700 dark:hover:bg-gray-700 hover:bg-blue-50 dark:hover:text-white hover:text-blue-800"
-                onClick={onClose}
-              >
-                {child.label}
-              </Link>
-            ))}
-          </div>
-        </motion.div>
-      )}
-    </AnimatePresence>
-  );
-});
-DropdownMenu.displayName = "DropdownMenu";
-
-// Memoized mobile dropdown component
-const MobileDropdown = memo(({ item, isOpen, onClose }: { item: NavItem; isOpen: boolean; onClose: () => void }) => {
-  return (
-    <AnimatePresence>
-      {isOpen && (
-        <motion.div
-          initial={{ opacity: 0, height: 0 }}
-          animate={{ opacity: 1, height: "auto" }}
-          exit={{ opacity: 0, height: 0 }}
-          transition={{ duration: 0.3 }}
-          className="dark:bg-blue-900/30 bg-blue-950/30 rounded-md mt-1 mb-2"
-        >
-          {item.children?.map((child) => (
-            <motion.div
-              key={child.label}
-              initial={{ opacity: 0, x: -10 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.2 }}
-            >
-              <Link href={child.href} className="block px-4 py-2 text-blue-100 hover:text-white" onClick={onClose}>
-                {child.label}
-              </Link>
-            </motion.div>
-          ))}
-        </motion.div>
-      )}
-    </AnimatePresence>
-  );
-});
-MobileDropdown.displayName = "MobileDropdown";
-
-// Memoized theme toggle button component
-const ThemeToggle = memo(() => {
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) return null;
-
-  return (
-    <Button
-      variant="ghost"
-      size="icon"
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="dark:text-blue-300 text-blue-800"
-    >
-      <AnimatePresence mode="wait" initial={false}>
-        <motion.div
-          key={theme}
-          initial={{ y: -20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: 20, opacity: 0 }}
-          transition={{ duration: 0.2 }}
-        >
-          {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-        </motion.div>
-      </AnimatePresence>
-    </Button>
-  );
-});
-ThemeToggle.displayName = "ThemeToggle";
+import { NavItem } from "@/types/components";
+import ThemeSwitcher from "@/components/ui/dmt3.tsx";
 
 export default function AnimatedNavbar() {
-  const [scrolled, setScrolled] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const [mounted, setMounted] = useState(false);
+
   const { theme } = useTheme();
   const pathname = usePathname();
 
@@ -144,39 +47,35 @@ export default function AnimatedNavbar() {
     { label: "IMPRESIONES", href: "/impresiones" },
   ];
 
-  // Used to avoid hydration mismatch
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
   // Memoized scroll handler to improve performance
   const handleScroll = useCallback(() => {
     if (window.scrollY > 20) {
-      if (!scrolled) setScrolled(true);
+      if (!scrolled) setScrolled(() => true);
     } else {
       if (scrolled) setScrolled(false);
     }
   }, [scrolled]);
+
+  const handleClickOutside = ({ target }: MouseEvent) => {
+    if (activeDropdown && !(target as Element).closest(".dropdown-container")) setActiveDropdown(() => null);
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, [handleScroll]);
 
+  // Used to avoid hydration mismatch
+  useEffect(() => setMounted(() => true), []);
+
   // Close dropdown when route changes
   useEffect(() => {
-    setActiveDropdown(null);
-    setMobileMenuOpen(false);
+    setActiveDropdown(() => null);
+    setMobileMenuOpen(() => false);
   }, [pathname]);
 
   // Handle click outside to close dropdowns - improves user experience
   useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (activeDropdown && !(event.target as Element).closest(".dropdown-container")) {
-        setActiveDropdown(null);
-      }
-    };
-
     document.addEventListener("click", handleClickOutside);
     return () => document.removeEventListener("click", handleClickOutside);
   }, [activeDropdown]);
@@ -202,15 +101,13 @@ export default function AnimatedNavbar() {
   }, []);
 
   // Avoid hydration mismatch by rendering only after mounting
-  if (!mounted) {
-    return null;
-  }
+  if (!mounted) return null;
 
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         scrolled ? "dark:bg-gray-900/80 bg-white/80 backdrop-blur-md shadow-lg" : "dark:bg-gray-900 bg-white",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         "border-b dark:border-gray-800 border-gray-100"
       )}
     >
@@ -290,7 +187,7 @@ export default function AnimatedNavbar() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
-              <ThemeToggle />
+              <ThemeSwitcher />
             </motion.div>
 
             {/* Language Selector */}
@@ -324,7 +221,7 @@ export default function AnimatedNavbar() {
           {/* Mobile Menu Button */}
           <div className="lg:hidden flex items-center gap-2">
             {/* Mobile Theme Toggle */}
-            <ThemeToggle />
+            <ThemeSwitcher />
 
             {/* Mobile Menu Toggle */}
             <Button
@@ -352,9 +249,9 @@ export default function AnimatedNavbar() {
         {mobileMenuOpen && (
           <motion.div
             id="mobile-menu"
+            exit={{ opacity: 0, height: 0 }}
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.5, ease: [0.04, 0.62, 0.23, 0.98] }}
             className="lg:hidden overflow-hidden dark:bg-gradient-to-r dark:from-blue-950 dark:to-gray-900 bg-gradient-to-r from-blue-900 to-blue-800"
           >
@@ -362,8 +259,8 @@ export default function AnimatedNavbar() {
               {navItems.map((item, index) => (
                 <div key={item.label}>
                   <motion.div
-                    initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, x: -20 }}
                     transition={{ duration: 0.3, delay: index * 0.1 }}
                   >
                     {item.children ? (

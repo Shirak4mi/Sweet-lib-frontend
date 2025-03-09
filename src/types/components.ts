@@ -154,3 +154,18 @@ export interface IDropdownMenuProps {
 }
 
 /* Animated Component Props */
+
+export interface BaseNavItem {
+  label: string;
+  href: string;
+}
+
+export interface NavItem extends BaseNavItem {
+  children?: BaseNavItem[];
+}
+
+export interface INavbarDropdownMenuProps {
+  item: NavItem;
+  isOpen: boolean;
+  onClose: () => void;
+}
