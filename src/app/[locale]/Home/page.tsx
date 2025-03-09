@@ -23,6 +23,11 @@ import NavbarHamburguer from "@/components/layouts/MainApp/Navbar";
 import AnimatedHero from "@/components/layouts/Homepage/Hero";
 import HeroSection from "@/components/layouts/Homepage/Herov2";
 import UsersTable from "@/components/utable";
+import TableDashboard from "@/components/utablev2";
+import EnhancedTable from "@/components/ui/enchai";
+import AncaiEnhancedTable from "@/components/ui/ancai";
+import { ExampleUsageSankai } from "@/components/ui/sankai";
+import { UsersTableAnim } from "@/components/ui/base/at2";
 
 export default function Home() {
   const [oldObj, setOldObj] = useState<Array<TNamedFiles>>();
@@ -89,6 +94,12 @@ export default function Home() {
       <AnimatedSearchBar />
 
       <UsersTable />
+
+      <TableDashboard />
+
+      <EnhancedTable />
+
+      <UsersTableAnim />
 
       <CardSection />
     </div>
