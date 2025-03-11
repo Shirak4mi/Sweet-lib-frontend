@@ -120,7 +120,7 @@ export default function AnimatedNavbar() {
             transition={{ duration: 0.5 }}
             className="flex items-center"
           >
-            <Link href="/" className="flex items-center">
+            <Link href="/Home" className="flex items-center">
               <div className="relative w-48 h-16">
                 <Image
                   src="/logo.png"
