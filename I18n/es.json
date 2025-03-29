@@ -7,5 +7,1813 @@
      },
      "Status": {
           "loading": "Cargando..."
+     },
+     //Inicio
+          "page": {
+            "title": "Biblioteca Fidel Méndez Núñez - UNAPEC",
+            "header": {
+              "logo": "UNAPEC Logo (visual)",
+              "navigation": [
+                {"text": "HOME", "link": "/home"},
+                {"text": "CONSULTAS", "link": "/consultas", "active": true},
+                {"text": "RESERVAS", "link": "/reservas"},
+                {"text": "CAPACITACIONES", "link": "/capacitaciones"},
+                {"text": "LIBROS ELECTRÓNICOS", "link": "/libros-electronicos"},
+                {"text": "IMPRESIONES", "link": "/impresiones"},
+                {"text": "ES", "link": "/espanol"},
+                {"text": "LOGIN", "link": "/login"}
+              ],
+              "subtitle": "BIBLIOTECA FIDEL MÉNDEZ NÚÑEZ"
+            },
+            "mainContent": {
+              "title": "Estudiar es crear un mundo nuevo",
+              "description": "La biblioteca Fidel Méndez Núñez de UNAPEC ofrece una amplia variedad de libros, revistas, periódicos y medios digitales, que pueden utilizarse para la investigación, el aprendizaje y el entretenimiento del estudiante y docente.",
+              "button": {"text": "Haz tu reserva", "link": "/reservas"}
+            },
+            "visuals": {
+              "image": "Imagen de libro abierto (visual)"
+            },
+            "advantages": {
+              "title": "Ventajas de usar la biblioteca de APEC",
+              "list": [
+                "Acceso a una gran variedad de recursos, como los catálogos en línea.",
+                "Acceso a todos los libros electrónicos de la biblioteca virtual.",
+                "Ofrece espacios cómodos y tranquilos para estudiar.",
+                "Permite reservar cubículos o salas multimedia para estudiar en grupo.",
+                "Permite reservar libros durante un periodo de tiempo determinado.",
+                "Proporciona un entorno propicio para el desarrollo de habilidades de lectura y escritura.",
+                "Ofrece asesorías sobre los procedimientos internos de la biblioteca.",
+                "Ofrecen capacitaciones para acceder a la biblioteca virtual."
+              ]
+            },
+            //Acervo
+            "acervo": {
+              "title": "Acervo",
+              "breadcrumbs": ["Consultas", "Acervo"],
+              "search": {
+                "placeholder": "Buscar...",
+                "filter": "Filtro"
+              },
+              "books": [
+                {
+                  "title": "La Guerra de los Mundos",
+                  "author": "H.G. WELLS",
+                  "category": "La Guerra de los Mundos",
+                  "description": "Narra la invasión de la Tierra por parte de extraterrestres marcianos, quienes...",
+                  "button": {"text": "VER MAS", "link": "/libro/guerra-mundos"}
+                },
+                {
+                  "title": "AL FARO",
+                  "author": "VIRGINIA WOOLF",
+                  "category": "Al faro",
+                  "description": "La novela se ambienta en la casa de veraneo de los Ramsays en las Hébridas...",
+                  "button": {"text": "VER MAS", "link": "/libro/al-faro"}
+                },
+                {
+                  "title": "EL PROCESO",
+                  "author": "Franz Kafka",
+                  "category": "El proceso",
+                  "description": "En el relato, Josef K. es arrestado una mañana por una razón que desconoce...",
+                  "button": {"text": "VER MAS", "link": "/libro/el-proceso"}
+                }
+              ]
+            },
+            "footer": {
+              "university": {
+                "name": "Universidad APEC",
+                "address": "Av. Máximo Gómez #72, Santo Domingo, República Dominicana",
+                "phone": "(809) 686-0021",
+                "fax": "(809) 287-8702"
+              },
+              "resources": ["Correo", "Directorio telefónico", "Empleos", "Ayuda"],
+              "relatedInstitutions": ["APEC", "CENAPEC", "FUNDAPEC", "Colegio CAFAM"],
+              "copyright": "Made with ❤️ Copyright iamdann © 2024",
+              "socialIcons": ["twitter", "youtube", "instagram", "github"]
+          }
+        }
+}
+//Visor 1 
+{
+     "page": {
+       "title": "La guerra de los mundos - Biblioteca UNAPEC",
+       "header": {
+         "logo": {
+           "src": "UNAPEC Logo (visual)",
+           "alt": "UNAPEC Logo"
+         },
+         "navigation": [
+           { "text": "HOME", "link": "/home" },
+           { "text": "CONSULTAS", "link": "/consultas", "active": true },
+           { "text": "RESERVAS", "link": "/reservas" },
+           { "text": "CAPACITACIONES", "link": "/capacitaciones" },
+           { "text": "LIBROS ELECTRÓNICOS", "link": "/libros-electronicos" },
+           { "text": "IMPRESIONES", "link": "/impresiones" },
+           { "text": "ES", "link": "/espanol" },
+           { "text": "LOGIN", "link": "/login" }
+         ],
+         "subtitle": "BIBLIOTECA FIDEL MÉNDEZ NÚÑEZ"
+       },
+       "bookDetails": {
+         "title": "La guerra de los mundos",
+         "breadcrumbs": [
+           { "text": "Consultas", "link": "/consultas" },
+           { "text": "Acervo", "link": "/acervo" },
+           { "text": "Titulo del libro escribri", "link": "/libro/guerra-mundos" }
+         ],
+         "bookCover": {
+           "src": "Imagen de la portada de La Guerra de los Mundos",
+           "alt": "Portada del libro La Guerra de los Mundos"
+         },
+         "description": "La trama se desarrolla en la Inglaterra de finales del siglo XIX y narra la invasión de la Tierra por parte de extraterrestres marcianos, quienes llegan en cilindros metálicos y comienzan a atacar a la humanidad con avanzadas máquinas de guerra, como los tripodes gigantes. El protagonista es un narrador sin nombre que vive en Londres y que presencia los horrores de la invasión marciana. A medida que avanza la historia, el narrador lucha por su supervivencia y trata de entender el motivo detrás de la brutal invasión.",
+         "details": {
+           "year": "1898",
+           "publisher": "William Heinemann",
+           "author": "H. G. Wells"
+         },
+         "readOnlineButton": {
+           "text": "LEER EN LINEA",
+           "link": "/libro/guerra-mundos/leer"
+         }
+       },
+       "footer": {
+         "university": {
+           "name": "Universidad APEC",
+           "address": "Av. Máximo Gómez #72, Santo Domingo, República Dominicana",
+           "phone": "(809) 686-0021",
+           "fax": "(809) 287-8702"
+         },
+         "resources": [
+           { "text": "Correo", "link": "/correo" },
+           { "text": "Directorio telefónico", "link": "/directorio" },
+           { "text": "Empleos", "link": "/empleos" },
+           { "text": "Ayuda", "link": "/ayuda" }
+         ],
+         "relatedInstitutions": [
+           { "text": "APEC", "link": "/apec" },
+           { "text": "CENAPEC", "link": "/cenapec" },
+           { "text": "FUNDAPEC", "link": "/fundapec" },
+           { "text": "Colegio CAFAM", "link": "/colegio-cafam" }
+         ],
+         "copyright": "Made with ❤️ Copyright iamdann © 2024",
+         "socialIcons": [
+           { "src": "twitter-icon.png", "link": "/twitter" },
+           { "src": "youtube-icon.png", "link": "/youtube" },
+           { "src": "instagram-icon.png", "link": "/instagram" },
+           { "src": "github-icon.png", "link": "/github" }
+         ]
+       }
      }
+   }
+//Visor 2
+{
+     "page": {
+       "title": "La ciudad y los perros - Biblioteca UNAPEC",
+       "header": {
+         "logo": {
+           "src": "UNAPEC Logo (visual)",
+           "alt": "UNAPEC Logo"
+         },
+         "navigation": [
+           { "text": "HOME", "link": "/home" },
+           { "text": "CONSULTAS", "link": "/consultas", "active": true },
+           { "text": "RESERVAS", "link": "/reservas" },
+           { "text": "CAPACITACIONES", "link": "/capacitaciones" },
+           { "text": "LIBROS ELECTRÓNICOS", "link": "/libros-electronicos" },
+           { "text": "IMPRESIONES", "link": "/impresiones" },
+           { "text": "ES", "link": "/espanol" },
+           { "text": "LOGIN", "link": "/login" }
+         ],
+         "subtitle": "BIBLIOTECA FIDEL MÉNDEZ NÚÑEZ"
+       },
+       "bookDetails": {
+         "title": "La ciudad y los perros",
+         "breadcrumbs": [
+           { "text": "Consultas", "link": "/consultas" },
+           { "text": "Catalogo", "link": "/catalogo" },
+           { "text": "Titulo del libro escribri", "link": "/libro/la-ciudad-y-los-perros" }
+         ],
+         "bookCover": {
+           "src": "Portada_La_ciudad_y_los_perros.png",
+           "alt": "Portada del libro La ciudad y los perros"
+         },
+         "description": "La trama se centra en cuatro cadetes: el Jaguar, el Poeta, el Esclavo y el Boa, quienes representan diferentes facetas de la sociedad peruana y están atrapados en un ambiente opresivo donde la jerarquía y la brutalidad son la norma. La novela aborda temas como la masculinidad, la lealtad, la traición y la búsqueda de identidad en un contexto de presión social y violencia.",
+         "details": {
+           "year": "1963",
+           "publisher": "Seix Barral",
+           "author": "Mario Vargas Llosa"
+         },
+         "readOnlineButton": {
+           "text": "LEER EN LINEA",
+           "link": "/libro/la-ciudad-y-los-perros/leer"
+         }
+       },
+       "footer": {
+         "university": {
+           "name": "Universidad APEC",
+           "address": "Av. Máximo Gómez #72, Santo Domingo, República Dominicana",
+           "phone": "(809) 686-0021",
+           "fax": "(809) 287-702"
+         },
+         "resources": [
+           { "text": "Correo", "link": "/correo" },
+           { "text": "Directorio telefónico", "link": "/directorio" },
+           { "text": "Empleos", "link": "/empleos" },
+           { "text": "Ayuda", "link": "/ayuda" }
+         ],
+         "relatedInstitutions": [
+           { "text": "APEC", "link": "/apec" },
+           { "text": "CENAPEC", "link": "/cenapec" },
+           { "text": "FUNDAPEC", "link": "/fundapec" },
+           { "text": "Colegio CAFAM", "link": "/colegio-cafam" }
+         ],
+         "copyright": "Made with ❤️ Copyright iamdann © 2024",
+         "socialIcons": [
+           { "src": "twitter-icon.png", "link": "/twitter" },
+           { "src": "youtube-icon.png", "link": "/youtube" },
+           { "src": "instagram-icon.png", "link": "/instagram" },
+           { "src": "github-icon.png", "link": "/github" }
+         ]
+       }
+     }
+   }
+   //Visor 3
+   {
+     "page": {
+       "title": "Cómo escribir una tesis en turismo: esquema metodológico - Biblioteca UNAPEC",
+       "header": {
+         "logo": {
+           "src": "UNAPEC Logo (visual)",
+           "alt": "UNAPEC Logo"
+         },
+         "navigation": [
+           { "text": "HOME", "link": "/home" },
+           { "text": "CONSULTAS", "link": "/consultas", "active": true },
+           { "text": "RESERVAS", "link": "/reservas" },
+           { "text": "CAPACITACIONES", "link": "/capacitaciones" },
+           { "text": "LIBROS ELECTRÓNICOS", "link": "/libros-electronicos" },
+           { "text": "IMPRESIONES", "link": "/impresiones" },
+           { "text": "ES", "link": "/espanol" },
+           { "text": "LOGIN", "link": "/login" }
+         ],
+         "subtitle": "BIBLIOTECA FIDEL MÉNDEZ NÚÑEZ"
+       },
+       "bookDetails": {
+         "title": "Cómo escribir una tesis en turismo: esquema metodológico",
+         "breadcrumbs": [
+           { "text": "Consultas", "link": "/consultas" },
+           { "text": "Catalogo", "link": "/catalogo" },
+           { "text": "Titulo del libro escribri", "link": "/libro/como-escribir-tesis-turismo" }
+         ],
+         "bookCover": {
+           "src": "Portada_Como_escribir_tesis_turismo.png",
+           "alt": "Portada del libro Cómo escribir una tesis en turismo: esquema metodológico"
+         },
+         "description": "Esta guía práctica ofrece pasos para la elaboraracion de una tesis en Turismo dirigido a estudiantes universitarios y profesionales que deseen realizar investigaciones en el ámbito del turismo, proporcionando un enfoque metodológico solido y herramientas aplicadas para llevar a cabo investigaciones efectivas y significativas en esta área.",
+         "details": {
+           "year": "2016",
+           "author": "Mónica Toyos"
+         },
+         "readOnlineButton": {
+           "text": "LEER EN LINEA",
+           "link": "/libro/como-escribir-tesis-turismo/leer"
+         }
+       },
+       "footer": {
+         "university": {
+           "name": "Universidad APEC",
+           "address": "Av. Máximo Gómez #72, Santo Domingo, República Dominicana",
+           "phone": "(809) 686-0021",
+           "fax": "(809) 287-8702"
+         },
+         "resources": [
+           { "text": "Correo", "link": "/correo" },
+           { "text": "Directorio telefónico", "link": "/directorio" },
+           { "text": "Empleos", "link": "/empleos" },
+           { "text": "Ayuda", "link": "/ayuda" }
+         ],
+         "relatedInstitutions": [
+           { "text": "APEC", "link": "/apec" },
+           { "text": "CENAPEC", "link": "/cenapec" },
+           { "text": "FUNDAPEC", "link": "/fundapec" },
+           { "text": "Colegio CAFAM", "link": "/colegio-cafam" }
+         ],
+         "copyright": "Made with ❤️ Copyright iamdann © 2024",
+         "socialIcons": [
+           { "src": "twitter-icon.png", "link": "/twitter" },
+           { "src": "youtube-icon.png", "link": "/youtube" },
+           { "src": "instagram-icon.png", "link": "/instagram" },
+           { "src": "github-icon.png", "link": "/github" }
+         ]
+       }
+     }
+   }
+   //Catalogo
+   {
+     "page": {
+       "title": "Catálogo - Biblioteca Fidel Méndez Núñez",
+       "header": {
+         "logo": {
+           "src": "UNAPEC Logo (visual)",
+           "alt": "UNAPEC Logo"
+         },
+         "navigation": [
+           { "text": "HOME", "link": "/home" },
+           { "text": "CONSULTAS", "link": "/consultas", "active": true },
+           { "text": "RESERVAS", "link": "/reservas" },
+           { "text": "CAPACITACIONES", "link": "/capacitaciones" },
+           { "text": "LIBROS ELECTRÓNICOS", "link": "/libros-electronicos" },
+           { "text": "IMPRESIONES", "link": "/impresiones" },
+           { "text": "ES", "link": "/espanol" },
+           { "text": "LOGIN", "link": "/login" }
+         ],
+         "subtitle": "BIBLIOTECA FIDEL MÉNDEZ NÚÑEZ"
+       },
+       "catalog": {
+         "title": "Catálogo",
+         "breadcrumbs": [
+           { "text": "Consultas", "link": "/consultas" },
+           { "text": "Catalogo", "link": "/catalogo" }
+         ],
+         "search": {
+           "placeholder": "Buscar...",
+           "filter": "Filtro"
+         },
+         "books": [
+           {
+             "title": "La ciudad y los perros",
+             "author": "Mario Vargas Llosa",
+             "category": "La ciudad y los perros",
+             "description": "Cuenta a través de la denuncia del machismo y la violencia de un colegio...",
+             "cover": {
+               "src": "Portada_La_ciudad_y_los_perros.png",
+               "alt": "Portada del libro La ciudad y los perros"
+             },
+             "viewMoreButton": {
+               "text": "VER MAS",
+               "link": "/libro/la-ciudad-y-los-perros"
+             }
+           },
+           {
+             "title": "El coronel no tiene quien le escriba",
+             "author": "Gabriel García Márquez",
+             "category": "El coronel no tiene quien le escriba",
+             "description": "Cuenta la historia de un viejo coronel...",
+             "cover": {
+               "src": "Portada_El_coronel_no_tiene_quien_le_escriba.png",
+               "alt": "Portada del libro El coronel no tiene quien le escriba"
+             },
+             "viewMoreButton": {
+               "text": "VER MAS",
+               "link": "/libro/el-coronel-no-tiene-quien-le-escriba"
+             }
+           },
+           {
+             "title": "El Lazarillo de Tormes",
+             "author": "Anónimo",
+             "category": "El Lazarillo de Tormes",
+             "description": "Cuenta de forma autobiográfica la vida de un niño, Lázaro de Tormes, en el siglo XVI...",
+             "cover": {
+               "src": "Portada_El_Lazarillo_de_Tormes.png",
+               "alt": "Portada del libro El Lazarillo de Tormes"
+             },
+             "viewMoreButton": {
+               "text": "VER MAS",
+               "link": "/libro/el-lazarillo-de-tormes"
+             }
+           }
+         ]
+       },
+       "footer": {
+         "university": {
+           "name": "Universidad APEC",
+           "address": "Av. Máximo Gómez #72, Santo Domingo, República Dominicana",
+           "phone": "(809) 686-0021",
+           "fax": "(809) 287-8702"
+         },
+         "resources": [
+           { "text": "Correo", "link": "/correo" },
+           { "text": "Directorio telefónico", "link": "/directorio" },
+           { "text": "Empleos", "link": "/empleos" },
+           { "text": "Ayuda", "link": "/ayuda" }
+         ],
+         "relatedInstitutions": [
+           { "text": "APEC", "link": "/apec" },
+           { "text": "CENAPEC", "link": "/cenapec" },
+           { "text": "FUNDAPEC", "link": "/fundapec" },
+           { "text": "Colegio CAFAM", "link": "/colegio-cafam" }
+         ],
+         "copyright": "Made with ❤️ Copyright iamdann © 2024",
+         "socialIcons": [
+           { "src": "twitter-icon.png", "link": "/twitter" },
+           { "src": "youtube-icon.png", "link": "/youtube" },
+           { "src": "instagram-icon.png", "link": "/instagram" },
+           { "src": "github-icon.png", "link": "/github" }
+         ]
+       }
+     }
+   }
+   //Tesis
+   {
+     "page": {
+       "title": "Tesis - Biblioteca Fidel Méndez Núñez",
+       "header": {
+         "logo": {
+           "src": "UNAPEC Logo (visual)",
+           "alt": "UNAPEC Logo"
+         },
+         "navigation": [
+           { "text": "HOME", "link": "/home" },
+           { "text": "CONSULTAS", "link": "/consultas", "active": true },
+           { "text": "RESERVAS", "link": "/reservas" },
+           { "text": "CAPACITACIONES", "link": "/capacitaciones" },
+           { "text": "LIBROS ELECTRÓNICOS", "link": "/libros-electronicos" },
+           { "text": "IMPRESIONES", "link": "/impresiones" },
+           { "text": "ES", "link": "/espanol" },
+           { "text": "LOGIN", "link": "/login" }
+         ],
+         "subtitle": "BIBLIOTECA FIDEL MÉNDEZ NÚÑEZ"
+       },
+       "thesis": {
+         "title": "Tesis",
+         "breadcrumbs": [
+           { "text": "Consultas", "link": "/consultas" },
+           { "text": "Tesis", "link": "/tesis" }
+         ],
+         "search": {
+           "placeholder": "Buscar...",
+           "filter": "Filtro"
+         },
+         "categories": [
+           {
+             "title": "Turismo",
+             "books": [
+               {
+                 "title": "Cómo escribir una tesis en turismo: esquema metodológico",
+                 "author": "Mónica Toyos - Mercedes Massafra",
+                 "cover": {
+                   "src": "Portada_Como_escribir_tesis_turismo.png",
+                   "alt": "Portada del libro Cómo escribir una tesis en turismo: esquema metodológico"
+                 },
+                 "description": "Esta guía práctica ofrece pasos para la elaboración de una tesis en Turismo dirigido a estudiantes universitarios y profesionales que deseen realizar investigaciones en el ámbito del turismo, proporcionando un enfoque metodológico sólido y herramientas aplicadas para llevar a cabo investigaciones efectivas y significativas en esta área.",
+                 "year": "2016",
+                 "link": "/libro/como-escribir-tesis-turismo"
+               }
+             ]
+           },
+           {
+             "title": "Ingeniería",
+             "books": [
+               {
+                 "title": "Ingeniería del software - Un Enfoque Práctico (Séptima Edición)",
+                 "author": "Roger S. Pressman",
+                 "cover": {
+                   "src": "Portada_Ingenieria_del_software.png",
+                   "alt": "Portada del libro Ingeniería del software - Un Enfoque Práctico (Séptima Edición)"
+                 },
+                 "description": "La séptima edición de Ingeniería del software - Un enfoque práctico tiene la intención de funcionar como guía hacia una disciplina de ingeniería que madura.",
+                 "year": "2010",
+                 "link": "/libro/ingenieria-del-software"
+               }
+             ]
+           }
+         ]
+       },
+       "footer": {
+         "university": {
+           "name": "Universidad APEC",
+           "address": "Av. Máximo Gómez #72, Santo Domingo, República Dominicana",
+           "phone": "(809) 686-0021",
+           "fax": "(809) 287-8702"
+         },
+         "resources": [
+           { "text": "Correo", "link": "/correo" },
+           { "text": "Directorio telefónico", "link": "/directorio" },
+           { "text": "Empleos", "link": "/empleos" },
+           { "text": "Ayuda", "link": "/ayuda" }
+         ],
+         "relatedInstitutions": [
+           { "text": "APEC", "link": "/apec" },
+           { "text": "CENAPEC", "link": "/cenapec" },
+           { "text": "FUNDAPEC", "link": "/fundapec" },
+           { "text": "Colegio CAFAM", "link": "/colegio-cafam" }
+         ],
+         "copyright": "Made with ❤️ Copyright iamdann © 2024",
+         "socialIcons": [
+           { "src": "twitter-icon.png", "link": "/twitter" },
+           { "src": "youtube-icon.png", "link": "/youtube" },
+           { "src": "instagram-icon.png", "link": "/instagram" },
+           { "src": "github-icon.png", "link": "/github" }
+         ]
+       }
+     }
+   }
+   //Preguntas Frecuentes(FAQ)
+   {
+     "page": {
+       "title": "Preguntas frecuentes - Biblioteca Fidel Méndez Núñez",
+       "header": {
+         "logo": {
+           "src": "UNAPEC Logo (visual)",
+           "alt": "UNAPEC Logo"
+         },
+         "navigation": [
+           { "text": "HOME", "link": "/home" },
+           { "text": "CONSULTAS", "link": "/consultas", "active": true },
+           { "text": "RESERVAS", "link": "/reservas" },
+           { "text": "CAPACITACIONES", "link": "/capacitaciones" },
+           { "text": "LIBROS ELECTRÓNICOS", "link": "/libros-electronicos" },
+           { "text": "IMPRESIONES", "link": "/impresiones" },
+           { "text": "ES", "link": "/espanol" },
+           { "text": "LOGIN", "link": "/login" }
+         ],
+         "subtitle": "BIBLIOTECA FIDEL MÉNDEZ NÚÑEZ"
+       },
+       "faq": {
+         "title": "Preguntas frecuentes",
+         "breadcrumbs": [
+           { "text": "Consultas", "link": "/consultas" },
+           { "text": "Preguntas frecuentes", "link": "/faq" }
+         ],
+         "questions": [
+           {
+             "question": "¿Cuántas veces puedo renovar un libro?",
+             "answer": "Se puede renovar el préstamo hasta tres (3) veces.",
+             "expanded": true
+           },
+           {
+             "question": "¿Puedo llevarme a casa los libros de la biblioteca?",
+             "answer": ,
+             "expanded": false
+           },
+           {
+             "question": "¿Qué pasa si no devuelvo un libro a tiempo?",
+             "answer": ,
+             "expanded": false
+           },
+           {
+             "question": "¿Puedo fotocopiar libros y revistas?",
+             "answer": ,
+             "expanded": false
+           },
+           {
+             "question": "¿Puedo estudiar en grupo en la biblioteca?",
+             "answer": ,
+             "expanded": false
+           },
+           {
+             "question": "¿Cómo reservo una sala de estudio en grupo?",
+             "answer": ,
+             "expanded": false
+           },
+           {
+             "question": "¿Puedo acceder a internet con mi computadora portátil desde la biblioteca?",
+             "answer": ,
+             "expanded": false
+           }
+         ],
+         "image": {
+           "src": "libros_apilados.jpg",
+           "alt": "Libros apilados"
+         }
+       },
+       "footer": {
+         "university": {
+           "name": "Universidad APEC",
+           "address": "Av. Máximo Gómez #72, Santo Domingo, República Dominicana",
+           "phone": "(809) 686-0021",
+           "fax": "(809) 287-8702"
+         },
+         "resources": [
+           { "text": "Correo", "link": "/correo" },
+           { "text": "Directorio telefónico", "link": "/directorio" },
+           { "text": "Empleos", "link": "/empleos" },
+           { "text": "Ayuda", "link": "/ayuda" }
+         ],
+         "relatedInstitutions": [
+           { "text": "APEC", "link": "/apec" },
+           { "text": "CENAPEC", "link": "/cenapec" },
+           { "text": "FUNDAPEC", "link": "/fundapec" },
+           { "text": "Colegio CAFAM", "link": "/colegio-cafam" }
+         ],
+         "copyright": "Made with ❤️ Copyright iamdann © 2024",
+         "socialIcons": [
+           { "src": "twitter-icon.png", "link": "/twitter" },
+           { "src": "youtube-icon.png", "link": "/youtube" },
+           { "src": "instagram-icon.png", "link": "/instagram" },
+           { "src": "github-icon.png", "link": "/github" }
+         ]
+       }
+     }
+   }
+   //Frame
+   ```json
+{
+  "frame": {
+    "title": "Frame",
+    "items": [
+      { "text": "Acervo", "link": "/acervo" },
+      { "text": "Catálogo", "link": "/catalogo" },
+      { "text": "Tesis", "link": "/tesis" },
+      { "text": "Faq", "link": "/faq" }
+    ]
+  }
+}
+```
+//Agregar Libro(Área de administración)
+{
+  "page": {
+    "title": "agregar libro",
+    "form": {
+      "title": "Crear Nuevo libro",
+      "fields": [
+        {
+          "label": "Titulo",
+          "placeholder": "Escribe un nombre para la capacitación aquí",
+          "type": "text",
+          "id": "titulo"
+        },
+        {
+          "label": "Autor",
+          "placeholder": "Nombre del capacitador",
+          "type": "text",
+          "id": "autor"
+        },
+        {
+          "label": "Descripcion",
+          "placeholder": "Escribir...",
+          "type": "textarea",
+          "id": "descripcion"
+        },
+        {
+          "label": "Genero",
+          "placeholder": "Genero",
+          "type": "text",
+          "id": "genero"
+        },
+        {
+          "label": "IBSM",
+          "placeholder": "codigos",
+          "type": "text",
+          "id": "ibsm"
+        },
+        {
+          "label": "Cantidad",
+          "placeholder": "cantidad",
+          "type": "number",
+          "id": "cantidad"
+        },
+        {
+          "label": "Sube una imagen",
+          "type": "file",
+          "id": "imagen",
+          "buttonText": "Click aquí"
+        }
+      ],
+      "submitButton": {
+        "text": "CREAR",
+        "type": "submit"
+      }
+    }
+  }
+}
+
+//Agregar sala de Estudio (Administración)
+{
+  "page": {
+    "title": "agregar sala de estudio",
+    "form": {
+      "title": "Crear Sala de Estudio",
+      "fields": [
+        {
+          "label": "Titulo",
+          "placeholder": "Escribe un nombre para la sala de estudio aqui",
+          "type": "text",
+          "id": "titulo"
+        },
+        {
+          "label": "Descripcion",
+          "placeholder": "Escribir...",
+          "type": "textarea",
+          "id": "descripcion"
+        },
+        {
+          "label": "Sube una imagen",
+          "type": "file",
+          "id": "imagen",
+          "buttonText": "Click aqui"
+        }
+      ],
+      "submitButton": {
+        "text": "CREAR",
+        "type": "submit"
+      }
+    }
+  }
+}
+
+//Agregar Capacitación (Administración)
+{
+  "page": {
+    "title": "agregar capacitación",
+    "form": {
+      "title": "Crear Nueva Capacitación",
+      "fields": [
+        {
+          "label": "Titulo",
+          "placeholder": "Escribe un nombre para la capacitación aqui",
+          "type": "text",
+          "id": "titulo"
+        },
+        {
+          "label": "Orador",
+          "placeholder": "Nombre del capacitador",
+          "type": "text",
+          "id": "orador"
+        },
+        {
+          "label": "Descripcion de la capacitación",
+          "placeholder": "Escribir...",
+          "type": "textarea",
+          "id": "descripcion"
+        },
+        {
+          "label": "Horario y fecha de la capacitación",
+          "fields": [
+            {
+              "label": "Horario de entrada",
+              "value": "08:00 AM",
+              "type": "time",
+              "id": "horarioEntrada"
+            },
+            {
+              "label": "Horario de salida",
+              "value": "05:00 PM",
+              "type": "time",
+              "id": "horarioSalida"
+            },
+            {
+              "label": "Fecha",
+              "value": "15/05/2025",
+              "type": "date",
+              "id": "fecha"
+            }
+          ]
+        },
+        {
+          "label": "Sube una imagen",
+          "type": "file",
+          "id": "imagen",
+          "buttonText": "Click aqui"
+        }
+      ],
+      "submitButton": {
+        "text": "CREAR",
+        "type": "submit"
+      }
+    }
+  }
+}
+
+//Proceso de Reservas
+
+//Frame
+
+{
+  "frame": {
+    "title": "Frame",
+    "items": [
+      { "text": "Reserva de libros", "link": "/reservas" },
+      { "text": "Salas de estudio", "link": "/salas-estudio" },
+      { "text": "Hemeroteca", "link": "/hemeroteca" }
+    ]
+  }
+}
+
+//Libros
+
+{
+  "page": {
+    "title": "Libros - Biblioteca Fidel Méndez Núñez",
+    "header": {
+      "logo": {
+        "src": "UNAPEC Logo (visual)",
+        "alt": "UNAPEC Logo"
+      },
+      "navigation": [
+        { "text": "HOME", "link": "/home" },
+        { "text": "CONSULTAS", "link": "/consultas" },
+        { "text": "RESERVAS", "link": "/reservas" },
+        { "text": "CAPACITACIONES", "link": "/capacitaciones" },
+        { "text": "LIBROS ELECTRÓNICOS", "link": "/libros-electronicos" },
+        { "text": "IMPRESIONES", "link": "/impresiones" },
+        { "text": "ES", "link": "/espanol" },
+        { "text": "LOGIN", "link": "/login" }
+      ],
+      "subtitle": "BIBLIOTECA FIDEL MÉNDEZ NÚÑEZ"
+    },
+    "books": {
+      "title": "Libros",
+      "breadcrumbs": [
+        { "text": "Reservas", "link": "/reservas" },
+        { "text": "Reservas de libros", "link": "/reservas/libros" }
+      ],
+      "search": {
+        "placeholder": "Buscar...",
+        "filter": "Filtro"
+      },
+      "popular": {
+        "title": "Más populares",
+        "viewMoreLink": "/libros/populares",
+        "items": [
+          {
+            "title": "La ciudad y los perros",
+            "author": "Mario Vargas Llosa",
+            "category": "Fantasia",
+            "description": "Cuenta a través de la denuncia del machismo y la violencia de un colegio...",
+            "cover": {
+              "src": "Portada_La_ciudad_y_los_perros.png",
+              "alt": "Portada del libro La ciudad y los perros"
+            },
+            "viewMoreButton": {
+              "text": "VER MAS",
+              "link": "/libro/la-ciudad-y-los-perros"
+            }
+          },
+          {
+            "title": "El coronel no tiene quien le escriba",
+            "author": "Gabriel García Márquez",
+            "category": "Biografia",
+            "description": "Cuenta la historia de un viejo coronel...",
+            "cover": {
+              "src": "Portada_El_coronel_no_tiene_quien_le_escriba.png",
+              "alt": "Portada del libro El coronel no tiene quien le escriba"
+            },
+            "viewMoreButton": {
+              "text": "VER MAS",
+              "link": "/libro/el-coronel-no-tiene-quien-le-escriba"
+            }
+          },
+          {
+            "title": "El Lazarillo de Tormes",
+            "author": "Anónimo",
+            "category": "Ciencia ficcion",
+            "description": "Cuenta de forma autobiográfica la vida de un niño, Lázaro de Tormes, en el siglo XVI...",
+            "cover": {
+              "src": "Portada_El_Lazarillo_de_Tormes.png",
+              "alt": "Portada del libro El Lazarillo de Tormes"
+            },
+            "viewMoreButton": {
+              "text": "VER MAS",
+              "link": "/libro/el-lazarillo-de-tormes"
+            }
+          }
+        ]
+      },
+      "genres": {
+        "title": "Géneros",
+        "viewMoreLink": "/libros/generos",
+        "items": [
+          {
+            "name": "Fantasia",
+            "link": "/libros/generos/fantasia"
+          },
+          {
+            "name": "Ciencia Ficción",
+            "link": "/libros/generos/ciencia-ficcion"
+          },
+          {
+            "name": "Bibliografia",
+            "link": "/libros/generos/bibliografia"
+          },
+          {
+            "name": "Ciencia Ficción",
+            "link": "/libros/generos/ciencia-ficcion"
+          },
+          {
+            "name": "Ciencia Ficción",
+            "link": "/libros/generos/ciencia-ficcion"
+          }
+        ]
+      }
+    }
+  }
+}
+
+{
+  "section": {
+    "title": "Más reservados",
+    "viewMoreLink": "/libros/mas-reservados",
+    "items": [
+      {
+        "title": "La ciudad y los perros",
+        "author": "Mario Vargas Llosa",
+        "category": "Fantasia",
+        "description": "Cuenta a través de la denuncia del machismo y la violencia de un colegio...",
+        "cover": {
+          "src": "Portada_La_ciudad_y_los_perros.png",
+          "alt": "Portada del libro La ciudad y los perros"
+        },
+        "viewMoreButton": {
+          "text": "VER MAS",
+          "link": "/libro/la-ciudad-y-los-perros"
+        }
+      },
+      {
+        "title": "El coronel no tiene quien le escriba",
+        "author": "Gabriel García Márquez",
+        "category": "Biografia",
+        "description": "Cuenta la historia de un viejo coronel...",
+        "cover": {
+          "src": "Portada_El_coronel_no_tiene_quien_le_escriba.png",
+          "alt": "Portada del libro El coronel no tiene quien le escriba"
+        },
+        "viewMoreButton": {
+          "text": "VER MAS",
+          "link": "/libro/el-coronel-no-tiene-quien-le-escriba"
+        }
+      },
+      {
+        "title": "El Lazarillo de Tormes",
+        "author": "Anónimo",
+        "category": "Ciencia ficcion",
+        "description": "Cuenta de forma autobiográfica la vida de un niño, Lázaro de Tormes, en el siglo XVI...",
+        "cover": {
+          "src": "Portada_El_Lazarillo_de_Tormes.png",
+          "alt": "Portada del libro El Lazarillo de Tormes"
+        },
+        "viewMoreButton": {
+          "text": "VER MAS",
+          "link": "/libro/el-lazarillo-de-tormes"
+        }
+      }
+    ]
+  },
+  "footer": {
+    "university": {
+      "name": "Universidad APEC",
+      "address": "Av. Máximo Gómez #72, Santo Domingo, República Dominicana",
+      "phone": "(809) 686-0021",
+      "fax": "(809) 287-8702"
+    },
+    "resources": [
+      { "text": "Correo", "link": "/correo" },
+      { "text": "Directorio telefónico", "link": "/directorio" },
+      { "text": "Empleos", "link": "/empleos" },
+      { "text": "Ayuda", "link": "/ayuda" }
+    ],
+    "relatedInstitutions": [
+      { "text": "APEC", "link": "/apec" },
+      { "text": "CENAPEC", "link": "/cenapec" },
+      { "text": "FUNDAPEC", "link": "/fundapec" },
+      { "text": "Colegio CAFAM", "link": "/colegio-cafam" }
+    ],
+    "copyright": "Made with ❤️ Copyright iamdann © 2024",
+    "socialIcons": [
+      { "src": "twitter-icon.png", "link": "/twitter" },
+      { "src": "youtube-icon.png", "link": "/youtube" },
+      { "src": "instagram-icon.png", "link": "/instagram" },
+      { "src": "github-icon.png", "link": "/github" }
+    ]
+  }
+}
+
+//Visor
+{
+  "page": {
+    "title": "La guerra de los mundos - Biblioteca UNAPEC",
+    "header": {
+      "logo": {
+        "src": "UNAPEC Logo (visual)",
+        "alt": "UNAPEC Logo"
+      },
+      "navigation": [
+        { "text": "HOME", "link": "/home" },
+        { "text": "CONSULTAS", "link": "/consultas" },
+        { "text": "RESERVAS", "link": "/reservas", "active": true },
+        { "text": "CAPACITACIONES", "link": "/capacitaciones" },
+        { "text": "LIBROS ELECTRÓNICOS", "link": "/libros-electronicos" },
+        { "text": "IMPRESIONES", "link": "/impresiones" },
+        { "text": "ES", "link": "/espanol" },
+        { "text": "LOGIN", "link": "/login" }
+      ],
+      "subtitle": "BIBLIOTECA FIDEL MÉNDEZ NÚÑEZ"
+    },
+    "bookDetails": {
+      "title": "La guerra de los mundos",
+      "breadcrumbs": [
+        { "text": "Consultas", "link": "/consultas" },
+        { "text": "Acervo", "link": "/acervo" },
+        { "text": "Titulo del libro escribri", "link": "/libro/guerra-mundos" }
+      ],
+      "bookCover": {
+        "src": "Imagen de la portada de La Guerra de los Mundos",
+        "alt": "Portada del libro La Guerra de los Mundos"
+      },
+      "description": "La trama se desarrolla en la Inglaterra de finales del siglo XIX y narra la invasión de la Tierra por parte de extraterrestres marcianos, quienes llegan en cilindros metálicos y comienzan a atacar a la humanidad con avanzadas máquinas de guerra, como los tripodes gigantes. El protagonista es un narrador sin nombre que vive en Londres y que presencia los horrores de la invasión marciana. A medida que avanza la historia, el narrador lucha por su supervivencia y trata de entender el motivo detrás de la brutal invasión.",
+      "details": {
+        "year": "1898",
+        "publisher": "William Heinemann",
+        "author": "H. G. Wells",
+        "stock": "12",
+        "genre": "Fantasía"
+      },
+      "readOnlineButton": {
+        "text": "LEER EN LINEA",
+        "link": "/libro/guerra-mundos/leer"
+      },
+      "reserveButton": {
+        "text": "RESERVAR",
+        "link": "/libro/guerra-mundos/reservar"
+      }
+    },
+    "footer": {
+      "university": {
+        "name": "Universidad APEC",
+        "address": "Av. Máximo Gómez #72, Santo Domingo, República Dominicana",
+        "phone": "(809) 686-0021",
+        "fax": "(809) 287-8702"
+      },
+      "resources": [
+        { "text": "Correo", "link": "/correo" },
+        { "text": "Directorio telefónico", "link": "/directorio" },
+        { "text": "Empleos", "link": "/empleos" },
+        { "text": "Ayuda", "link": "/ayuda" }
+      ],
+      "relatedInstitutions": [
+        { "text": "APEC", "link": "/apec" },
+        { "text": "CENAPEC", "link": "/cenapec" },
+        { "text": "FUNDAPEC", "link": "/fundapec" },
+        { "text": "Colegio CAFAM", "link": "/colegio-cafam" }
+      ],
+      "copyright": "Made with ❤️ Copyright iamdann © 2024",
+      "socialIcons": [
+        { "src": "twitter-icon.png", "link": "/twitter" },
+        { "src": "youtube-icon.png", "link": "/youtube" },
+        { "src": "instagram-icon.png", "link": "/instagram" },
+        { "src": "github-icon.png", "link": "/github" }
+      ]
+    }
+  }
+}
+
+//Reservar Libro
+{
+  "reservationForm": {
+    "title": "Reservar Libro",
+    "fields": [
+      {
+        "label": "ID",
+        "value": "a000111",
+        "type": "text",
+        "id": "id",
+        "readonly": true
+      },
+      {
+        "label": "Fecha",
+        "value": "15/05/2025",
+        "type": "date",
+        "id": "fecha"
+      },
+      {
+        "label": "Fecha que se reservo",
+        "value": "15/05/2025",
+        "type": "text",
+        "id": "fechaReserva",
+        "readonly": true
+      },
+      {
+        "label": "Fecha de entrega",
+        "value": "17/05/2025",
+        "type": "text",
+        "id": "fechaEntrega",
+        "readonly": true
+      }
+    ],
+    "submitButton": {
+      "text": "GUARDAR",
+      "type": "submit"
+    }
+  }
+}
+// Sala de Estudio
+{
+  "page": {
+    "title": "Salas de estudio - Biblioteca UNAPEC",
+    "header": {
+      "logo": {
+        "src": "UNAPEC Logo (visual)",
+        "alt": "UNAPEC Logo"
+      },
+      "navigation": [
+        { "text": "HOME", "link": "/home" },
+        { "text": "CONSULTAS", "link": "/consultas" },
+        { "text": "RESERVAS", "link": "/reservas", "active": true },
+        { "text": "CAPACITACIONES", "link": "/capacitaciones" },
+        { "text": "LIBROS ELECTRÓNICOS", "link": "/libros-electronicos" },
+        { "text": "IMPRESIONES", "link": "/impresiones" },
+        { "text": "ES", "link": "/espanol" },
+        { "text": "LOGIN", "link": "/login" }
+      ],
+      "subtitle": "BIBLIOTECA FIDEL MÉNDEZ NÚÑEZ"
+    },
+    "studyRooms": {
+      "title": "Salas de estudio",
+      "breadcrumbs": [
+        { "text": "Reservas", "link": "/reservas" },
+        { "text": "Salas de estudio", "link": "/reservas/salas-estudio" }
+      ],
+      "search": {
+        "placeholder": "Buscar...",
+        "filter": "Filtro"
+      },
+      "rooms": [
+        {
+          "title": "Mesa de estudio",
+          "description": "escribir una descripción",
+          "image": {
+            "src": "mesa_estudio_1.jpg",
+            "alt": "Mesa de estudio 1"
+          },
+          "reserveButton": {
+            "text": "RESERVAR",
+            "link": "/reservas/salas-estudio/1"
+          }
+        },
+        {
+          "title": "Mesa de estudio",
+          "description": "escribir una descripción",
+          "image": {
+            "src": "mesa_estudio_2.jpg",
+            "alt": "Mesa de estudio 2"
+          },
+          "reserveButton": {
+            "text": "RESERVAR",
+            "link": "/reservas/salas-estudio/2"
+          }
+        },
+        {
+          "title": "Mesa de estudio",
+          "description": "escribir una descripción",
+          "image": {
+            "src": "mesa_estudio_3.jpg",
+            "alt": "Mesa de estudio 3"
+          },
+          "reserveButton": {
+            "text": "RESERVAR",
+            "link": "/reservas/salas-estudio/3"
+          }
+        }
+      ]
+    },
+    "footer": {
+      "university": {
+        "name": "Universidad APEC",
+        "address": "Av. Máximo Gómez #72, Santo Domingo, República Dominicana",
+        "phone": "(809) 686-0021",
+        "fax": "(809) 287-8702"
+      },
+      "resources": [
+        { "text": "Correo", "link": "/correo" },
+        { "text": "Directorio telefónico", "link": "/directorio" },
+        { "text": "Empleos", "link": "/empleos" },
+        { "text": "Ayuda", "link": "/ayuda" }
+      ],
+      "relatedInstitutions": [
+        { "text": "APEC", "link": "/apec" },
+        { "text": "CENAPEC", "link": "/cenapec" },
+        { "text": "FUNDAPEC", "link": "/fundapec" },
+        { "text": "Colegio CAFAM", "link": "/colegio-cafam" }
+      ],
+      "copyright": "Made with ❤️ Copyright iamdann © 2024",
+      "socialIcons": [
+        { "src": "twitter-icon.png", "link": "/twitter" },
+        { "src": "youtube-icon.png", "link": "/youtube" },
+        { "src": "instagram-icon.png", "link": "/instagram" },
+        { "src": "github-icon.png", "link": "/github" }
+      ]
+    }
+  }
+}
+//Formulario Reserva (Espacio de Estudio)
+{
+  "reservationForm": {
+    "title": "Reservar Espacio de estudio",
+    "fields": [
+      {
+        "label": "ID",
+        "value": "A000011",
+        "type": "text",
+        "id": "id",
+        "readonly": true
+      },
+      {
+        "label": "Cantidad de personas",
+        "value": "2 personas",
+        "type": "select",
+        "id": "cantidadPersonas",
+        "options": [
+          { "value": "1 persona", "label": "1 persona" },
+          { "value": "2 personas", "label": "2 personas" },
+          { "value": "3 personas", "label": "3 personas" },
+          { "value": "4 personas", "label": "4 personas" }
+        ]
+      },
+      {
+        "label": "Motivo de reserva",
+        "placeholder": "Escribir....",
+        "type": "textarea",
+        "id": "motivoReserva"
+      },
+      {
+        "label": "Cuanto tiempo piensas quedarte?",
+        "fields": [
+          {
+            "label": "Horario de entrada",
+            "value": "08:00 AM",
+            "type": "time",
+            "id": "horarioEntrada"
+          },
+          {
+            "label": "Horario de salida",
+            "value": "05:00 PM",
+            "type": "time",
+            "id": "horarioSalida"
+          }
+        ]
+      }
+    ],
+    "submitButton": {
+      "text": "RESERVAR",
+      "type": "submit"
+    }
+  }
+}
+//Hemeroteca
+{
+  "page": {
+    "title": "Hemeroteca - Biblioteca UNAPEC",
+    "header": {
+      "logo": {
+        "src": "UNAPEC Logo (visual)",
+        "alt": "UNAPEC Logo"
+      },
+      "navigation": [
+        { "text": "HOME", "link": "/home" },
+        { "text": "CONSULTAS", "link": "/consultas" },
+        { "text": "RESERVAS", "link": "/reservas", "active": true },
+        { "text": "CAPACITACIONES", "link": "/capacitaciones" },
+        { "text": "LIBROS ELECTRÓNICOS", "link": "/libros-electronicos" },
+        { "text": "IMPRESIONES", "link": "/impresiones" },
+        { "text": "ES", "link": "/espanol" },
+        { "text": "LOGIN", "link": "/login" }
+      ],
+      "subtitle": "BIBLIOTECA FIDEL MÉNDEZ NÚÑEZ"
+    },
+    "hemeroteca": {
+      "title": "Hemeroteca",
+      "breadcrumbs": [
+        { "text": "Reservas", "link": "/reservas" },
+        { "text": "Hemeroteca", "link": "/reservas/hemeroteca" }
+      ],
+      "search": {
+        "placeholder": "Buscar...",
+        "filter": "Filtro"
+      },
+      "rooms": [
+        {
+          "title": "Mesa de estudio",
+          "description": "escribir una descripcion",
+          "image": {
+            "src": "mesa_estudio_hemeroteca_1.jpg",
+            "alt": "Mesa de estudio 1"
+          },
+          "reserveButton": {
+            "text": "RESERVAR",
+            "link": "/reservas/hemeroteca/1"
+          }
+        },
+        {
+          "title": "Mesa de estudio",
+          "description": "escribir una descripcion",
+          "image": {
+            "src": "mesa_estudio_hemeroteca_2.jpg",
+            "alt": "Mesa de estudio 2"
+          },
+          "reserveButton": {
+            "text": "RESERVAR",
+            "link": "/reservas/hemeroteca/2"
+          }
+        },
+        {
+          "title": "Mesa de estudio",
+          "description": "escribir una descripcion",
+          "image": {
+            "src": "mesa_estudio_hemeroteca_3.jpg",
+            "alt": "Mesa de estudio 3"
+          },
+          "reserveButton": {
+            "text": "RESERVAR",
+            "link": "/reservas/hemeroteca/3"
+          }
+        }
+      ]
+    },
+    "footer": {
+      "university": {
+        "name": "Universidad APEC",
+        "address": "Av. Máximo Gómez #72, Santo Domingo, República Dominicana",
+        "phone": "(809) 686-0021",
+        "fax": "(809) 287-8702"
+      },
+      "resources": [
+        { "text": "Correo", "link": "/correo" },
+        { "text": "Directorio telefónico", "link": "/directorio" },
+        { "text": "Empleos", "link": "/empleos" },
+        { "text": "Ayuda", "link": "/ayuda" }
+      ],
+      "relatedInstitutions": [
+        { "text": "APEC", "link": "/apec" },
+        { "text": "CENAPEC", "link": "/cenapec" },
+        { "text": "FUNDAPEC", "link": "/fundapec" },
+        { "text": "Colegio CAFAM", "link": "/colegio-cafam" }
+      ],
+      "copyright": "Made with ❤️ Copyright iamdann © 2024",
+      "socialIcons": [
+        { "src": "twitter-icon.png", "link": "/twitter" },
+        { "src": "youtube-icon.png", "link": "/youtube" },
+        { "src": "instagram-icon.png", "link": "/instagram" },
+        { "src": "github-icon.png", "link": "/github" }
+      ]
+    }
+  }
+}
+//Reservar Hemeroteca
+{
+  "reservationForm": {
+    "title": "Reservar Hemeroteca",
+    "fields": [
+      {
+        "label": "ID",
+        "value": "A000011",
+        "type": "text",
+        "id": "id",
+        "readonly": true
+      },
+      {
+        "label": "Cantidad de personas",
+        "value": "2 personas",
+        "type": "select",
+        "id": "cantidadPersonas",
+        "options": [
+          { "value": "1 persona", "label": "1 persona" },
+          { "value": "2 personas", "label": "2 personas" },
+          { "value": "3 personas", "label": "3 personas" },
+          { "value": "4 personas", "label": "4 personas" }
+        ]
+      },
+      {
+        "label": "Motivo de reserva",
+        "placeholder": "Escribir....",
+        "type": "textarea",
+        "id": "motivoReserva"
+      },
+      {
+        "label": "Cuanto tiempo piensas quedarte?",
+        "fields": [
+          {
+            "label": "Horario de entrada",
+            "value": "08:00 AM",
+            "type": "time",
+            "id": "horarioEntrada"
+          },
+          {
+            "label": "Horario de salida",
+            "value": "05:00 PM",
+            "type": "time",
+            "id": "horarioSalida"
+          }
+        ]
+      }
+    ],
+    "submitButton": {
+      "text": "RESERVAR",
+      "type": "submit"
+    }
+  }
+}
+//Capacitación
+{
+  "page": {
+    "title": "Capacitaciones - Biblioteca UNAPEC",
+    "header": {
+      "logo": {
+        "src": "UNAPEC Logo (visual)",
+        "alt": "UNAPEC Logo"
+      },
+      "navigation": [
+        { "text": "HOME", "link": "/home" },
+        { "text": "CONSULTAS", "link": "/consultas" },
+        { "text": "RESERVAS", "link": "/reservas" },
+        { "text": "CAPACITACIONES", "link": "/capacitaciones", "active": true },
+        { "text": "LIBROS ELECTRÓNICOS", "link": "/libros-electronicos" },
+        { "text": "IMPRESIONES", "link": "/impresiones" },
+        { "text": "ES", "link": "/espanol" },
+        { "text": "LOGIN", "link": "/login" }
+      ],
+      "subtitle": "BIBLIOTECA FIDEL MÉNDEZ NÚÑEZ"
+    },
+    "trainings": {
+      "title": "Capacitaciones",
+      "breadcrumbs": [
+        { "text": "Capacitaciones", "link": "/capacitaciones" },
+        { "text": "Capacitaciones", "link": "/capacitaciones" }
+      ],
+      "search": {
+        "placeholder": "Buscar...",
+        "filter": "Filtro"
+      },
+      "trainingList": [
+        {
+          "title": "Funcionalidades de la biblioteca virtual",
+          "category": "Mercadotecnia",
+          "description": "La biblioteca es un recurso fundamental que ofrece una amplia gama de funcionalidades para el acceso a la información y el conocimiento. Entre sus principales características se encuentran: colección de recursos, préstamo de materiales, consulta en sala, acceso a internet, servicios digitales, como libros electrónicos, bases de datos en línea, cursos en línea, recursos impresos, programas y actividades.",
+          "speaker": "Elizabeth Vargas",
+          "date": "15 de febrero 2023",
+          "video": {
+            "src": "video_capacitacion_1.mp4",
+            "alt": "Video Funcionalidades de la biblioteca virtual"
+          }
+        },
+        {
+          "title": "Gestor bibliográfico",
+          "category": "Mercadotecnia",
+          "description": "Esta es una herramienta o software diseñado para ayudar a los investigadores, estudiantes y académicos a organizar, gestionar y citar las referencias bibliográficas utilizadas en sus trabajos académicos, como tesis, ensayos, artículos científicos y otros documentos.",
+          "speaker": "Carlos Matos",
+          "date": "20 de enero 2023",
+          "video": {
+            "src": "video_capacitacion_2.mp4",
+            "alt": "Video Gestor bibliográfico"
+          }
+        }
+      ]
+    },
+    "footer": {
+      "university": {
+        "name": "Universidad APEC",
+        "address": "Av. Máximo Gómez #72, Santo Domingo, República Dominicana",
+        "phone": "(809) 686-0021",
+        "fax": "(809) 287-8702"
+      },
+      "resources": [
+        { "text": "Correo", "link": "/correo" },
+        { "text": "Directorio telefónico", "link": "/directorio" },
+        { "text": "Empleos", "link": "/empleos" },
+        { "text": "Ayuda", "link": "/ayuda" }
+      ],
+      "relatedInstitutions": [
+        { "text": "APEC", "link": "/apec" },
+        { "text": "CENAPEC", "link": "/cenapec" },
+        { "text": "FUNDAPEC", "link": "/fundapec" },
+        { "text": "Colegio CAFAM", "link": "/colegio-cafam" }
+      ],
+      "copyright": "Made with ❤️ Copyright iamdann © 2024",
+      "socialIcons": [
+        { "src": "twitter-icon.png", "link": "/twitter" },
+        { "src": "youtube-icon.png", "link": "/youtube" },
+        { "src": "instagram-icon.png", "link": "/instagram" },
+        { "src": "github-icon.png", "link": "/github" }
+      ]
+    }
+  }
+}
+//Visor(Capacitación)
+{
+  "page": {
+    "title": "Funcionalidades de la biblioteca virtual - Biblioteca UNAPEC",
+    "header": {
+      "logo": {
+        "src": "UNAPEC Logo (visual)",
+        "alt": "UNAPEC Logo"
+      },
+      "navigation": [
+        { "text": "HOME", "link": "/home" },
+        { "text": "CONSULTAS", "link": "/consultas" },
+        { "text": "RESERVAS", "link": "/reservas" },
+        { "text": "CAPACITACIONES", "link": "/capacitaciones", "active": true },
+        { "text": "LIBROS ELECTRÓNICOS", "link": "/libros-electronicos" },
+        { "text": "IMPRESIONES", "link": "/impresiones" },
+        { "text": "ES", "link": "/espanol" },
+        { "text": "LOGIN", "link": "/login" }
+      ],
+      "subtitle": "BIBLIOTECA FIDEL MÉNDEZ NÚÑEZ"
+    },
+    "trainingDetails": {
+      "title": "Funcionalidades de la biblioteca virtual",
+      "breadcrumbs": [
+        { "text": "Consultas", "link": "/consultas" },
+        { "text": "Acervo", "link": "/acervo" },
+        { "text": "Titulo del libro escribri", "link": "/capacitaciones/funcionalidades-biblioteca-virtual" }
+      ],
+      "image": {
+        "src": "libros_estanteria.jpg",
+        "alt": "Libros en estantería"
+      },
+      "description": "La biblioteca es un recurso fundamental que ofrece una amplia gama de funcionalidades para el acceso a la información y el conocimiento. Entre sus principales características se encuentran: colección de recursos, préstamo de materiales, consulta en sala, acceso a internet, servicios digitales, como libros electrónicos, bases de datos en línea, cursos en línea, recursos impresos, programas y actividades.",
+      "details": {
+        "duration": "1H",
+        "author": "Elizabeth Vargas"
+      },
+      "viewTrainingButton": {
+        "text": "VER CAPACITACION",
+        "link": "/capacitaciones/funcionalidades-biblioteca-virtual/ver"
+      }
+    },
+    "footer": {
+      "university": {
+        "name": "Universidad APEC",
+        "address": "Av. Máximo Gómez #72, Santo Domingo, República Dominicana",
+        "phone": "(809) 686-0021",
+        "fax": "(809) 287-8702"
+      },
+      "resources": [
+        { "text": "Correo", "link": "/correo" },
+        { "text": "Directorio telefónico", "link": "/directorio" },
+        { "text": "Empleos", "link": "/empleos" },
+        { "text": "Ayuda", "link": "/ayuda" }
+      ],
+      "relatedInstitutions": [
+        { "text": "APEC", "link": "/apec" },
+        { "text": "CENAPEC", "link": "/cenapec" },
+        { "text": "FUNDAPEC", "link": "/fundapec" },
+        { "text": "Colegio CAFAM", "link": "/colegio-cafam" }
+      ],
+      "copyright": "Made with ❤️ Copyright iamdann © 2024",
+      "socialIcons": [
+        { "src": "twitter-icon.png", "link": "/twitter" },
+        { "src": "youtube-icon.png", "link": "/youtube" },
+        { "src": "instagram-icon.png", "link": "/instagram" },
+        { "src": "github-icon.png", "link": "/github" }
+      ]
+    }
+  }
+}
+//Visor Inscripción (Capacitación)
+{
+  "page": {
+    "title": "Gestor bibliográfico - Biblioteca UNAPEC",
+    "header": {
+      "logo": {
+        "src": "UNAPEC Logo (visual)",
+        "alt": "UNAPEC Logo"
+      },
+      "navigation": [
+        { "text": "HOME", "link": "/home" },
+        { "text": "CONSULTAS", "link": "/consultas" },
+        { "text": "RESERVAS", "link": "/reservas" },
+        { "text": "CAPACITACIONES", "link": "/capacitaciones", "active": true },
+        { "text": "LIBROS ELECTRÓNICOS", "link": "/libros-electronicos" },
+        { "text": "IMPRESIONES", "link": "/impresiones" },
+        { "text": "ES", "link": "/espanol" },
+        { "text": "LOGIN", "link": "/login" }
+      ],
+      "subtitle": "BIBLIOTECA FIDEL MÉNDEZ NÚÑEZ"
+    },
+    "trainingDetails": {
+      "title": "Gestor bibliográfico",
+      "breadcrumbs": [
+        { "text": "Consultas", "link": "/consultas" },
+        { "text": "Acervo", "link": "/acervo" },
+        { "text": "Titulo del libro escribri", "link": "/capacitaciones/gestor-bibliografico" }
+      ],
+      "image": {
+        "src": "libros_estanteria.jpg",
+        "alt": "Libros en estantería"
+      },
+      "description": "Esta herramienta o software está diseñado para ayudar a los investigadores, estudiantes y académicos a organizar, gestionar y citar las referencias bibliográficas utilizadas en sus trabajos académicos, como tesis, ensayos, artículos científicos y otros documentos.",
+      "details": {
+        "duration": "1H",
+        "author": "Carlos Matos"
+      },
+      "enrollButton": {
+        "text": "INSCRIBIRME",
+        "link": "/capacitaciones/gestor-bibliografico/inscribirme"
+      }
+    },
+    "footer": {
+      "university": {
+        "name": "Universidad APEC",
+        "address": "Av. Máximo Gómez #72, Santo Domingo, República Dominicana",
+        "phone": "(809) 686-0021",
+        "fax": "(809) 287-8702"
+      },
+      "resources": [
+        { "text": "Correo", "link": "/correo" },
+        { "text": "Directorio telefónico", "link": "/directorio" },
+        { "text": "Empleos", "link": "/empleos" },
+        { "text": "Ayuda", "link": "/ayuda" }
+      ],
+      "relatedInstitutions": [
+        { "text": "APEC", "link": "/apec" },
+        { "text": "CENAPEC", "link": "/cenapec" },
+        { "text": "FUNDAPEC", "link": "/fundapec" },
+        { "text": "Colegio CAFAM", "link": "/colegio-cafam" }
+      ],
+      "copyright": "Made with ❤️ Copyright iamdann © 2024",
+      "socialIcons": [
+        { "src": "twitter-icon.png", "link": "/twitter" },
+        { "src": "youtube-icon.png", "link": "/youtube" },
+        { "src": "instagram-icon.png", "link": "/instagram" },
+        { "src": "github-icon.png", "link": "/github" }
+      ]
+    }
+  }
+}
+//Notificación
+{
+  "notification": {
+    "title": "notificacion",
+    "message": "Te has inscrito!",
+    "icon": "megaphone",
+    "details": "Se te enviara una notificación a tu correo cuando empiece",
+    "actionButton": {
+      "text": "OKEY",
+      "action": "closeNotification"
+    }
+  }
+}
+//Procesos Libros Electronicos
+//Libros Electronicos
+{
+  "page": {
+    "title": "Libros electronicos - Biblioteca UNAPEC",
+    "header": {
+      "logo": {
+        "src": "UNAPEC Logo (visual)",
+        "alt": "UNAPEC Logo"
+      },
+      "navigation": [
+        { "text": "HOME", "link": "/home" },
+        { "text": "CONSULTAS", "link": "/consultas" },
+        { "text": "RESERVAS", "link": "/reservas" },
+        { "text": "CAPACITACIONES", "link": "/capacitaciones" },
+        { "text": "LIBROS ELECTRÓNICOS", "link": "/libros-electronicos", "active": true },
+        { "text": "IMPRESIONES", "link": "/impresiones" },
+        { "text": "ES", "link": "/espanol" },
+        { "text": "LOGIN", "link": "/login" }
+      ],
+      "subtitle": "BIBLIOTECA FIDEL MÉNDEZ NÚÑEZ"
+    },
+    "electronicBooks": {
+      "title": "Biblioteca virtual",
+      "breadcrumbs": [
+        { "text": "Libros electrónicos", "link": "/libros-electronicos" },
+        { "text": "Libros electrónicos", "link": "/libros-electronicos" }
+      ],
+      "platforms": [
+        {
+          "name": "EBSCOHOST",
+          "description": "eBook Academic Collection contiene más de 137,840 titulos de libros electrónicos de prestigiosas editoriales académicas, en todas las materias y áreas del conocimiento, está disponible con acceso ilimitado de usuarios concurrentes desde cualquier ubicación.",
+          "image": {
+            "src": "ebscohost_logo.png",
+            "alt": "EBSCOHOST logo"
+          },
+          "accessButton": {
+            "text": "ACCEDER",
+            "link": "/ebscohost"
+          }
+        },
+        {
+          "name": "Elibro",
+          "description": "eLibro.net es actualmente la plataforma académica más completa de contenidos electrónicos en español disponible, cuenta con más de 100,000 (cien mil) titulos en todas las áreas del conocimiento. La colección más importante es Cátedra que cubre todas las aéreas del conocimiento.",
+          "image": {
+            "src": "elibro_logo.png",
+            "alt": "Elibro logo"
+          },
+          "accessButton": {
+            "text": "ACCEDER",
+            "link": "/elibro"
+          }
+        }
+      ]
+    },
+    "footer": {
+      "university": {
+        "name": "Universidad APEC",
+        "address": "Av. Máximo Gómez #72, Santo Domingo, República Dominicana",
+        "phone": "(809) 686-0021",
+        "fax": "(809) 287-8702"
+      },
+      "resources": [
+        { "text": "Correo", "link": "/correo" },
+        { "text": "Directorio telefónico", "link": "/directorio" },
+        { "text": "Empleos", "link": "/empleos" },
+        { "text": "Ayuda", "link": "/ayuda" }
+      ],
+      "relatedInstitutions": [
+        { "text": "APEC", "link": "/apec" },
+        { "text": "CENAPEC", "link": "/cenapec" },
+        { "text": "FUNDAPEC", "link": "/fundapec" },
+        { "text": "Colegio CAFAM", "link": "/colegio-cafam" }
+      ],
+      "copyright": "Made with ❤️ Copyright iamdann © 2024",
+      "socialIcons": [
+        { "src": "twitter-icon.png", "link": "/twitter" },
+        { "src": "youtube-icon.png", "link": "/youtube" },
+        { "src": "instagram-icon.png", "link": "/instagram" },
+        { "src": "github-icon.png", "link": "/github" }
+      ]
+    }
+  }
+}
+//Proceso Impresiones
+//Impresiones
+{
+  "page": {
+    "title": "Impresiones - Biblioteca UNAPEC",
+    "header": {
+      "logo": {
+        "src": "UNAPEC Logo (visual)",
+        "alt": "UNAPEC Logo"
+      },
+      "navigation": [
+        { "text": "HOME", "link": "/home" },
+        { "text": "CONSULTAS", "link": "/consultas" },
+        { "text": "RESERVAS", "link": "/reservas" },
+        { "text": "CAPACITACIONES", "link": "/capacitaciones" },
+        { "text": "LIBROS ELECTRÓNICOS", "link": "/libros-electronicos" },
+        { "text": "IMPRESIONES", "link": "/impresiones", "active": true },
+        { "text": "ES", "link": "/espanol" },
+        { "text": "LOGIN", "link": "/login" }
+      ],
+      "subtitle": "BIBLIOTECA FIDEL MÉNDEZ NÚÑEZ"
+    },
+    "prints": {
+      "title": "Impresiones",
+      "uploadArea": {
+        "title": "Sube tus archivos",
+        "maxSize": "Tamaño máximo: 50mb",
+        "uploadButton": {
+          "text": "SUBIR ARCHIVO",
+          "link": "/impresiones/subir-archivo"
+        }
+      },
+      "image": {
+        "src": "libros_apilados_impresiones.jpg",
+        "alt": "Libros apilados"
+      }
+    },
+    "footer": {
+      "university": {
+        "name": "Universidad APEC",
+        "address": "Av. Máximo Gómez #72, Santo Domingo, República Dominicana",
+        "phone": "(809) 686-0021",
+        "fax": "(809) 287-8702"
+      },
+      "resources": [
+        { "text": "Correo", "link": "/correo" },
+        { "text": "Directorio telefónico", "link": "/directorio" },
+        { "text": "Empleos", "link": "/empleos" },
+        { "text": "Ayuda", "link": "/ayuda" }
+      ],
+      "relatedInstitutions": [
+        { "text": "APEC", "link": "/apec" },
+        { "text": "CENAPEC", "link": "/cenapec" },
+        { "text": "FUNDAPEC", "link": "/fundapec" },
+        { "text": "Colegio CAFAM", "link": "/colegio-cafam" }
+      ],
+      "copyright": "Made with ❤️ Copyright iamdann © 2024",
+      "socialIcons": [
+        { "src": "twitter-icon.png", "link": "/twitter" },
+        { "src": "youtube-icon.png", "link": "/youtube" },
+        { "src": "instagram-icon.png", "link": "/instagram" },
+        { "src": "github-icon.png", "link": "/github" }
+      ]
+    }
+  }
+}
+//Subir el archivo
+{
+  "uploadArea": {
+    "title": "Sube tus archivos",
+    "maxSize": "Tamaño máximo: 50mb",
+    "colorOptions": {
+      "noColor": {
+        "label": "Sin color",
+        "selected": true
+      },
+      "color": {
+        "label": "A color",
+        "selected": false
+      }
+    },
+    "uploadStatus": {
+      "success": true,
+      "message": "¡Todo correcto!",
+      "icon": "check"
+    },
+    "printButton": {
+      "text": "IMPRIMIR ARCHIVO",
+      "link": "/impresiones/imprimir"
+    }
+  }
 }
