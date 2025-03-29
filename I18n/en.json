@@ -8,3 +8,1810 @@
           "loading": "Loading..."
      }
 }
+"page": {
+            "title": " Fidel Méndez Núñez's Library - UNAPEC",
+            "header": {
+              "logo": "UNAPEC Logo (visual)",
+              "navigation": [
+                {"text": "HOME", "link": "/home"},
+                {"text": "QUERIES", "link": "/queries", "active": true},
+                {"text": "BOOKINGS", "link": "/bookings"},
+                {"text": "CAPACITATIONS", "link": "/capacitations"},
+                {"text": "EBOOKS", "link": "/e-books"},
+                {"text": "Printing", "link": "/printing"},
+                {"text": "EN", "link": "/english"},
+                {"text": "LOGIN", "link": "/login"}
+              ],
+              "subtitle": "FIDEL MÉNDEZ NÚÑEZ'S LIBRARY"
+            },
+            "mainContent": {
+              "title": "Studying is creating a new world",
+              "description": "The UNAPEC Fidel Méndez Núñez Library offers a wide variety of books, magazines, newspapers, and digital media, which can be used for research, learning, and entertainment for students and faculty.",
+              "button": {"text": "Make a Booking", "link": "/bookings"}
+            },
+            "visuals": {
+              "image": "Imagen de libro abierto (visual)"
+            },
+            "advantages": {
+              "title": "Advantages of using the APEC library",
+              "list": [
+                    "Access to a wide variety of resources, such as online catalogs."
+                    "Access to all the e-books in the virtual library."
+                    "Offers comfortable and quiet spaces for studying."
+                    "Allows you to reserve carrels or multimedia rooms for group study."
+                    "Allows you to reserve books for a specific period of time."
+                    "Provides a conducive environment for developing reading and writing skills."
+                    "Offers advice on internal library procedures."
+                    "They offer training on how to access the virtual library."
+              ]
+            },
+            //Acervo
+            "acervo": {
+              "title": "Collections",
+              "breadcrumbs": ["Queries", "Collections"],
+              "search": {
+                "placeholder": "Search...",
+                "filter": "Filters"
+              },
+              "books": [
+                {
+                  "title": "The War Of The Worlds",
+                  "author": "H.G. WELLS",
+                  "category": "The War Of The Worlds",
+                  "description": "It tells the story of the invasion of Earth by Martian aliens, who...",
+                  "button": {"text": "SEE MORE", "link": "/book/war-worlds"}
+                },
+                {
+                  "title": "TO THE LIGHTHOUSE",
+                  "author": "VIRGINIA WOOLF",
+                  "category": "To The Lighthouse",
+                  "description": "The novel is set in the Ramsays' summer home in the Hebrides...",
+                  "button": {"text": "SEE MORE", "link": "/book/to-the-lighthouse"}
+                },
+                {
+                  "title": "THE PROCESS",
+                  "author": "Franz Kafka",
+                  "category": "The Process",
+                  "description": "In the story, Josef K. is arrested one morning for an unknown reason...",
+                  "button": {"text": "SEE MORE", "link": "/book/the-process"}
+                }
+              ]
+            },
+            "footer": {
+              "university": {
+                "name": "APEC University",
+                "address": "Av. Máximo Gómez #72, Santo Domingo, República Dominicana",
+                "phone": "(809) 686-0021",
+                "fax": "(809) 287-8702"
+              },
+              "resources": ["Mail", "Telephone directory", "Jobs", "Help"],
+              "relatedInstitutions": ["APEC", "CENAPEC", "FUNDAPEC", "CAFAM SCHOOL"],
+              "copyright": "Made with ❤️ Copyright iamdann © 2024",
+              "socialIcons": ["twitter", "youtube", "instagram", "github"]
+          }
+        }
+     }   
+}
+//Visor 1 
+{
+     "page": {
+       "title": "The War Of The Worlds - Library UNAPEC",
+       "header": {
+         "logo": {
+           "src": "UNAPEC Logo (visual)",
+           "alt": "UNAPEC Logo"
+         },
+         "navigation": [
+          {"text": "HOME", "link": "/home"},
+          {"text": "QUERIES", "link": "/queries", "active": true},
+          {"text": "BOOKINGS", "link": "/bookings"},
+          {"text": "CAPACITATIONS", "link": "/capacitations"},
+          {"text": "EBOOKS", "link": "/e-books"},
+          {"text": "Printing", "link": "/printing"},
+          {"text": "EN", "link": "/english"},
+          {"text": "LOGIN", "link": "/login"}
+         ],
+         "subtitle": "FIDEL MÉNDEZ NÚÑEZ'S LIBRARY"
+       },
+       "bookDetails": {
+         "title": "The War Of The Worlds",
+         "breadcrumbs": [
+           { "text": "Queries", "link": "/queries" },
+           { "text": "Collections", "link": "/collections" },
+           { "text": "Title of the book escribri", "link": "/libro/war-worlds" }
+         ],
+         "bookCover": {
+           "src": "Imagen de la portada de La Guerra de los Mundos",
+           "alt": "Portada del libro La Guerra de los Mundos"
+         },
+         "description": "The plot takes place in late 19th-century England and narrates the invasion of Earth by Martian aliens, who arrive in metal cylinders and begin attacking humanity with advanced war machines, such as giant tripods. The protagonist is an unnamed narrator living in London who witnesses the horrors of the Martian invasion. As the story progresses, the narrator fights for his survival and tries to understand the motive behind the brutal invasion.",
+         "details": {
+           "year": "1898",
+           "publisher": "William Heinemann",
+           "author": "H. G. Wells"
+         },
+         "readOnlineButton": {
+           "text": "READ ONLINE",
+           "link": "/book/war-worlds/read"
+         }
+       },
+       "footer": {
+         "university": {
+           "name": "APEC University",
+           "address": "Av. Máximo Gómez #72, Santo Domingo, Dominican Republic",
+           "phone": "(809) 686-0021",
+           "fax": "(809) 287-8702"
+         },
+         "resources": [
+           { "text": "Mail", "link": "/mail" },
+           { "text": "Telephone directory", "link": "/directory" },
+           { "text": "Jobs", "link": "/jobs" },
+           { "text": "Help", "link": "/help" }
+         ],
+         "relatedInstitutions": [
+           { "text": "APEC", "link": "/apec" },
+           { "text": "CENAPEC", "link": "/cenapec" },
+           { "text": "FUNDAPEC", "link": "/fundapec" },
+           { "text": "CAFAM School", "link": "/cafam-school" }
+         ],
+         "copyright": "Made with ❤️ Copyright iamdann © 2024",
+         "socialIcons": [
+           { "src": "twitter-icon.png", "link": "/twitter" },
+           { "src": "youtube-icon.png", "link": "/youtube" },
+           { "src": "instagram-icon.png", "link": "/instagram" },
+           { "src": "github-icon.png", "link": "/github" }
+         ]
+       }
+     }
+   }
+//Visor 2
+{
+     "page": {
+       "title": "The City and the Dogs - UNAPEC Library",
+       "header": {
+         "logo": {
+           "src": "UNAPEC Logo (visual)",
+           "alt": "UNAPEC Logo"
+         },
+         "navigation": [
+           { "text": "HOME", "link": "/home" },
+           { "text": "QUERIES", "link": "/queries", "active": true },
+           { "text": "BOOKINGS", "link": "/bookings" },
+           { "text": "CAPACITATIONS", "link": "/capacitations" },
+           { "text": "E-BOOKS", "link": "/e-books" },
+           { "text": "PRINTING", "link": "/printing" },
+           { "text": "EN", "link": "/english" },
+           { "text": "LOGIN", "link": "/login" }
+         ],
+         "subtitle": "FIDEL MÉNDEZ NÚÑEZ LIBRARY"
+       },
+       "bookDetails": {
+         "title": "The City and the Dogs",
+         "breadcrumbs": [
+           { "text": "Queries", "link": "/queries" },
+           { "text": "Collections", "link": "/collections" },
+           { "text": "Title of the book escribri", "link": "/book/city-dogs" }
+         ],
+         "bookCover": {
+           "src": "Portada_La_ciudad_y_los_perros.png",
+           "alt": "Portada del libro La ciudad y los perros"
+         },
+         "description": "The plot centers on four cadets: the Jaguar, the Poet, the Slave, and the Boa, who represent different facets of Peruvian society and are trapped in an oppressive environment where hierarchy and brutality are the norm. The novel addresses themes such as masculinity, loyalty, betrayal, and the search for identity in a context of social pressure and violence..",
+         "details": {
+           "year": "1963",
+           "publisher": "Seix Barral",
+           "author": "Mario Vargas Llosa"
+         },
+         "readOnlineButton": {
+           "text": "READ ONLINE",
+           "link": "/book/the-city-and-the-dogs/read"
+         }
+       },
+       "footer": {
+         "university": {
+           "name": "Universidad APEC",
+           "address": "Av. Máximo Gómez #72, Santo Domingo, República Dominicana",
+           "phone": "(809) 686-0021",
+           "fax": "(809) 287-702"
+         },
+         "resources": [
+           { "text": "Mail", "link": "/mail" },
+           { "text": "Telephone Directory", "link": "/directory" },
+           { "text": "Jobs", "link": "/jobs" },
+           { "text": "Help", "link": "/help" }
+         ],
+         "relatedInstitutions": [
+           { "text": "APEC", "link": "/apec" },
+           { "text": "CENAPEC", "link": "/cenapec" },
+           { "text": "FUNDAPEC", "link": "/fundapec" },
+           { "text": "CAFAM SCHOOL", "link": "/cafam-school" }
+         ],
+         "copyright": "Made with ❤️ Copyright iamdann © 2024",
+         "socialIcons": [
+           { "src": "twitter-icon.png", "link": "/twitter" },
+           { "src": "youtube-icon.png", "link": "/youtube" },
+           { "src": "instagram-icon.png", "link": "/instagram" },
+           { "src": "github-icon.png", "link": "/github" }
+         ]
+       }
+     }
+   }
+   //Visor 3
+   {
+     "page": {
+       "title": "How to write a thesis in tourism: methodological outline - UNAPEC Library",
+       "header": {
+         "logo": {
+           "src": "UNAPEC Logo (visual)",
+           "alt": "UNAPEC Logo"
+         },
+         "navigation": [
+          { "text": "HOME", "link": "/home" },
+          { "text": "INQUIRIES", "link": "/inquiries", "active": true },
+          { "text": "RESERVATIONS", "link": "/reservations" },
+          { "text": "TRAINING", "link": "/training" },
+          { "text": "E-BOOKS", "link": "/e-books" },
+          { "text": "PRINTING", "link": "/printing" },
+          { "text": "EN", "link": "/english" },
+          { "text": "LOGIN", "link": "/login" }
+        ],
+        "subtitle": "FIDEL MÉNDEZ NÚÑEZ LIBRARY",
+        "bookDetails": {
+          "title": "How to Write a Thesis in Tourism: Methodological Framework",
+          "breadcrumbs": [
+            { "text": "Inquiries", "link": "/inquiries" },
+            { "text": "Catalog", "link": "/catalog" },
+            { "text": "Book Title", "link": "/book/how-to-write-a-thesis-in-tourism" }
+          ],
+          "bookCover": {
+            "src": "Cover_How_to_Write_a_Thesis_in_Tourism.png",
+            "alt": "Cover of the book How to Write a Thesis in Tourism: Methodological Framework"
+          },
+          "description": "This practical guide provides steps for developing a thesis in Tourism aimed at university students and professionals who wish to conduct research in the field of tourism. It offers a solid methodological approach and applied tools to carry out effective and meaningful research in this area.",
+          "details": {
+            "year": "2016",
+            "author": "Mónica Toyos"
+          },
+          "readOnlineButton": {
+            "text": "READ ONLINE",
+            "link": "/book/how-to-write-a-thesis-in-tourism/read"
+          }
+        },
+        "footer": {
+          "university": {
+            "name": "APEC University",
+            "address": "Av. Máximo Gómez #72, Santo Domingo, Dominican Republic",
+            "phone": "(809) 686-0021",
+            "fax": "(809) 287-8702"
+          },
+          "resources": [
+            { "text": "Email", "link": "/email" },
+            { "text": "Phone Directory", "link": "/phone-directory" },
+            { "text": "Jobs", "link": "/jobs" },
+            { "text": "Help", "link": "/help" }
+          ],
+          "relatedInstitutions": [
+            { "text": "APEC", "link": "/apec" },
+            { "text": "CENAPEC", "link": "/cenapec" },
+            { "text": "FUNDAPEC", "link": "/fundapec" },
+            { "text": "CAFAM School", "link": "/cafam-school" }
+          ],
+          "copyright": "Made with ❤️ Copyright iamdann © 2024",
+          "socialIcons": [
+            { "src": "twitter-icon.png", "link": "/twitter" },
+            { "src": "youtube-icon.png", "link": "/youtube" },
+            { "src": "instagram-icon.png", "link": "/instagram" },
+            { "src": "github-icon.png", "link": "/github" }
+         ]
+       }
+     }
+   }
+   //Catalogo
+   {
+    {
+      "page": {
+        "title": "Catalog - Fidel Méndez Núñez Library",
+        "header": {
+          "logo": {
+            "src": "UNAPEC Logo (visual)",
+            "alt": "UNAPEC Logo"
+          },
+          "navigation": [
+            { "text": "HOME", "link": "/home" },
+            { "text": "INQUIRIES", "link": "/inquiries", "active": true },
+            { "text": "RESERVATIONS", "link": "/reservations" },
+            { "text": "TRAINING", "link": "/training" },
+            { "text": "E-BOOKS", "link": "/e-books" },
+            { "text": "PRINTING", "link": "/printing" },
+            { "text": "EN", "link": "/english" },
+            { "text": "LOGIN", "link": "/login" }
+          ],
+          "subtitle": "FIDEL MÉNDEZ NÚÑEZ LIBRARY"
+        },
+        "catalog": {
+          "title": "Catalog",
+          "breadcrumbs": [
+            { "text": "Inquiries", "link": "/inquiries" },
+            { "text": "Catalog", "link": "/catalog" }
+          ],
+          "search": {
+            "placeholder": "Search...",
+            "filter": "Filter"
+          },
+          "books": [
+            {
+              "title": "The Time of the Hero",
+              "author": "Mario Vargas Llosa",
+              "category": "The Time of the Hero",
+              "description": "It narrates through the denunciation of machismo and violence in a school...",
+              "cover": {
+                "src": "Cover_The_Time_of_the_Hero.png",
+                "alt": "Cover of the book The Time of the Hero"
+              },
+              "viewMoreButton": {
+                "text": "VIEW MORE",
+                "link": "/book/the-time-of-the-hero"
+              }
+            },
+            {
+              "title": "No One Writes to the Colonel",
+              "author": "Gabriel García Márquez",
+              "category": "No One Writes to the Colonel",
+              "description": "It tells the story of an old colonel...",
+              "cover": {
+                "src": "Cover_No_One_Writes_to_the_Colonel.png",
+                "alt": "Cover of the book No One Writes to the Colonel"
+              },
+              "viewMoreButton": {
+                "text": "VIEW MORE",
+                "link": "/book/no-one-writes-to-the-colonel"
+              }
+            },
+            {
+              "title": "The Life of Lazarillo de Tormes",
+              "author": "Anonymous",
+              "category": "The Life of Lazarillo de Tormes",
+              "description": "It tells the autobiographical story of a boy, Lázaro de Tormes, in the 16th century...",
+              "cover": {
+                "src": "Cover_The_Life_of_Lazarillo_de_Tormes.png",
+                "alt": "Cover of the book The Life of Lazarillo de Tormes"
+              },
+              "viewMoreButton": {
+                "text": "VIEW MORE",
+                "link": "/book/the-life-of-lazarillo-de-tormes"
+              }
+            }
+          ]
+        },
+        "footer": {
+          "university": {
+            "name": "APEC University",
+            "address": "Av. Máximo Gómez #72, Santo Domingo, Dominican Republic",
+            "phone": "(809) 686-0021",
+            "fax": "(809) 287-8702"
+          },
+          "resources": [
+            { "text": "Email", "link": "/email" },
+            { "text": "Phone Directory", "link": "/phone-directory" },
+            { "text": "Jobs", "link": "/jobs" },
+            { "text": "Help", "link": "/help" }
+          ],
+          "relatedInstitutions": [
+            { "text": "APEC", "link": "/apec" },
+            { "text": "CENAPEC", "link": "/cenapec" },
+            { "text": "FUNDAPEC", "link": "/fundapec" },
+            { "text": "CAFAM School", "link": "/cafam-school" }
+          ],
+          "copyright": "Made with ❤️ Copyright iamdann © 2024",
+          "socialIcons": [
+            { "src": "twitter-icon.png", "link": "/twitter" },
+            { "src": "youtube-icon.png", "link": "/youtube" },
+            { "src": "instagram-icon.png", "link": "/instagram" },
+            { "src": "github-icon.png", "link": "/github" }
+         ]
+       }
+     }
+   }
+   //Tesis
+   {
+    "page": {
+      "title": "Theses - Fidel Méndez Núñez Library",
+      "header": {
+        "logo": {
+          "src": "UNAPEC Logo (visual)",
+          "alt": "UNAPEC Logo"
+        },
+        "navigation": [
+          { "text": "HOME", "link": "/home" },
+          { "text": "INQUIRIES", "link": "/inquiries", "active": true },
+          { "text": "RESERVATIONS", "link": "/reservations" },
+          { "text": "TRAINING", "link": "/training" },
+          { "text": "E-BOOKS", "link": "/e-books" },
+          { "text": "PRINTING", "link": "/printing" },
+          { "text": "EN", "link": "/english" },
+          { "text": "LOGIN", "link": "/login" }
+        ],
+        "subtitle": "FIDEL MÉNDEZ NÚÑEZ LIBRARY"
+      },
+      "thesis": {
+        "title": "Theses",
+        "breadcrumbs": [
+          { "text": "Inquiries", "link": "/inquiries" },
+          { "text": "Theses", "link": "/theses" }
+        ],
+        "search": {
+          "placeholder": "Search...",
+          "filter": "Filter"
+        },
+        "categories": [
+          {
+            "title": "Tourism",
+            "books": [
+              {
+                "title": "How to Write a Thesis in Tourism: Methodological Framework",
+                "author": "Mónica Toyos - Mercedes Massafra",
+                "cover": {
+                  "src": "Cover_How_to_Write_a_Thesis_in_Tourism.png",
+                  "alt": "Cover of the book How to Write a Thesis in Tourism: Methodological Framework"
+                },
+                "description": "This practical guide provides steps for writing a thesis in Tourism aimed at university students and professionals who wish to conduct research in the field of tourism, offering a solid methodological approach and applied tools to carry out effective and meaningful research in this area.",
+                "year": "2016",
+                "link": "/book/how-to-write-a-thesis-in-tourism"
+              }
+            ]
+          },
+          {
+            "title": "Engineering",
+            "books": [
+              {
+                "title": "Software Engineering - A Practical Approach (Seventh Edition)",
+                "author": "Roger S. Pressman",
+                "cover": {
+                  "src": "Cover_Software_Engineering.png",
+                  "alt": "Cover of the book Software Engineering - A Practical Approach (Seventh Edition)"
+                },
+                "description": "The seventh edition of Software Engineering - A Practical Approach is intended to serve as a guide towards a maturing engineering discipline.",
+                "year": "2010",
+                "link": "/book/software-engineering"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "university": {
+          "name": "APEC University",
+          "address": "Av. Máximo Gómez #72, Santo Domingo, Dominican Republic",
+          "phone": "(809) 686-0021",
+          "fax": "(809) 287-8702"
+        },
+        "resources": [
+          { "text": "Email", "link": "/email" },
+          { "text": "Phone Directory", "link": "/phone-directory" },
+          { "text": "Jobs", "link": "/jobs" },
+          { "text": "Help", "link": "/help" }
+        ],
+        "relatedInstitutions": [
+          { "text": "APEC", "link": "/apec" },
+          { "text": "CENAPEC", "link": "/cenapec" },
+          { "text": "FUNDAPEC", "link": "/fundapec" },
+          { "text": "CAFAM School", "link": "/cafam-school" }
+        ],
+        "copyright": "Made with ❤️ Copyright iamdann © 2024",
+        "socialIcons": [
+          { "src": "twitter-icon.png", "link": "/twitter" },
+          { "src": "youtube-icon.png", "link": "/youtube" },
+          { "src": "instagram-icon.png", "link": "/instagram" },
+          { "src": "github-icon.png", "link": "/github" }
+         ]
+       }
+     }
+   }
+   //Preguntas Frecuentes(FAQ)
+   {
+    "page": {
+      "title": "Frequently Asked Questions - Fidel Méndez Núñez Library",
+      "header": {
+        "logo": {
+          "src": "UNAPEC Logo (visual)",
+          "alt": "UNAPEC Logo"
+        },
+        "navigation": [
+          { "text": "HOME", "link": "/home" },
+          { "text": "INQUIRIES", "link": "/inquiries", "active": true },
+          { "text": "RESERVATIONS", "link": "/reservations" },
+          { "text": "TRAINING", "link": "/training" },
+          { "text": "E-BOOKS", "link": "/e-books" },
+          { "text": "PRINTING", "link": "/printing" },
+          { "text": "EN", "link": "/english" },
+          { "text": "LOGIN", "link": "/login" }
+        ],
+        "subtitle": "FIDEL MÉNDEZ NÚÑEZ LIBRARY"
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "breadcrumbs": [
+          { "text": "Inquiries", "link": "/inquiries" },
+          { "text": "Frequently Asked Questions", "link": "/faq" }
+        ],
+        "questions": [
+          {
+            "question": "How many times can I renew a book?",
+            "answer": "The loan can be renewed up to three (3) times.",
+            "expanded": true
+          },
+          {
+            "question": "Can I take library books home?",
+            "answer": ,
+            "expanded": false
+          },
+          {
+            "question": "What happens if I don't return a book on time?",
+            "answer": ,
+            "expanded": false
+          },
+          {
+            "question": "Can I photocopy books and magazines?",
+            "answer": ,
+            "expanded": false
+          },
+          {
+            "question": "Can I study in a group at the library?",
+            "answer": ,
+            "expanded": false
+          },
+          {
+            "question": "How do I reserve a group study room?",
+            "answer": ,
+            "expanded": false
+          },
+          {
+            "question": "Can I access the internet with my laptop from the library?",
+            "answer": ,
+            "expanded": false
+          }
+        ],
+        "image": {
+          "src": "stacked_books.jpg",
+          "alt": "Stacked books"
+        }
+      },
+      "footer": {
+        "university": {
+          "name": "APEC University",
+          "address": "Av. Máximo Gómez #72, Santo Domingo, Dominican Republic",
+          "phone": "(809) 686-0021",
+          "fax": "(809) 287-8702"
+        },
+        "resources": [
+          { "text": "Email", "link": "/email" },
+          { "text": "Phone Directory", "link": "/phone-directory" },
+          { "text": "Jobs", "link": "/jobs" },
+          { "text": "Help", "link": "/help" }
+        ],
+        "relatedInstitutions": [
+          { "text": "APEC", "link": "/apec" },
+          { "text": "CENAPEC", "link": "/cenapec" },
+          { "text": "FUNDAPEC", "link": "/fundapec" },
+          { "text": "CAFAM School", "link": "/cafam-school" }
+        ],
+        "copyright": "Made with ❤️ Copyright iamdann © 2024",
+        "socialIcons": [
+          { "src": "twitter-icon.png", "link": "/twitter" },
+          { "src": "youtube-icon.png", "link": "/youtube" },
+          { "src": "instagram-icon.png", "link": "/instagram" },
+          { "src": "github-icon.png", "link": "/github" }
+         ]
+       }
+     }
+   }
+   //Frame
+{
+  "frame": {
+    "title": "Frame",
+    "items": [
+      { "text": "Collection", "link": "/collection" },
+      { "text": "Catalog", "link": "/catalog" },
+      { "text": "Thesis", "link": "/thesis" },
+      { "text": "FAQ", "link": "/faq" }
+    ]
+  }
+}
+//Agregar Libro(Área de administración)
+{
+"page": {
+  "title": "Add Book",
+  "form": {
+    "title": "Create New Book",
+    "fields": [
+      {
+        "label": "Title",
+        "placeholder": "Write a name for the training here",
+        "type": "text",
+        "id": "title"
+      },
+      {
+        "label": "Author",
+        "placeholder": "Trainer's name",
+        "type": "text",
+        "id": "author"
+      },
+      {
+        "label": "Description",
+        "placeholder": "Write...",
+        "type": "textarea",
+        "id": "description"
+      },
+      {
+        "label": "Genre",
+        "placeholder": "Genre",
+        "type": "text",
+        "id": "genre"
+      },
+      {
+        "label": "ISBN",
+        "placeholder": "Codes",
+        "type": "text",
+        "id": "isbn"
+      },
+      {
+        "label": "Quantity",
+        "placeholder": "Quantity",
+        "type": "number",
+        "id": "quantity"
+      },
+      {
+        "label": "Upload an Image",
+        "type": "file",
+        "id": "image",
+        "buttonText": "Click here"
+      }
+    ],
+    "submitButton": {
+      "text": "CREATE",
+      "type": "submit"
+      }
+    }
+  }
+}
+
+//Agregar sala de Estudio (Administración)
+{
+  "page": {
+    "title": "Add Study Room",
+    "form": {
+      "title": "Create Study Room",
+      "fields": [
+        {
+          "label": "Title",
+          "placeholder": "Write a name for the study room here",
+          "type": "text",
+          "id": "title"
+        },
+        {
+          "label": "Description",
+          "placeholder": "Write...",
+          "type": "textarea",
+          "id": "description"
+        },
+        {
+          "label": "Upload an Image",
+          "type": "file",
+          "id": "image",
+          "buttonText": "Click here"
+        }
+      ],
+      "submitButton": {
+        "text": "CREATE",
+        "type": "submit"
+      }
+    }
+  }
+}
+
+//Agregar Capacitación (Administración)
+{
+  "page": {
+    "title": "Add Training",
+    "form": {
+      "title": "Create New Training",
+      "fields": [
+        {
+          "label": "Title",
+          "placeholder": "Enter a name for the training here",
+          "type": "text",
+          "id": "titulo"
+        },
+        {
+          "label": "Speaker",
+          "placeholder": "Trainer's name",
+          "type": "text",
+          "id": "orador"
+        },
+        {
+          "label": "Training Description",
+          "placeholder": "Write...",
+          "type": "textarea",
+          "id": "descripcion"
+        },
+        {
+          "label": "Training Schedule and Date",
+          "fields": [
+            {
+              "label": "Entry Time",
+              "value": "08:00 AM",
+              "type": "time",
+              "id": "horarioEntrada"
+            },
+            {
+              "label": "Exit Time",
+              "value": "05:00 PM",
+              "type": "time",
+              "id": "horarioSalida"
+            },
+            {
+              "label": "Date",
+              "value": "15/05/2025",
+              "type": "date",
+              "id": "fecha"
+            }
+          ]
+        },
+        {
+          "label": "Upload an Image",
+          "type": "file",
+          "id": "imagen",
+          "buttonText": "Click here"
+        }
+      ],
+      "submitButton": {
+        "text": "CREATE",
+        "type": "submit"
+      }
+    }
+  }
+}
+
+//Proceso de Reservas
+
+//Frame
+
+{
+  "frame": {
+    "title": "Frame",
+    "items": [
+      { "text": "Book Reservation", "link": "/reservas" },
+      { "text": "Study Rooms", "link": "/salas-estudio" },
+      { "text": "Newspaper Library", "link": "/hemeroteca" }
+    ]
+  }
+}
+
+//Libros
+
+{
+  "page": {
+    "title": "Books - Fidel Méndez Núñez Library",
+    "header": {
+      "logo": {
+        "src": "UNAPEC Logo (visual)",
+        "alt": "UNAPEC Logo"
+      },
+      "navigation": [
+        { "text": "HOME", "link": "/home" },
+        { "text": "QUERIES", "link": "/queries" },
+        { "text": "RESERVATIONS", "link": "/reservations" },
+        { "text": "TRAININGS", "link": "/trainings" },
+        { "text": "ELECTRONIC BOOKS", "link": "/electronic-books" },
+        { "text": "PRINTING", "link": "/printing" },
+        { "text": "ES", "link": "/spanish" },
+        { "text": "LOGIN", "link": "/login" }
+      ],
+      "subtitle": "FIDEL MÉNDEZ NÚÑEZ LIBRARY"
+    },
+    "books": {
+      "title": "Books",
+      "breadcrumbs": [
+        { "text": "Reservations", "link": "/reservations" },
+        { "text": "Book Reservations", "link": "/reservations/books" }
+      ],
+      "search": {
+        "placeholder": "Search...",
+        "filter": "Filter"
+      },
+      "popular": {
+        "title": "Most Popular",
+        "viewMoreLink": "/books/popular",
+        "items": [
+          {
+            "title": "The Time of the Hero",
+            "author": "Mario Vargas Llosa",
+            "category": "Fantasy",
+            "description": "It tells the story of a school, denouncing machismo and violence...",
+            "cover": {
+              "src": "Portada_La_ciudad_y_los_perros.png",
+              "alt": "Cover of the book The Time of the Hero"
+            },
+            "viewMoreButton": {
+              "text": "VIEW MORE",
+              "link": "/book/the-time-of-the-hero"
+            }
+          },
+          {
+            "title": "No One Writes to the Colonel",
+            "author": "Gabriel García Márquez",
+            "category": "Biography",
+            "description": "It tells the story of an old colonel...",
+            "cover": {
+              "src": "Portada_El_coronel_no_tiene_quien_le_escriba.png",
+              "alt": "Cover of the book No One Writes to the Colonel"
+            },
+            "viewMoreButton": {
+              "text": "VIEW MORE",
+              "link": "/book/no-one-writes-to-the-colonel"
+            }
+          },
+          {
+            "title": "Lazarillo de Tormes",
+            "author": "Anonymous",
+            "category": "Science Fiction",
+            "description": "It tells the autobiographical life story of a boy, Lazarillo de Tormes, in the 16th century...",
+            "cover": {
+              "src": "Portada_El_Lazarillo_de_Tormes.png",
+              "alt": "Cover of the book Lazarillo de Tormes"
+            },
+            "viewMoreButton": {
+              "text": "VIEW MORE",
+              "link": "/book/lazarillo-de-tormes"
+            }
+          }
+        ]
+      },
+      "genres": {
+        "title": "Genres",
+        "viewMoreLink": "/books/genres",
+        "items": [
+          {
+            "name": "Fantasy",
+            "link": "/books/genres/fantasy"
+          },
+          {
+            "name": "Science Fiction",
+            "link": "/books/genres/science-fiction"
+          },
+          {
+            "name": "Biography",
+            "link": "/books/genres/biography"
+          },
+          {
+            "name": "Science Fiction",
+            "link": "/books/genres/science-fiction"
+          },
+          {
+            "name": "Science Fiction",
+            "link": "/books/genres/science-fiction"
+          }
+        ]
+      }
+    }
+  }
+}
+
+{
+  "section": {
+    "title": "Most Reserved",
+    "viewMoreLink": "/books/most-reserved",
+    "items": [
+      {
+        "title": "The Time of the Hero",
+        "author": "Mario Vargas Llosa",
+        "category": "Fantasy",
+        "description": "It tells the story of a school, denouncing machismo and violence...",
+        "cover": {
+          "src": "Portada_La_ciudad_y_los_perros.png",
+          "alt": "Cover of the book The Time of the Hero"
+        },
+        "viewMoreButton": {
+          "text": "VIEW MORE",
+          "link": "/book/the-time-of-the-hero"
+        }
+      },
+      {
+        "title": "No One Writes to the Colonel",
+        "author": "Gabriel García Márquez",
+        "category": "Biography",
+        "description": "It tells the story of an old colonel...",
+        "cover": {
+          "src": "Portada_El_coronel_no_tiene_quien_le_escriba.png",
+          "alt": "Cover of the book No One Writes to the Colonel"
+        },
+        "viewMoreButton": {
+          "text": "VIEW MORE",
+          "link": "/book/no-one-writes-to-the-colonel"
+        }
+      },
+      {
+        "title": "Lazarillo de Tormes",
+        "author": "Anonymous",
+        "category": "Science Fiction",
+        "description": "It tells the autobiographical life story of a boy, Lazarillo de Tormes, in the 16th century...",
+        "cover": {
+          "src": "Portada_El_Lazarillo_de_Tormes.png",
+          "alt": "Cover of the book Lazarillo de Tormes"
+        },
+        "viewMoreButton": {
+          "text": "VIEW MORE",
+          "link": "/book/lazarillo-de-tormes"
+        }
+      }
+    ]
+  },
+  "footer": {
+    "university": {
+      "name": "APEC University",
+      "address": "Av. Máximo Gómez #72, Santo Domingo, Dominican Republic",
+      "phone": "(809) 686-0021",
+      "fax": "(809) 287-8702"
+    },
+    "resources": [
+      { "text": "Email", "link": "/email" },
+      { "text": "Phone Directory", "link": "/directory" },
+      { "text": "Jobs", "link": "/jobs" },
+      { "text": "Help", "link": "/help" }
+    ],
+    "relatedInstitutions": [
+      { "text": "APEC", "link": "/apec" },
+      { "text": "CENAPEC", "link": "/cenapec" },
+      { "text": "FUNDAPEC", "link": "/fundapec" },
+      { "text": "CAFAM School", "link": "/cafam-school" }
+    ],
+    "copyright": "Made with ❤️ Copyright iamdann © 2024",
+    "socialIcons": [
+      { "src": "twitter-icon.png", "link": "/twitter" },
+      { "src": "youtube-icon.png", "link": "/youtube" },
+      { "src": "instagram-icon.png", "link": "/instagram" },
+      { "src": "github-icon.png", "link": "/github" }
+    ]
+  }
+}
+
+//Visor
+{
+  "page": {
+    "title": "The War of the Worlds - UNAPEC Library",
+    "header": {
+      "logo": {
+        "src": "UNAPEC Logo (visual)",
+        "alt": "UNAPEC Logo"
+      },
+      "navigation": [
+        { "text": "HOME", "link": "/home" },
+        { "text": "CONSULTATIONS", "link": "/consultas" },
+        { "text": "RESERVATIONS", "link": "/reservas", "active": true },
+        { "text": "TRAININGS", "link": "/capacitaciones" },
+        { "text": "ELECTRONIC BOOKS", "link": "/libros-electronicos" },
+        { "text": "PRINTING", "link": "/impresiones" },
+        { "text": "EN", "link": "/english" },
+        { "text": "LOGIN", "link": "/login" }
+      ],
+      "subtitle": "FIDEL MÉNDEZ NÚÑEZ LIBRARY"
+    },
+    "bookDetails": {
+      "title": "The War of the Worlds",
+      "breadcrumbs": [
+        { "text": "Consultations", "link": "/consultas" },
+        { "text": "Collection", "link": "/acervo" },
+        { "text": "Book Title", "link": "/libro/guerra-mundos" }
+      ],
+      "bookCover": {
+        "src": "Cover image of The War of the Worlds",
+        "alt": "Cover of the book The War of the Worlds"
+      },
+      "description": "The plot is set in late 19th-century England and tells the story of Earth's invasion by Martian aliens, who arrive in metal cylinders and begin attacking humanity with advanced war machines, like giant tripods. The protagonist is an unnamed narrator who lives in London and witnesses the horrors of the Martian invasion. As the story progresses, the narrator struggles for survival and tries to understand the reason behind the brutal invasion.",
+      "details": {
+        "year": "1898",
+        "publisher": "William Heinemann",
+        "author": "H. G. Wells",
+        "stock": "12",
+        "genre": "Fantasy"
+      },
+      "readOnlineButton": {
+        "text": "READ ONLINE",
+        "link": "/libro/guerra-mundos/leer"
+      },
+      "reserveButton": {
+        "text": "RESERVE",
+        "link": "/libro/guerra-mundos/reservar"
+      }
+    },
+    "footer": {
+      "university": {
+        "name": "APEC University",
+        "address": "Av. Máximo Gómez #72, Santo Domingo, Dominican Republic",
+        "phone": "(809) 686-0021",
+        "fax": "(809) 287-8702"
+      },
+      "resources": [
+        { "text": "Email", "link": "/correo" },
+        { "text": "Phone Directory", "link": "/directorio" },
+        { "text": "Jobs", "link": "/empleos" },
+        { "text": "Help", "link": "/ayuda" }
+      ],
+      "relatedInstitutions": [
+        { "text": "APEC", "link": "/apec" },
+        { "text": "CENAPEC", "link": "/cenapec" },
+        { "text": "FUNDAPEC", "link": "/fundapec" },
+        { "text": "CAFAM School", "link": "/colegio-cafam" }
+      ],
+      "copyright": "Made with ❤️ Copyright iamdann © 2024",
+      "socialIcons": [
+        { "src": "twitter-icon.png", "link": "/twitter" },
+        { "src": "youtube-icon.png", "link": "/youtube" },
+        { "src": "instagram-icon.png", "link": "/instagram" },
+        { "src": "github-icon.png", "link": "/github" }
+      ]
+    }
+  }
+}
+
+//Reservar Libro
+{
+  "reservationForm": {
+    "title": "Reserve Book",
+    "fields": [
+      {
+        "label": "ID",
+        "value": "a000111",
+        "type": "text",
+        "id": "id",
+        "readonly": true
+      },
+      {
+        "label": "Date",
+        "value": "15/05/2025",
+        "type": "date",
+        "id": "fecha"
+      },
+      {
+        "label": "Reservation Date",
+        "value": "15/05/2025",
+        "type": "text",
+        "id": "fechaReserva",
+        "readonly": true
+      },
+      {
+        "label": "Delivery Date",
+        "value": "17/05/2025",
+        "type": "text",
+        "id": "fechaEntrega",
+        "readonly": true
+      }
+    ],
+    "submitButton": {
+      "text": "SAVE",
+      "type": "submit"
+    }
+  }
+}
+// Sala de Estudio
+{
+  "page": {
+    "title": "Study Rooms - UNAPEC Library",
+    "header": {
+      "logo": {
+        "src": "UNAPEC Logo (visual)",
+        "alt": "UNAPEC Logo"
+      },
+      "navigation": [
+        { "text": "HOME", "link": "/home" },
+        { "text": "CONSULTATIONS", "link": "/consultas" },
+        { "text": "RESERVATIONS", "link": "/reservas", "active": true },
+        { "text": "TRAININGS", "link": "/capacitaciones" },
+        { "text": "E-BOOKS", "link": "/libros-electronicos" },
+        { "text": "PRINTING", "link": "/impresiones" },
+        { "text": "ES", "link": "/espanol" },
+        { "text": "LOGIN", "link": "/login" }
+      ],
+      "subtitle": "FIDEL MÉNDEZ NÚÑEZ LIBRARY"
+    },
+    "studyRooms": {
+      "title": "Study Rooms",
+      "breadcrumbs": [
+        { "text": "Reservations", "link": "/reservas" },
+        { "text": "Study Rooms", "link": "/reservas/salas-estudio" }
+      ],
+      "search": {
+        "placeholder": "Search...",
+        "filter": "Filter"
+      },
+      "rooms": [
+        {
+          "title": "Study Table",
+          "description": "Write a description",
+          "image": {
+            "src": "mesa_estudio_1.jpg",
+            "alt": "Study Table 1"
+          },
+          "reserveButton": {
+            "text": "RESERVE",
+            "link": "/reservas/salas-estudio/1"
+          }
+        },
+        {
+          "title": "Study Table",
+          "description": "Write a description",
+          "image": {
+            "src": "mesa_estudio_2.jpg",
+            "alt": "Study Table 2"
+          },
+          "reserveButton": {
+            "text": "RESERVE",
+            "link": "/reservas/salas-estudio/2"
+          }
+        },
+        {
+          "title": "Study Table",
+          "description": "Write a description",
+          "image": {
+            "src": "mesa_estudio_3.jpg",
+            "alt": "Study Table 3"
+          },
+          "reserveButton": {
+            "text": "RESERVE",
+            "link": "/reservas/salas-estudio/3"
+          }
+        }
+      ]
+    },
+    "footer": {
+      "university": {
+        "name": "APEC University",
+        "address": "Av. Máximo Gómez #72, Santo Domingo, Dominican Republic",
+        "phone": "(809) 686-0021",
+        "fax": "(809) 287-8702"
+      },
+      "resources": [
+        { "text": "Email", "link": "/correo" },
+        { "text": "Phone Directory", "link": "/directorio" },
+        { "text": "Jobs", "link": "/empleos" },
+        { "text": "Help", "link": "/ayuda" }
+      ],
+      "relatedInstitutions": [
+        { "text": "APEC", "link": "/apec" },
+        { "text": "CENAPEC", "link": "/cenapec" },
+        { "text": "FUNDAPEC", "link": "/fundapec" },
+        { "text": "Colegio CAFAM", "link": "/colegio-cafam" }
+      ],
+      "copyright": "Made with ❤️ Copyright iamdann © 2024",
+      "socialIcons": [
+        { "src": "twitter-icon.png", "link": "/twitter" },
+        { "src": "youtube-icon.png", "link": "/youtube" },
+        { "src": "instagram-icon.png", "link": "/instagram" },
+        { "src": "github-icon.png", "link": "/github" }
+      ]
+    }
+  }
+}
+//Formulario Reserva (Espacio de Estudio)
+{
+  "reservationForm": {
+    "title": "Reserve Study Space",
+    "fields": [
+      {
+        "label": "ID",
+        "value": "A000011",
+        "type": "text",
+        "id": "id",
+        "readonly": true
+      },
+      {
+        "label": "Number of people",
+        "value": "2 people",
+        "type": "select",
+        "id": "cantidadPersonas",
+        "options": [
+          { "value": "1 person", "label": "1 person" },
+          { "value": "2 people", "label": "2 people" },
+          { "value": "3 people", "label": "3 people" },
+          { "value": "4 people", "label": "4 people" }
+        ]
+      },
+      {
+        "label": "Reason for reservation",
+        "placeholder": "Write....",
+        "type": "textarea",
+        "id": "motivoReserva"
+      },
+      {
+        "label": "How long do you plan to stay?",
+        "fields": [
+          {
+            "label": "Entry time",
+            "value": "08:00 AM",
+            "type": "time",
+            "id": "horarioEntrada"
+          },
+          {
+            "label": "Exit time",
+            "value": "05:00 PM",
+            "type": "time",
+            "id": "horarioSalida"
+          }
+        ]
+      }
+    ],
+    "submitButton": {
+      "text": "RESERVE",
+      "type": "submit"
+    }
+  }
+}
+//Hemeroteca
+{
+  "page": {
+    "title": "Newspaper Archive - UNAPEC Library",
+    "header": {
+      "logo": {
+        "src": "UNAPEC Logo (visual)",
+        "alt": "UNAPEC Logo"
+      },
+      "navigation": [
+        { "text": "HOME", "link": "/home" },
+        { "text": "CONSULTATIONS", "link": "/consultas" },
+        { "text": "RESERVATIONS", "link": "/reservas", "active": true },
+        { "text": "TRAININGS", "link": "/capacitaciones" },
+        { "text": "ELECTRONIC BOOKS", "link": "/libros-electronicos" },
+        { "text": "PRINTINGS", "link": "/impresiones" },
+        { "text": "ES", "link": "/espanol" },
+        { "text": "LOGIN", "link": "/login" }
+      ],
+      "subtitle": "FIDEL MÉNDEZ NÚÑEZ LIBRARY"
+    },
+    "hemeroteca": {
+      "title": "Newspaper Archive",
+      "breadcrumbs": [
+        { "text": "Reservations", "link": "/reservas" },
+        { "text": "Newspaper Archive", "link": "/reservas/hemeroteca" }
+      ],
+      "search": {
+        "placeholder": "Search...",
+        "filter": "Filter"
+      },
+      "rooms": [
+        {
+          "title": "Study Table",
+          "description": "Write a description",
+          "image": {
+            "src": "mesa_estudio_hemeroteca_1.jpg",
+            "alt": "Study Table 1"
+          },
+          "reserveButton": {
+            "text": "RESERVE",
+            "link": "/reservas/hemeroteca/1"
+          }
+        },
+        {
+          "title": "Study Table",
+          "description": "Write a description",
+          "image": {
+            "src": "mesa_estudio_hemeroteca_2.jpg",
+            "alt": "Study Table 2"
+          },
+          "reserveButton": {
+            "text": "RESERVE",
+            "link": "/reservas/hemeroteca/2"
+          }
+        },
+        {
+          "title": "Study Table",
+          "description": "Write a description",
+          "image": {
+            "src": "mesa_estudio_hemeroteca_3.jpg",
+            "alt": "Study Table 3"
+          },
+          "reserveButton": {
+            "text": "RESERVE",
+            "link": "/reservas/hemeroteca/3"
+          }
+        }
+      ]
+    },
+    "footer": {
+      "university": {
+        "name": "APEC University",
+        "address": "Av. Máximo Gómez #72, Santo Domingo, Dominican Republic",
+        "phone": "(809) 686-0021",
+        "fax": "(809) 287-8702"
+      },
+      "resources": [
+        { "text": "Email", "link": "/correo" },
+        { "text": "Phone Directory", "link": "/directorio" },
+        { "text": "Jobs", "link": "/empleos" },
+        { "text": "Help", "link": "/ayuda" }
+      ],
+      "relatedInstitutions": [
+        { "text": "APEC", "link": "/apec" },
+        { "text": "CENAPEC", "link": "/cenapec" },
+        { "text": "FUNDAPEC", "link": "/fundapec" },
+        { "text": "Colegio CAFAM", "link": "/colegio-cafam" }
+      ],
+      "copyright": "Made with ❤️ Copyright iamdann © 2024",
+      "socialIcons": [
+        { "src": "twitter-icon.png", "link": "/twitter" },
+        { "src": "youtube-icon.png", "link": "/youtube" },
+        { "src": "instagram-icon.png", "link": "/instagram" },
+        { "src": "github-icon.png", "link": "/github" }
+      ]
+    }
+  }
+}
+//Reservar Hemeroteca
+{
+  "reservationForm": {
+    "title": "Reserve Newspaper Archive",
+    "fields": [
+      {
+        "label": "ID",
+        "value": "A000011",
+        "type": "text",
+        "id": "id",
+        "readonly": true
+      },
+      {
+        "label": "Number of people",
+        "value": "2 people",
+        "type": "select",
+        "id": "cantidadPersonas",
+        "options": [
+          { "value": "1 person", "label": "1 person" },
+          { "value": "2 people", "label": "2 people" },
+          { "value": "3 people", "label": "3 people" },
+          { "value": "4 people", "label": "4 people" }
+        ]
+      },
+      {
+        "label": "Reason for reservation",
+        "placeholder": "Write....",
+        "type": "textarea",
+        "id": "motivoReserva"
+      },
+      {
+        "label": "How long do you plan to stay?",
+        "fields": [
+          {
+            "label": "Entry time",
+            "value": "08:00 AM",
+            "type": "time",
+            "id": "horarioEntrada"
+          },
+          {
+            "label": "Exit time",
+            "value": "05:00 PM",
+            "type": "time",
+            "id": "horarioSalida"
+          }
+        ]
+      }
+    ],
+    "submitButton": {
+      "text": "RESERVE",
+      "type": "submit"
+    }
+  }
+}
+//Capacitación
+{
+  "page": {
+    "title": "Trainings - UNAPEC Library",
+    "header": {
+      "logo": {
+        "src": "UNAPEC Logo (visual)",
+        "alt": "UNAPEC Logo"
+      },
+      "navigation": [
+        { "text": "HOME", "link": "/home" },
+        { "text": "CONSULTATIONS", "link": "/consultas" },
+        { "text": "RESERVATIONS", "link": "/reservas" },
+        { "text": "TRAININGS", "link": "/capacitaciones", "active": true },
+        { "text": "ELECTRONIC BOOKS", "link": "/libros-electronicos" },
+        { "text": "PRINTING", "link": "/impresiones" },
+        { "text": "ES", "link": "/espanol" },
+        { "text": "LOGIN", "link": "/login" }
+      ],
+      "subtitle": "FIDEL MÉNDEZ NÚÑEZ LIBRARY"
+    },
+    "trainings": {
+      "title": "Trainings",
+      "breadcrumbs": [
+        { "text": "Trainings", "link": "/capacitaciones" },
+        { "text": "Trainings", "link": "/capacitaciones" }
+      ],
+      "search": {
+        "placeholder": "Search...",
+        "filter": "Filter"
+      },
+      "trainingList": [
+        {
+          "title": "Functionalities of the Virtual Library",
+          "category": "Marketing",
+          "description": "The library is a fundamental resource offering a wide range of functionalities for accessing information and knowledge. Its main features include: resource collection, material lending, in-room consultations, internet access, digital services such as e-books, online databases, online courses, printed resources, programs, and activities.",
+          "speaker": "Elizabeth Vargas",
+          "date": "February 15, 2023",
+          "video": {
+            "src": "video_capacitacion_1.mp4",
+            "alt": "Video on Functionalities of the Virtual Library"
+          }
+        },
+        {
+          "title": "Bibliographic Manager",
+          "category": "Marketing",
+          "description": "This is a tool or software designed to help researchers, students, and academics organize, manage, and cite bibliographic references used in their academic work, such as theses, essays, scientific articles, and other documents.",
+          "speaker": "Carlos Matos",
+          "date": "January 20, 2023",
+          "video": {
+            "src": "video_capacitacion_2.mp4",
+            "alt": "Video on Bibliographic Manager"
+          }
+        }
+      ]
+    },
+    "footer": {
+      "university": {
+        "name": "APEC University",
+        "address": "Av. Máximo Gómez #72, Santo Domingo, Dominican Republic",
+        "phone": "(809) 686-0021",
+        "fax": "(809) 287-8702"
+      },
+      "resources": [
+        { "text": "Email", "link": "/correo" },
+        { "text": "Phone Directory", "link": "/directorio" },
+        { "text": "Jobs", "link": "/empleos" },
+        { "text": "Help", "link": "/ayuda" }
+      ],
+      "relatedInstitutions": [
+        { "text": "APEC", "link": "/apec" },
+        { "text": "CENAPEC", "link": "/cenapec" },
+        { "text": "FUNDAPEC", "link": "/fundapec" },
+        { "text": "CAFAM School", "link": "/colegio-cafam" }
+      ],
+      "copyright": "Made with ❤️ Copyright iamdann © 2024",
+      "socialIcons": [
+        { "src": "twitter-icon.png", "link": "/twitter" },
+        { "src": "youtube-icon.png", "link": "/youtube" },
+        { "src": "instagram-icon.png", "link": "/instagram" },
+        { "src": "github-icon.png", "link": "/github" }
+      ]
+    }
+  }
+}
+//Visor(Capacitación)
+{
+  "page": {
+    "title": "Functionalities of the Virtual Library - UNAPEC Library",
+    "header": {
+      "logo": {
+        "src": "UNAPEC Logo (visual)",
+        "alt": "UNAPEC Logo"
+      },
+      "navigation": [
+        { "text": "HOME", "link": "/home" },
+        { "text": "CONSULTATIONS", "link": "/consultas" },
+        { "text": "RESERVATIONS", "link": "/reservas" },
+        { "text": "TRAININGS", "link": "/capacitaciones", "active": true },
+        { "text": "ELECTRONIC BOOKS", "link": "/libros-electronicos" },
+        { "text": "PRINTING", "link": "/impresiones" },
+        { "text": "ES", "link": "/espanol" },
+        { "text": "LOGIN", "link": "/login" }
+      ],
+      "subtitle": "FIDEL MÉNDEZ NÚÑEZ LIBRARY"
+    },
+    "trainingDetails": {
+      "title": "Functionalities of the Virtual Library",
+      "breadcrumbs": [
+        { "text": "Consultations", "link": "/consultas" },
+        { "text": "Collection", "link": "/acervo" },
+        { "text": "Book Title", "link": "/capacitaciones/funcionalidades-biblioteca-virtual" }
+      ],
+      "image": {
+        "src": "libros_estanteria.jpg",
+        "alt": "Books on a Shelf"
+      },
+      "description": "The library is a fundamental resource offering a wide range of functionalities for accessing information and knowledge. Its main features include: resource collection, material lending, in-room consultations, internet access, digital services such as e-books, online databases, online courses, printed resources, programs, and activities.",
+      "details": {
+        "duration": "1H",
+        "author": "Elizabeth Vargas"
+      },
+      "viewTrainingButton": {
+        "text": "VIEW TRAINING",
+        "link": "/capacitaciones/funcionalidades-biblioteca-virtual/ver"
+      }
+    },
+    "footer": {
+      "university": {
+        "name": "APEC University",
+        "address": "Av. Máximo Gómez #72, Santo Domingo, Dominican Republic",
+        "phone": "(809) 686-0021",
+        "fax": "(809) 287-8702"
+      },
+      "resources": [
+        { "text": "Email", "link": "/correo" },
+        { "text": "Phone Directory", "link": "/directorio" },
+        { "text": "Jobs", "link": "/empleos" },
+        { "text": "Help", "link": "/ayuda" }
+      ],
+      "relatedInstitutions": [
+        { "text": "APEC", "link": "/apec" },
+        { "text": "CENAPEC", "link": "/cenapec" },
+        { "text": "FUNDAPEC", "link": "/fundapec" },
+        { "text": "CAFAM School", "link": "/colegio-cafam" }
+      ],
+      "copyright": "Made with ❤️ Copyright iamdann © 2024",
+      "socialIcons": [
+        { "src": "twitter-icon.png", "link": "/twitter" },
+        { "src": "youtube-icon.png", "link": "/youtube" },
+        { "src": "instagram-icon.png", "link": "/instagram" },
+        { "src": "github-icon.png", "link": "/github" }
+      ]
+    }
+  }
+}
+//Visor Inscripción (Capacitación)
+{
+  "page": {
+    "title": "Bibliographic Manager - UNAPEC Library",
+    "header": {
+      "logo": {
+        "src": "UNAPEC Logo (visual)",
+        "alt": "UNAPEC Logo"
+      },
+      "navigation": [
+        { "text": "HOME", "link": "/home" },
+        { "text": "CONSULTATIONS", "link": "/consultas" },
+        { "text": "RESERVATIONS", "link": "/reservas" },
+        { "text": "TRAININGS", "link": "/capacitaciones", "active": true },
+        { "text": "ELECTRONIC BOOKS", "link": "/libros-electronicos" },
+        { "text": "PRINTING", "link": "/impresiones" },
+        { "text": "ES", "link": "/espanol" },
+        { "text": "LOGIN", "link": "/login" }
+      ],
+      "subtitle": "FIDEL MÉNDEZ NÚÑEZ LIBRARY"
+    },
+    "trainingDetails": {
+      "title": "Bibliographic Manager",
+      "breadcrumbs": [
+        { "text": "Consultations", "link": "/consultas" },
+        { "text": "Collection", "link": "/acervo" },
+        { "text": "Book Title", "link": "/capacitaciones/gestor-bibliografico" }
+      ],
+      "image": {
+        "src": "libros_estanteria.jpg",
+        "alt": "Books on a Shelf"
+      },
+      "description": "This tool or software is designed to help researchers, students, and academics organize, manage, and cite the bibliographic references used in their academic works, such as theses, essays, scientific articles, and other documents.",
+      "details": {
+        "duration": "1H",
+        "author": "Carlos Matos"
+      },
+      "enrollButton": {
+        "text": "ENROLL ME",
+        "link": "/capacitaciones/gestor-bibliografico/inscribirme"
+      }
+    },
+    "footer": {
+      "university": {
+        "name": "APEC University",
+        "address": "Av. Máximo Gómez #72, Santo Domingo, Dominican Republic",
+        "phone": "(809) 686-0021",
+        "fax": "(809) 287-8702"
+      },
+      "resources": [
+        { "text": "Email", "link": "/correo" },
+        { "text": "Phone Directory", "link": "/directorio" },
+        { "text": "Jobs", "link": "/empleos" },
+        { "text": "Help", "link": "/ayuda" }
+      ],
+      "relatedInstitutions": [
+        { "text": "APEC", "link": "/apec" },
+        { "text": "CENAPEC", "link": "/cenapec" },
+        { "text": "FUNDAPEC", "link": "/fundapec" },
+        { "text": "CAFAM School", "link": "/colegio-cafam" }
+      ],
+      "copyright": "Made with ❤️ Copyright iamdann © 2024",
+      "socialIcons": [
+        { "src": "twitter-icon.png", "link": "/twitter" },
+        { "src": "youtube-icon.png", "link": "/youtube" },
+        { "src": "instagram-icon.png", "link": "/instagram" },
+        { "src": "github-icon.png", "link": "/github" }
+      ]
+    }
+  }
+}
+//Notificación
+{
+  "notification": {
+    "title": "Notification",
+    "message": "You have signed up!",
+    "icon": "megaphone",
+    "details": "You will receive a notification in your email when it starts.",
+    "actionButton": {
+      "text": "OKAY",
+      "action": "closeNotification"
+    }
+  }
+}
+//Procesos Libros Electronicos
+//Libros Electronicos
+{
+  "page": {
+    "title": "Electronic Books - UNAPEC Library",
+    "header": {
+      "logo": {
+        "src": "UNAPEC Logo (visual)",
+        "alt": "UNAPEC Logo"
+      },
+      "navigation": [
+        { "text": "HOME", "link": "/home" },
+        { "text": "CONSULTATIONS", "link": "/consultas" },
+        { "text": "RESERVATIONS", "link": "/reservas" },
+        { "text": "TRAININGS", "link": "/capacitaciones" },
+        { "text": "ELECTRONIC BOOKS", "link": "/libros-electronicos", "active": true },
+        { "text": "PRINTING", "link": "/impresiones" },
+        { "text": "ES", "link": "/espanol" },
+        { "text": "LOGIN", "link": "/login" }
+      ],
+      "subtitle": "FIDEL MÉNDEZ NÚÑEZ LIBRARY"
+    },
+    "electronicBooks": {
+      "title": "Virtual Library",
+      "breadcrumbs": [
+        { "text": "Electronic Books", "link": "/libros-electronicos" },
+        { "text": "Electronic Books", "link": "/libros-electronicos" }
+      ],
+      "platforms": [
+        {
+          "name": "EBSCOHOST",
+          "description": "eBook Academic Collection contains over 137,840 electronic book titles from prestigious academic publishers, covering all subjects and fields of knowledge. It is available with unlimited concurrent user access from any location.",
+          "image": {
+            "src": "ebscohost_logo.png",
+            "alt": "EBSCOHOST logo"
+          },
+          "accessButton": {
+            "text": "ACCESS",
+            "link": "/ebscohost"
+          }
+        },
+        {
+          "name": "Elibro",
+          "description": "eLibro.net is currently the most comprehensive academic platform for electronic content in Spanish. It has over 100,000 titles across all areas of knowledge. The most important collection is Cátedra, covering all areas of knowledge.",
+          "image": {
+            "src": "elibro_logo.png",
+            "alt": "Elibro logo"
+          },
+          "accessButton": {
+            "text": "ACCESS",
+            "link": "/elibro"
+          }
+        }
+      ]
+    },
+    "footer": {
+      "university": {
+        "name": "APEC University",
+        "address": "Av. Máximo Gómez #72, Santo Domingo, Dominican Republic",
+        "phone": "(809) 686-0021",
+        "fax": "(809) 287-8702"
+      },
+      "resources": [
+        { "text": "Email", "link": "/correo" },
+        { "text": "Phone Directory", "link": "/directorio" },
+        { "text": "Jobs", "link": "/empleos" },
+        { "text": "Help", "link": "/ayuda" }
+      ],
+      "relatedInstitutions": [
+        { "text": "APEC", "link": "/apec" },
+        { "text": "CENAPEC", "link": "/cenapec" },
+        { "text": "FUNDAPEC", "link": "/fundapec" },
+        { "text": "CAFAM School", "link": "/colegio-cafam" }
+      ],
+      "copyright": "Made with ❤️ Copyright iamdann © 2024",
+      "socialIcons": [
+        { "src": "twitter-icon.png", "link": "/twitter" },
+        { "src": "youtube-icon.png", "link": "/youtube" },
+        { "src": "instagram-icon.png", "link": "/instagram" },
+        { "src": "github-icon.png", "link": "/github" }
+      ]
+    }
+  }
+}
+//Proceso Impresiones
+//Impresiones
+{
+  "page": {
+    "title": "Prints - UNAPEC Library",
+    "header": {
+      "logo": {
+        "src": "UNAPEC Logo (visual)",
+        "alt": "UNAPEC Logo"
+      },
+      "navigation": [
+        { "text": "HOME", "link": "/home" },
+        { "text": "CONSULTATIONS", "link": "/consultations" },
+        { "text": "RESERVATIONS", "link": "/reservas" },
+        { "text": "TRAININGS", "link": "/capacitaciones" },
+        { "text": "ELECTRONIC BOOKS", "link": "/libros-electronicos" },
+        { "text": "PRINTING", "link": "/impresiones", "active": true },
+        { "text": "ES", "link": "/espanol" },
+        { "text": "LOGIN", "link": "/login" }
+      ],
+      "subtitle": "FIDEL MÉNDEZ NÚÑEZ LIBRARY"
+    },
+    "prints": {
+      "title": "Prints",
+      "uploadArea": {
+        "title": "Upload your files",
+        "maxSize": "Maximum size: 50mb",
+        "uploadButton": {
+          "text": "UPLOAD FILE",
+          "link": "/impresiones/subir-archivo"
+        }
+      },
+      "image": {
+        "src": "libros_apilados_impresiones.jpg",
+        "alt": "Stacked books"
+      }
+    },
+    "footer": {
+      "university": {
+        "name": "APEC University",
+        "address": "Av. Máximo Gómez #72, Santo Domingo, Dominican Republic",
+        "phone": "(809) 686-0021",
+        "fax": "(809) 287-8702"
+      },
+      "resources": [
+        { "text": "Email", "link": "/correo" },
+        { "text": "Phone Directory", "link": "/directorio" },
+        { "text": "Jobs", "link": "/empleos" },
+        { "text": "Help", "link": "/ayuda" }
+      ],
+      "relatedInstitutions": [
+        { "text": "APEC", "link": "/apec" },
+        { "text": "CENAPEC", "link": "/cenapec" },
+        { "text": "FUNDAPEC", "link": "/fundapec" },
+        { "text": "CAFAM School", "link": "/colegio-cafam" }
+      ],
+      "copyright": "Made with ❤️ Copyright iamdann © 2024",
+      "socialIcons": [
+        { "src": "twitter-icon.png", "link": "/twitter" },
+        { "src": "youtube-icon.png", "link": "/youtube" },
+        { "src": "instagram-icon.png", "link": "/instagram" },
+        { "src": "github-icon.png", "link": "/github" }
+      ]
+    }
+  }
+}
+//Subir el archivo
+{
+  "uploadArea": {
+    "title": "Upload your files",
+    "maxSize": "Maximum size: 50mb",
+    "colorOptions": {
+      "noColor": {
+        "label": "No color",
+        "selected": true
+      },
+      "color": {
+        "label": "Color",
+        "selected": false
+      }
+    },
+    "uploadStatus": {
+      "success": true,
+      "message": "All good!",
+      "icon": "check"
+    },
+    "printButton": {
+      "text": "PRINT FILE",
+      "link": "/impresiones/imprimir"
+    }
+  }
+}
