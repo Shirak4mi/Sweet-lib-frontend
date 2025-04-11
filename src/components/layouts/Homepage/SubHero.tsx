@@ -91,37 +91,21 @@ export default function LibraryBenefitsSection() {
 	};
 
 	const titleVariants = {
+		visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" } },
 		hidden: { opacity: 0, x: -20 },
-		visible: {
-			opacity: 1,
-			x: 0,
-			transition: {
-				duration: 0.6,
-				ease: "easeOut",
-			},
-		},
 	};
 
 	const floatingAnimation = {
+		transition: { duration: 3, repeat: Infinity, repeatType: "reverse" as const, ease: "easeInOut" },
 		y: [0, -10, 0],
-		transition: {
-			duration: 3,
-			repeat: Infinity,
-			repeatType: "reverse" as const,
-			ease: "easeInOut",
-		},
 	};
 
 	// Image parallax effect
 	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
 	useEffect(() => {
-		const handleMouseMove = (e: MouseEvent) => {
-			setMousePosition({
-				x: e.clientX / window.innerWidth - 0.5,
-				y: e.clientY / window.innerHeight - 0.5,
-			});
-		};
+		const handleMouseMove = (e: MouseEvent) =>
+			setMousePosition({ x: e.clientX / window.innerWidth - 0.5, y: e.clientY / window.innerHeight - 0.5 });
 
 		window.addEventListener("mousemove", handleMouseMove);
 		return () => window.removeEventListener("mousemove", handleMouseMove);
@@ -151,24 +135,17 @@ export default function LibraryBenefitsSection() {
 
 					<motion.h2
 						className="text-4xl md:text-5xl font-bold text-blue-700 dark:text-blue-300 mb-4"
-						style={{
-							transform: `translate(${mousePosition.x * 10}px, ${mousePosition.y * 10}px)`,
-						}}>
+						style={{ transform: `translate(${mousePosition.x * 10}px, ${mousePosition.y * 10}px)` }}>
 						Ventajas de usar la biblioteca de APEC
 					</motion.h2>
 
 					<motion.div
 						className="w-24 h-1 bg-blue-600 dark:bg-blue-400 rounded-full mb-6"
-						animate={{
-							width: [40, 96, 40],
-							transition: { duration: 3, repeat: Infinity },
-						}}></motion.div>
+						animate={{ width: [40, 96, 40], transition: { duration: 3, repeat: Infinity } }}></motion.div>
 
 					<motion.p
 						className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl"
-						style={{
-							transform: `translate(${mousePosition.x * -5}px, ${mousePosition.y * -5}px)`,
-						}}>
+						style={{ transform: `translate(${mousePosition.x * -5}px, ${mousePosition.y * -5}px)` }}>
 						Descubre cómo nuestra biblioteca puede potenciar tu desarrollo académico
 					</motion.p>
 				</motion.div>
@@ -183,19 +160,15 @@ export default function LibraryBenefitsSection() {
 						transition={{ duration: 0.8 }}>
 						<motion.div
 							className="relative z-10"
-							style={{
-								transform: `perspective(1000px) rotateY(${mousePosition.x * 10}deg) rotateX(${mousePosition.y * -10}deg)`,
-							}}
 							whileHover={{ scale: 1.05 }}
-							transition={{ type: "spring", stiffness: 300 }}>
+							transition={{ type: "spring", stiffness: 300 }}
+							style={{ transform: `perspective(1000px) rotateY(${mousePosition.x * 10}deg) rotateX(${mousePosition.y * -10}deg)` }}>
 							<div className="relative">
 								<motion.img
 									src="/api/placeholder/400/500"
 									alt="Libro abierto"
 									className="w-full h-auto rounded-lg shadow-2xl"
-									style={{
-										transform: `translate(${mousePosition.x * 20}px, ${mousePosition.y * 20}px)`,
-									}}
+									style={{ transform: `translate(${mousePosition.x * 20}px, ${mousePosition.y * 20}px)` }}
 								/>
 								<div className="absolute inset-0 rounded-lg shadow-inner"></div>
 								<div className="absolute -inset-0.5 bg-gradient-to-tr from-blue-500 to-purple-600 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
@@ -213,22 +186,14 @@ export default function LibraryBenefitsSection() {
 							</motion.div>
 
 							<motion.div
-								className="absolute -left-6 top-20 w-10 h-10 bg-blue-400 dark:bg-blue-500 rounded-full flex items-center justify-center text-lg shadow-lg"
-								animate={{
-									y: [0, 6, 0],
-									x: [0, -3, 0, 3, 0],
-									transition: { duration: 3, repeat: Infinity, delay: 0.5 },
-								}}>
+								animate={{ y: [0, 6, 0], x: [0, -3, 0, 3, 0], transition: { duration: 3, repeat: Infinity, delay: 0.5 } }}
+								className="absolute -left-6 top-20 w-10 h-10 bg-blue-400 dark:bg-blue-500 rounded-full flex items-center justify-center text-lg shadow-lg">
 								🔍
 							</motion.div>
 
 							<motion.div
 								className="absolute right-10 -bottom-6 w-14 h-14 bg-green-400 dark:bg-green-500 rounded-full flex items-center justify-center text-2xl shadow-lg"
-								animate={{
-									y: [0, 10, 0],
-									rotate: [0, -5, 0, 5, 0],
-									transition: { duration: 5, repeat: Infinity, delay: 1 },
-								}}>
+								animate={{ y: [0, 10, 0], rotate: [0, -5, 0, 5, 0], transition: { duration: 5, repeat: Infinity, delay: 1 } }}>
 								🎓
 							</motion.div>
 						</motion.div>
@@ -245,8 +210,8 @@ export default function LibraryBenefitsSection() {
 								key={benefit.id}
 								variants={itemVariants}
 								whileHover={{ scale: 1.03, y: -5 }}
-								onHoverStart={() => setHoveredIndex(index)}
-								onHoverEnd={() => setHoveredIndex(null)}>
+								onHoverEnd={() => setHoveredIndex(null)}
+								onHoverStart={() => setHoveredIndex(index)}>
 								<Card
 									className={`h-full overflow-hidden backdrop-blur-sm transition-all duration-300 border-2 ${
 										hoveredIndex === index ? "border-blue-400 dark:border-blue-500 shadow-lg" : "border-transparent"
@@ -267,10 +232,10 @@ export default function LibraryBenefitsSection() {
 
 										{hoveredIndex === index && (
 											<motion.div
-												className="w-full h-1 bg-gradient-to-r from-blue-400 to-blue-600 mt-4 rounded-full"
 												initial={{ width: 0 }}
 												animate={{ width: "100%" }}
 												transition={{ duration: 0.4 }}
+												className="w-full h-1 bg-gradient-to-r from-blue-400 to-blue-600 mt-4 rounded-full"
 											/>
 										)}
 									</CardContent>

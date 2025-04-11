@@ -1,3 +1,4 @@
+"use client";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { BookOpen, ChevronRight } from "lucide-react";
 import { Badge } from "@/components/ui/base";
