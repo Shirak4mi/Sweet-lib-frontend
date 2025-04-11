@@ -197,7 +197,7 @@ const BookProfilePage = () => {
   // Custom Tab implementation with animations
   const CustomTabs = () => {
     return (
-      <div className="w-full">
+      <div className="w-full ">
         <div className="relative bg-gray-100 dark:bg-gray-800/50 rounded-lg mb-6">
           <div className="grid grid-cols-3 relative z-10">
             {["reviews", "details", "similar"].map((tab) => (
@@ -525,7 +525,7 @@ const BookProfilePage = () => {
 
   // Full content once loaded
   return (
-    <motion.div initial="hidden" animate="visible" variants={fadeIn} className="container mx-auto px-4 py-8 max-w-6xl">
+    <motion.div initial="hidden" animate="visible" variants={fadeIn} className="container mx-auto px-4 py-8 max-w-6xl mt-20">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Book cover and quick actions */}
         <div className="md:col-span-1">
