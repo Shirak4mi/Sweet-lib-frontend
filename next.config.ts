@@ -5,23 +5,29 @@ import type { NextConfig } from "next";
 const withNextIntl = createNextIntlPlugin();
 
 export default withNextIntl({
-  experimental: {
-    serverActions: {
-      bodySizeLimit: "50mb",
-    },
-  },
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "images.pexels.com",
-        port: "",
-      },
-    ],
-  },
-  redirects: async () => [
-    { source: "/", destination: "/en/Home", permanent: true },
-    { source: "/en", destination: "/en/Home", permanent: true },
-    { source: "/es", destination: "/es/Home", permanent: true },
-  ],
+	experimental: {
+		serverActions: {
+			bodySizeLimit: "50mb",
+		},
+	},
+	images: {
+		remotePatterns: [
+			{
+				protocol: "https",
+				hostname: "images.pexels.com",
+				port: "",
+			},
+
+			{
+				hostname: "images.unsplash.com",
+				protocol: "https",
+				port: "",
+			},
+		],
+	},
+	redirects: async () => [
+		{ source: "/", destination: "/en/Home", permanent: true },
+		{ source: "/en", destination: "/en/Home", permanent: true },
+		{ source: "/es", destination: "/es/Home", permanent: true },
+	],
 }) as NextConfig;
