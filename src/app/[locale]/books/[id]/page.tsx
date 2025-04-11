@@ -39,11 +39,11 @@ const reviews = [
   },
 ];
 
-export default function BookDetails({ params }: { params: { id: string } }) {
+export default async function BookDetails({ params }: { params: { id: string } }) {
   const [rating, setRating] = useState(0);
   const [hoveredStar, setHoveredStar] = useState(0);
   const [comment, setComment] = useState("");
-  const { id } = params;
+  const { id } = await params;
 
   const book = {
     id: Number.parseInt(id),
