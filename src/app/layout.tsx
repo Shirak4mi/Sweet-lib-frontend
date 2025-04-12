@@ -25,10 +25,6 @@ export default function RootLayout({ children, params: { locale } }: Readonly<IR
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <head>
-        <script src="https://unpkg.com/react-scan/dist/auto.global.js" />
-      </head>
-
       <body className={`${fonts} antialiased`}>
         <AppThemeProvider>
           <MainAppWrapper>{children}</MainAppWrapper>
